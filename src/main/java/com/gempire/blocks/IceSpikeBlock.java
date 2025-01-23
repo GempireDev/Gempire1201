@@ -101,9 +101,12 @@ public class IceSpikeBlock extends Block {
 
     @Override
     public boolean canSurvive(BlockState state, LevelReader reader, BlockPos pos) {
-        BlockPos blockpos = pos.below();
-        BlockState blockstate = reader.getBlockState(blockpos);
-        boolean flag = blockstate.isFaceSturdy(reader, blockpos, Direction.DOWN);
+        boolean flag = true;
+        if (state.getValue(HALF) == DoubleBlockHalf.LOWER) {
+            flag = reader.getBlockState(pos.below()).isSolid();
+        } else {
+            flag = reader.getBlockState(pos.below().below()).isSolid();
+        }
         if (!flag) removeTopHalf((Level) reader, pos, state);
         return flag;
     }
@@ -115,7 +118,7 @@ public class IceSpikeBlock extends Block {
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         BlockPos blockpos = context.getClickedPos();
-        if (blockpos.getY() < 255 && context.getLevel().getBlockState(blockpos.above()).canBeReplaced(context)) {
+        if (context.getLevel().getBlockState(blockpos.above()).canBeReplaced(context)) {
             return this.defaultBlockState().setValue(HALF, DoubleBlockHalf.LOWER);
         } else {
             return null;

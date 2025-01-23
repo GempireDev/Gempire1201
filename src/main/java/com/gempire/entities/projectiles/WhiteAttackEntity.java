@@ -4,6 +4,7 @@ import com.gempire.init.ModEffects;
 import com.gempire.init.ModEntities;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EntityType;
@@ -15,6 +16,7 @@ import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 
 public class WhiteAttackEntity extends AbstractHurtingProjectile {
+    public int tick = 0;
     public WhiteAttackEntity(EntityType<? extends WhiteAttackEntity> entity, Level world) {
         super(entity, world);
     }
@@ -83,7 +85,8 @@ public class WhiteAttackEntity extends AbstractHurtingProjectile {
     @Override
     public void tick() {
         super.tick();
-        if (this.getDeltaMovement().equals(new Vec3(0, 0, 0))) {
+        if (!this.level().isClientSide) tick++;
+        if (this.getDeltaMovement().equals(new Vec3(0, 0, 0)) || tick >= 400) {
             this.kill();
         }
     }
@@ -98,5 +101,17 @@ public class WhiteAttackEntity extends AbstractHurtingProjectile {
 
     protected boolean shouldBurn() {
         return false;
+    }
+
+    @Override
+    public void addAdditionalSaveData(CompoundTag tag) {
+        super.addAdditionalSaveData(tag);
+        tag.putInt("ticks", tick);
+    }
+
+    @Override
+    public void load(CompoundTag tag) {
+        super.load(tag);
+        tick = tag.getInt("ticks");
     }
 }
