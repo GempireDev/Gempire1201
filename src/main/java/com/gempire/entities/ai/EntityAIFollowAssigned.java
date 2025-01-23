@@ -26,8 +26,8 @@ public class EntityAIFollowAssigned extends Goal {
         if (!follower.getRebelled()) {
             if (this.follower.getSludgeAmount() < 5) {
                 for (EntityGem entity : list) {
-                    if (!entity.isSpectator() || !entity.isInvisible() && this.follower.ASSIGNED_ID != null) {
-                        if (this.follower.ASSIGNED_ID != UUID.fromString("00000000-0000-0000-0000-000000000000") && this.follower.ASSIGNED_ID.equals(entity.getUUID())) {
+                    if (!entity.isSpectator() || !entity.isInvisible()) {
+                        if (this.follower.ASSIGNED_ID != 0 && this.follower.ASSIGNED_ID == entity.getGemID()) {
                             double newDistance = entity.distanceToSqr(this.follower);
                             if (newDistance <= maxDistance) {
                                 maxDistance = newDistance;

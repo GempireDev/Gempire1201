@@ -138,6 +138,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
     public static final EntityDataAccessor<Float> ZSCALE = SynchedEntityData.defineId(EntityGem.class, EntityDataSerializers.FLOAT);
 
     public static final EntityDataAccessor<Integer> QUALITY = SynchedEntityData.defineId(EntityGem.class, EntityDataSerializers.INT);
+    public static final EntityDataAccessor<Integer> GEM_ID = SynchedEntityData.defineId(EntityGem.class, EntityDataSerializers.INT);
 
     public static final EntityDataAccessor<Boolean> DISPLAY = SynchedEntityData.<Boolean>defineId(EntityGem.class, EntityDataSerializers.BOOLEAN);
 
@@ -147,7 +148,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
     public ArrayList<UUID> OWNERS = new ArrayList<>();
     public UUID MASTER_OWNER;
     public UUID FOLLOW_ID;
-    public UUID ASSIGNED_ID;
+    public int ASSIGNED_ID;
     public BlockPos GUARD_POS;
     public ArrayList<IIdleAbility> idlePowers = new ArrayList<>();
     private final ItemBasedSteering booster = new ItemBasedSteering(this.entityData, BOOST_TIME, SADDLED);
@@ -276,8 +277,9 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         this.entityData.define(EntityGem.ZSCALE, 0F);
         this.entityData.define(EntityGem.LUMBERJACK, false);
         this.entityData.define(EntityGem.DISPLAY, false);
+        this.entityData.define(EntityGem.GEM_ID, 0);
         this.FOLLOW_ID = UUID.randomUUID();
-        this.ASSIGNED_ID = UUID.fromString("00000000-0000-0000-0000-000000000000");
+        this.ASSIGNED_ID = 0;
         this.MASTER_OWNER = UUID.randomUUID();
         Arrays.fill(this.armorDropChances, 0);
         Arrays.fill(this.handDropChances, 0);
@@ -310,8 +312,18 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         this.setFacet(this.generateFacet());
         this.setCut(this.generateCut());
         this.FOLLOW_ID = UUID.randomUUID();
-        this.ASSIGNED_ID = UUID.fromString("00000000-0000-0000-0000-000000000000");
+        this.ASSIGNED_ID = 0;
         this.MASTER_OWNER = UUID.randomUUID();
+        boolean flag = false;
+        while (!flag) {
+            int a = this.random.nextInt(9999999);
+            GemSavedData data = GemSavedData.getData(level().getServer());
+            ArrayList<Integer> list = data.getGemData();
+            if (!list.contains(a) && a != 0) {
+                setGemID(a);
+                flag = true;
+            }
+        }
         this.setMarkingVariant(this.generateMarkingVariant());
         this.setMarkingColor(this.generatePaletteColor(PaletteType.MARKINGS));
         this.setMarking2Variant(this.generateMarking2Variant());
@@ -325,7 +337,6 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         ItemStack stack = new ItemStack(this.getGemItem());
         ItemGem.saveData(stack, this);
         //setAssignedGem(((ItemGem) stack.getItem()).assigned_gem);
-        System.out.println(this.getAssignedGem());
         this.setRebelHairVariant(this.generateHairVariant());
         this.setRebelOutfitVariant(this.generateOutfitVariant());
         this.setRebelOutfitColor(this.random.nextInt(16));
@@ -477,6 +488,9 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         this.writeAbilityUtil(compound);
         this.writeUtil(compound);
         this.writeAssignedUtil(compound);
+        GemSavedData data = GemSavedData.getData(level().getServer());
+        if (!data.getGemData().contains(getGemID())) data.addToGemData(getGemID());
+        compound.putInt("gemID", this.getGemID());
         compound.putString("masterName", getMasterName());
         if (this.canLocateStructures()) compound.putInt("structureTime", this.structureTime);
         if (this.canLocateStructures()) this.writeStructures(compound);
@@ -554,13 +568,13 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
 
     public void writeIDs(CompoundTag compound) {
         compound.putUUID("followID", FOLLOW_ID);
-        compound.putUUID("assignedID", ASSIGNED_ID);
+        compound.putInt("assignedID", ASSIGNED_ID);
         compound.putUUID("master", MASTER_OWNER);
     }
 
     public void readIDs(CompoundTag compound) {
         FOLLOW_ID = compound.getUUID("followID");
-        ASSIGNED_ID = compound.getUUID("assignedID");
+        ASSIGNED_ID = compound.getInt("assignedID");
         MASTER_OWNER = compound.getUUID("master");
     }
 
@@ -744,6 +758,8 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
             if (this.spawnGem != null) {
                 this.spawnGem.remove(RemovalReason.DISCARDED);
             }
+            setGemID(compound.getInt("gemID"));
+
         } else {
             this.readVariant(compound);
             this.readColour(compound);
@@ -1310,44 +1326,25 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         setAssignedCut(cut);
     }
 
-    public EntityGem getAssignedGem() {
-        if (!this.level().isClientSide) {
-            if (((ServerLevel)this.level()).getEntity(ASSIGNED_ID) instanceof EntityGem) {
-                return (EntityGem) ((ServerLevel) this.level()).getEntity(ASSIGNED_ID);
-            } else {
-                System.out.println("not a gem");
-                return null;
-            }
-        }
-        return null;
-    }
-
-    public void setAssignedGem(EntityGem assigned) {
-        if (assigned != null) {
-            this.ASSIGNED_ID = assigned.getUUID();
-        }
-    }
-
     public void cycleMovementAI(Player player){
         if (!this.getRebelled() && !(this.getSludgeAmount() >= 5)) {
             //Cycles through the various movement types.
             this.navigation.stop();
             setFollow(player.getUUID());
             System.out.println("Assigned ID " + ASSIGNED_ID);
-            System.out.println("assigned  " + getAssignedGem());
             this.GUARD_POS = this.getOnPos().above();
-            if (getAssignedGem() != null ? this.getMovementType() < 3 : this.getMovementType() < 2) {
+            if (ASSIGNED_ID != 0 ? this.getMovementType() < 3 : this.getMovementType() < 2) {
                 this.addMovementType(1);
                 switch (this.getMovementType()) {
                     case 1 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will wander around"));
                     case 2 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now follow you"));
-                    case 3 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now follow " + getAssignedGem().getName().getString() + " " + getAssignedGem().getFacetAndCut()));
+                    case 3 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now follow " + getAssignedName() + " " + getAssignedFacet() + " "+ getAssignedCut()));
                     default -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now stay put"));
                 }
-            } else if (getAssignedGem() != null ? this.getMovementType() == 3 : this.getMovementType() == 2) {
+            } else if (ASSIGNED_ID != 0 ? this.getMovementType() == 3 : this.getMovementType() == 2) {
                 this.setMovementType((byte) 0);
                 player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now stay put"));
-            } else if (getAssignedGem() == null && this.getMovementType() == 3 || !getAssignedGem().isAlive()) {
+            } else if (ASSIGNED_ID == 0 && this.getMovementType() == 3) {
                 this.setMovementType((byte) 0);
                 player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now stay put"));
             }
@@ -1643,6 +1640,8 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
                 this.writeAbilityUtil(compound);
                 this.writeUtil(compound);
                 this.writeAssignedUtil(compound);
+
+                compound.putInt("gemID", getGemID());
                 compound.putString("masterName", getMasterName());
                 if (this.canLocateStructures()) compound.putInt("structureTime", this.structureTime);
                 if (this.canLocateStructures()) this.writeStructures(compound);
@@ -1817,7 +1816,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         this.FOLLOW_ID = id;
     }
 
-    public void setAssignedId(UUID id){
+    public void setAssignedId(int id){
         this.ASSIGNED_ID = id;
     }
 
@@ -2218,6 +2217,14 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
 
     public void setEmotional(boolean value){
         this.entityData.set(EntityGem.EMOTIONAL, value);
+    }
+
+    public int getGemID(){
+        return this.entityData.get(EntityGem.GEM_ID);
+    }
+
+    public void setGemID(int value){
+        this.entityData.set(EntityGem.GEM_ID, value);
     }
 
     public abstract boolean generateIsEmotional();

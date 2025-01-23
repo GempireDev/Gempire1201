@@ -28,7 +28,7 @@ public class EntityAISludged extends Goal {
         double maxDistance = Double.MAX_VALUE;
         if (follower.getSludgeAmount() >= 5) {
             for (EntityGem entity : list) {
-                if (!entity.isSpectator() || !entity.isInvisible() && this.follower.ASSIGNED_ID != null) {
+                if (!entity.isSpectator() || !entity.isInvisible()) {
                     double newDistance = entity.distanceToSqr(this.follower);
                     if (newDistance <= maxDistance) {
                         maxDistance = newDistance;

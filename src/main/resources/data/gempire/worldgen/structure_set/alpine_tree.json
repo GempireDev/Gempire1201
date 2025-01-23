@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "gempire:alpine_tree",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1607375778,
+    "spacing": 5,
+    "separation": 4
+  }
+}

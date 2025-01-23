@@ -16,10 +16,7 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
-import net.minecraft.world.level.block.PipeBlock;
-import net.minecraft.world.level.block.PoweredBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -111,7 +108,9 @@ public class DestabWallBlock extends HorizontalDirectionalBlock {
     public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
         if (entity instanceof EntityGem) {
             entity.hurt(entity.damageSources().magic(), 2);
-            ((LivingEntity) entity).knockback(1, 1, 1);
+            Direction direction = state.getValue(HorizontalDirectionalBlock.FACING);
+            boolean n = entity.getMotionDirection() == direction;
+            ((LivingEntity) entity).knockback(n ? -1 : 1, 0, n ? -1 : 1);
         }
     }
 

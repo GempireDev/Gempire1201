@@ -385,7 +385,6 @@ public class GemSeedTE extends BlockEntity {
                 gem.setSkinColorVariant(gem.generateSkinColorVariant());
             } else gem.setSkinColorVariant(gem.initalSkinVariant);
             //gem.setAssignedGem(((ItemGem)gem.getGemItem().getDefaultInstance().getItem()).assigned_gem);
-            System.out.println(gem.getAssignedGem());
             gem.setHairVariant(gem.generateHairVariant());
             gem.setSkinColor(gem.generatePaletteColor(PaletteType.SKIN));
             gem.setHairColor(gem.generatePaletteColor(PaletteType.HAIR));

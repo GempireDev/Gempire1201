@@ -14,6 +14,7 @@ import com.gempire.init.AddonHandler;
 import com.gempire.init.ModEnchants;
 import com.gempire.init.ModEntities;
 import com.gempire.init.ModItems;
+import com.gempire.util.GemSavedData;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.nbt.ListTag;
@@ -52,10 +53,7 @@ import org.apache.commons.lang3.ArrayUtils;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-import java.util.List;
-import java.util.Objects;
-import java.util.Random;
-import java.util.UUID;
+import java.util.*;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.Mth;
@@ -232,8 +230,9 @@ public class ItemGem extends Item {
                     if (stack.getTag().getString("abilities") != "") {
                         assert gem != null;
                         if (stack.getTag().contains("assignedID")) {
-                            if (stack.getOrCreateTag().getUUID("assignedID") != UUID.fromString("00000000-0000-0000-0000-000000000000")) {
-                                gem.setAssignedId(stack.getOrCreateTag().getUUID("assignedID"));System.out.println("assigned id " + stack.getOrCreateTag().getUUID("assignedID"));
+                            if (stack.getOrCreateTag().getInt("assignedID") != 0) {
+                                gem.setAssignedId(stack.getOrCreateTag().getInt("assignedID"));
+                                System.out.println("assigned id " + stack.getOrCreateTag().getInt("assignedID"));
                             }
                         }
                         gem.setQuality(stack.getTag().getInt("quality"));
@@ -251,8 +250,8 @@ public class ItemGem extends Item {
                             gem.initalSkinVariant = Integer.parseInt(skinColorVariant);
                         }
                         if (stack.getTag().contains("assignedID")) {
-                            if (stack.getOrCreateTag().getUUID("assignedID") != UUID.fromString("00000000-0000-0000-0000-000000000000")) {
-                                gem.setAssignedId(stack.getOrCreateTag().getUUID("assignedID"));
+                            if (stack.getOrCreateTag().getInt("assignedID") != 0) {
+                                gem.setAssignedId(stack.getOrCreateTag().getInt("assignedID"));
                             }
                         }
                         if (player != null) {
@@ -398,8 +397,21 @@ public class ItemGem extends Item {
                 GemFormEvent event = new GemFormEvent(gem, gem.blockPosition());
                 MinecraftForge.EVENT_BUS.post(event);
                 world.addFreshEntity(gem);
-                System.out.println(gem.getGemPlacementE());
-                System.out.println(gem.getOutfitVariant() + " and " + gem.getInsigniaVariant());
+                if (stack.getTag().getInt("gemID") != 0) {
+                    gem.setGemID(stack.getTag().getInt("gemID"));
+                } else {
+                    boolean flag = false;
+                    while (!flag) {
+                        int a = gem.getRandom().nextInt(9999999);
+                        GemSavedData data = GemSavedData.getData(gem.level().getServer());
+                        ArrayList<Integer> listid = data.getGemData();
+                        if (!listid.contains(a)) {
+                            gem.setGemID(a);
+                            flag = true;
+                        }
+                    }
+                }
+                System.out.println("gem id "+gem.getGemID());
                 System.out.println("assigned id "+gem.ASSIGNED_ID);
                 return true;
             }

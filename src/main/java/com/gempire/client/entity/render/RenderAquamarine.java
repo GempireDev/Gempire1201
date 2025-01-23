@@ -44,7 +44,7 @@ public class RenderAquamarine extends MobRenderer<EntityAquamarine, ModelAquamar
     }
     @Override
     protected void renderNameTag(EntityAquamarine entityIn, Component displayNameIn, PoseStack matrixStackIn, MultiBufferSource bufferIn, int packedLightIn) {
-        if (entityIn.ASSIGNED_ID != UUID.fromString("00000000-0000-0000-0000-000000000000") && entityIn.ASSIGNED_ID != null && entityIn.getAssigned()) {
+        if (entityIn.ASSIGNED_ID != 0) {
             matrixStackIn.translate(0.0D, (double) 3*(9.0F * 1.15F * 0.025F), 0.0D);
             if (entityIn.hasCustomName()) {
                 super.renderNameTag(entityIn, entityIn.getCustomName(), matrixStackIn, bufferIn, packedLightIn);

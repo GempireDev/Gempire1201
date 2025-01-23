@@ -1,4 +1,4 @@
-// 1.20.1	2025-01-12T12:25:33.246401	Item Models: gempire
+// 1.20.1	2025-01-23T20:07:18.647279	Item Models: gempire
 2a4c323206d2fbeca217109aa5c8a2ac8ce38701 assets/gempire/models/item/acid_spit.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/gempire/models/item/alabaster_empress_spawn_egg.json
 0da7ed67ca0a8fcb9a8ba427cc3a79d0931ef656 assets/gempire/models/item/alabaster_shards.json
@@ -169,6 +169,7 @@ d316da9d02fb86cbf41c2c52013f2bedb8508095 assets/gempire/models/item/red_chroma.j
 a9adf09a6b9a7f914f03414e71baa7035833370e assets/gempire/models/item/red_lattice.json
 b6c2fd3b1a56b802808f12d3ebed745fb5d62a8b assets/gempire/models/item/red_shards.json
 c47c115685ed81207b9f5c368482ca57f978d626 assets/gempire/models/item/remnants_music_disc.json
+ec838d0a7a9d61759d9220a0bf921454ff6d996b assets/gempire/models/item/removal_contract.json
 b627f6f8876527949526345edf389a7db250e104 assets/gempire/models/item/ryolite_wall.json
 0c1b0d85cb4569bc359e9460da94c1fe3a789029 assets/gempire/models/item/schist_wall.json
 efa949f765d907a63e01488c8bcbf70309276907 assets/gempire/models/item/selenite_chunk.json

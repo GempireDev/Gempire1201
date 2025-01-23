@@ -124,7 +124,7 @@ public class EntityFusion extends PathfinderMob implements RangedAttackMob, Cont
     public ArrayList<UUID> OWNERS = new ArrayList<>();
     public UUID MASTER_OWNER;
     public UUID FOLLOW_ID;
-    public UUID ASSIGNED_ID;
+    public int ASSIGNED_ID;
     public BlockPos GUARD_POS;
     public ArrayList<IIdleAbility> idlePowers = new ArrayList<>();
 
@@ -271,7 +271,7 @@ public class EntityFusion extends PathfinderMob implements RangedAttackMob, Cont
         this.entityData.define(EntityFusion.YSCALE, 0F);
         this.entityData.define(EntityFusion.ZSCALE, 0F);
         this.FOLLOW_ID = UUID.randomUUID();
-        this.ASSIGNED_ID = UUID.fromString("00000000-0000-0000-0000-000000000000");
+        this.ASSIGNED_ID = 0;
         this.MASTER_OWNER = UUID.randomUUID();
         Arrays.fill(this.armorDropChances, 0);
         Arrays.fill(this.handDropChances, 0);
@@ -304,7 +304,7 @@ public class EntityFusion extends PathfinderMob implements RangedAttackMob, Cont
         this.setFacet(this.generateFacet());
         this.setCut(this.generateCut());
         this.FOLLOW_ID = UUID.randomUUID();
-        this.ASSIGNED_ID = UUID.fromString("00000000-0000-0000-0000-000000000000");
+        this.ASSIGNED_ID = 0;
         this.MASTER_OWNER = UUID.randomUUID();
         this.setMarkingVariant(this.generateMarkingVariant());
         this.setMarkingColor(this.generatePaletteColor(PaletteType.MARKINGS));
@@ -319,7 +319,6 @@ public class EntityFusion extends PathfinderMob implements RangedAttackMob, Cont
         ItemStack stack = new ItemStack(this.getGemItem());
         ItemGem.saveFusionData(stack, this);
         //setAssignedGem(((ItemGem) stack.getItem()).assigned_gem);
-        System.out.println(this.getAssignedGem());
         this.setRebelHairVariant(this.generateHairVariant());
         this.setRebelOutfitVariant(this.generateOutfitVariant());
         this.setRebelOutfitColor(this.random.nextInt(16));
@@ -562,7 +561,7 @@ public class EntityFusion extends PathfinderMob implements RangedAttackMob, Cont
     public void readIDs(CompoundTag compound) {
         String[] strings = compound.getString("id").split(",");
         FOLLOW_ID = UUID.fromString(strings[0]);
-        ASSIGNED_ID = UUID.fromString(strings[1]);
+        ASSIGNED_ID = Integer.parseInt(strings[1]);
         MASTER_OWNER = UUID.fromString(strings[2]);
     }
 
@@ -1333,25 +1332,7 @@ public class EntityFusion extends PathfinderMob implements RangedAttackMob, Cont
     public int generateHardness() {
         return 1;
     };
-    public EntityGem getAssignedGem() {
-        if (!this.level().isClientSide) {
-            if (((ServerLevel)this.level()).getEntity(ASSIGNED_ID) instanceof EntityGem) {
-                return (EntityGem) ((ServerLevel) this.level()).getEntity(ASSIGNED_ID);
-            } else {
-                System.out.println("not a gem");
-                return null;
-            }
-        } else {
-            System.out.println("not clientside");
-            return null;
-        }
-    }
 
-    public void setAssignedGem(EntityGem assigned) {
-        if (assigned != null) {
-            this.ASSIGNED_ID = assigned.getUUID();
-        }
-    }
 
     public void cycleMovementAI(Player player){
         if (!this.getRebelled() && !(this.getSludgeAmount() >= 5)) {
@@ -1359,20 +1340,19 @@ public class EntityFusion extends PathfinderMob implements RangedAttackMob, Cont
             this.navigation.stop();
             setFollow(player.getUUID());
             System.out.println("Assigned ID " + ASSIGNED_ID);
-            System.out.println("assigned  " + getAssignedGem());
             this.GUARD_POS = this.getOnPos().above();
-            if (getAssignedGem() != null ? this.getMovementType() < 3 : this.getMovementType() < 2) {
+            if (ASSIGNED_ID != 0 ? this.getMovementType() < 3 : this.getMovementType() < 2) {
                 this.addMovementType(1);
                 switch (this.getMovementType()) {
                     case 1 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will wander around"));
                     case 2 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now follow you"));
-                    case 3 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now follow " + getAssignedGem().getName().getString() + " " + getAssignedGem().getFacetAndCut()));
+                    //case 3 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now follow " + getAssignedName() + " " + getAssignedGem().getFacetAndCut()));
                     default -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now stay put"));
                 }
-            } else if (getAssignedGem() != null ? this.getMovementType() == 3 : this.getMovementType() == 2) {
+            } else if (ASSIGNED_ID != 0 ? this.getMovementType() == 3 : this.getMovementType() == 2) {
                 this.setMovementType((byte) 0);
                 player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now stay put"));
-            } else if (getAssignedGem() == null && this.getMovementType() == 3 || !getAssignedGem().isAlive()) {
+            } else if (ASSIGNED_ID != 0 && this.getMovementType() == 3) {
                 this.setMovementType((byte) 0);
                 player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now stay put"));
             }
@@ -1816,7 +1796,7 @@ public class EntityFusion extends PathfinderMob implements RangedAttackMob, Cont
         this.FOLLOW_ID = id;
     }
 
-    public void setAssignedId(UUID id){
+    public void setAssignedId(int id){
         this.ASSIGNED_ID = id;
     }
 
