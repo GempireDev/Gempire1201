@@ -1,0 +1,13 @@
+{
+  "name": "Drained Stones",
+  "icon": "gempire:drained_purple_stone_2",
+  "advancement": "gempire:root",
+  "category": "gempire:misc",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "gempire:drained_purple_stone_bands",
+      "text": "Drained stones and other leftover materials are the result of injection and kindergartening. Some materials can be used in crafting decorative blocks.$(br2)As of right now, not every block has a use. But that will change as time progresses."
+    }
+  ]
+}

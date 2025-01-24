@@ -1,0 +1,23 @@
+{
+  "name": "Selenite",
+  "icon": "gempire:selenite",
+  "advancement": "gempire:root",
+  "category": "gempire:misc",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "gempire:selenite_chunk",
+      "text": "Selenite is a multipurpose mineral. It can be used for crafting decorative blocks and is also used for warp pad repairs.$(br2)It spawns in geode formations, similar to amethyst geodes in the overworld."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "gempire:polished_selenite",
+      "text": "First you gotta polish it."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "gempire:primed_selenite",
+      "text": "Then you gotta prime it. Now you can use it to repair warp pads!"
+    }
+  ]
+}

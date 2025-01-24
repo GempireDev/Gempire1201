@@ -15,7 +15,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Possible Abilities$() $(br)$(li)Paralysis$(li)Tank$(li)Beefcake$(li)Powerhouse$(li)Unhinged$(li)Stern$(br2) $(l)Definite Abilities$()$(li)Knockback"
+      "text": "$(l)Possible Abilities$() $(br)$(li)Paralysis$(li)Tank$(li)Beefcake$(li)Powerhouse$(li)Unhinged$(li)Stern$(li)Berserker$(br2) $(l)Definite Abilities$()$(li)Knockback$(li)Intimidation"
     },
     {
       "type": "patchouli:text",

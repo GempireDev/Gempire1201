@@ -1,7 +1,7 @@
 {
   "name": "Clods",
   "advancement": "gempire:root",
-  "icon": "gempire:blue_essence_bucket",
+  "icon": "gempire:sludge_glob",
   "category": "gempire:gem_concepts",
   "pages": [
     {
@@ -16,7 +16,8 @@
       "entity": "gempire:shambler",
       "name": "A Shambler",
       "rotate": "true",
-      "scale": 0.7,
+      "scale": 0.6,
+      "offset": 0.5,
       "text": "A bipedal clod variant that rushes to players and gems so they can attack them."
     },
     {
@@ -24,7 +25,8 @@
       "entity": "gempire:abomination",
       "name": "An Abomination",
       "rotate": "true",
-      "scale": 0.6,
+      "scale": 0.5,
+      "offset": 0.5,
       "text": "A much larger bipedal clod variant that rushes to players and gems so they can attack them."
     },
     {
@@ -33,7 +35,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "They are extremely hostile entities that seek out both players and gems so they can attack and try to devour them for sustenance.$(br2)They desperately crave to become whole instead of living in anguish due to their unfinished state.$(br2)Clods can infect gems with sludge upon attacking, brainwashing them and turning them hostile to their owner."
+      "text": "They are extremely hostile entities that seek out both players and gems so they can attack and try to devour them for sustenance.$(br2)They desperately crave to become whole instead of living in anguish due to their unfinished state."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Clods can infect gems with sludge upon attacking, brainwashing them and turning them hostile to their owner."
     }
   ]
 }

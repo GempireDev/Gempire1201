@@ -13,7 +13,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "A cave dwelling gem that when given torches, places them in dark spaces. She can also seek out blocks of interest, like ore chunks and mob spawners."
+      "text": "A cave dwelling gem that when given torches, places them in dark spaces.$(br2)She can also seek out blocks of interest, like ore chunks and mob spawners."
     },
     {
       "type": "patchouli:text",

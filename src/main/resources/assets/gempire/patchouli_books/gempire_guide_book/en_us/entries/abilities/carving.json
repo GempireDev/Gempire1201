@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Prospector is an ability that lets gems convert primed ice blocks into carved statues that give off various effects."
+      "text": "Carving is an ability that lets gems convert primed ice blocks into carved statues that give off various effects.$(br2)To trigger the ability, give the gem a pickaxe and set out a two block pillar of one of the primed ice variants."
     },
     {
       "type": "patchouli:text",

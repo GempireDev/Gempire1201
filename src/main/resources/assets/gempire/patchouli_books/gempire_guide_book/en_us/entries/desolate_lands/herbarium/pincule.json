@@ -9,6 +9,10 @@
       "title": "Pincule",
       "item": "gempire:pincule",
       "text": "A prickly purple pint-sized peculiar cactus. Found in the Abnormal Desert biome."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "... however, there are rumors of fruiting variants somewhere in the desert. Perhaps someday I'll run across one."
     }
   ]
 }

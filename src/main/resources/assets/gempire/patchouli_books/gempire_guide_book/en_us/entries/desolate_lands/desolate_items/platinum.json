@@ -1,0 +1,18 @@
+{
+  "name": "Platinum",
+  "icon": "gempire:raw_platinum",
+  "advancement": "gempire:desolate_lands/root",
+  "category": "gempire:desolate_items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Platinum Ore",
+      "item": "gempire:platinum_ore",
+      "text": "Shiny white ore that can be processed into ingots and blocks. Also useful for various crafting recipes."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "It can be found underground anywhere in the Prismatic Gates, at around Y levels 80 all the way to -64.$(br2)The most common areas seem to be around Y level -10."
+    }
+  ]
+}

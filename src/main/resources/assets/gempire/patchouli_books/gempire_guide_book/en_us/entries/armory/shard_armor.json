@@ -1,16 +1,12 @@
 {
-  "name": "Wearing a Diamond's Shards",
+  "name": "A Diamond's Shards",
   "icon": "minecraft:book",
   "advancement": "gempire:desolate_lands/kill_empress",
   "category": "gempire:armory",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Each full set of armor grants you positive benefits."
-    },
-    {
-      "type": "patchouli:text",
-      "text": "The Empress grants a radiant glow and extra speed."
+      "text": "Each full set of armor grants you positive benefits. For example, the Empress set grants a radiant glow and extra speed."
     },
     {
       "type": "patchouli:crafting",
@@ -38,7 +34,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The Guardian grants absorption."
+      "text": "The Guardian grants absorption..."
     },
     {
       "type": "patchouli:crafting",
@@ -52,7 +48,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The Paladin grants extra health and regeneration."
+      "text": "... and the Paladin grants extra health and regeneration."
     },
     {
       "type": "patchouli:crafting",

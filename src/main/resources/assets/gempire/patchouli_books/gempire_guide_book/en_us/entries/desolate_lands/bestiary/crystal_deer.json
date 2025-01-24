@@ -15,6 +15,16 @@
     {
       "type": "patchouli:text",
       "text": "These beautiful creatures spawn in the Iridescent Plains biome and have evolved to blend into their surroundings. Their backs are lined with mimicked forms of Thulite.$(br2)They are passive in nature, and flee when attacked. They drop crystalline shanks that can be cooked for a meal."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gempire:cooked_crystal_shank",
+      "text": "Crunchy, yet satisfying. Mind the shards."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gempire:raw_thulite",
+      "text": "You can breed crystal deer with pieces of raw thulite."
     }
   ]
 }

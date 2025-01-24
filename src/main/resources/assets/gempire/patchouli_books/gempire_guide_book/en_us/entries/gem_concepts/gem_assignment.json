@@ -13,6 +13,10 @@
       "text": "That gem will now be assigned to another gem and will display a special tag under her name that's green in color.$(br2)To make your gem follow her assigned gem, change her movement mode with shift-right click."
     },
     {
+      "type": "patchouli:text",
+      "text": "To remove ownership status on a gem, right-click her again with the contract to clear her tag."
+    },
+    {
       "type": "patchouli:crafting",
       "recipe": "gempire:assignmentcontract",
       "text": "Assignment contracts are used to tell gems to follow other gems."

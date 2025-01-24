@@ -1,0 +1,14 @@
+{
+  "name": "Reinforced Glass Shards",
+  "icon": "gempire:prismatic_glass_shards",
+  "advancement": "gempire:desolate_lands/root",
+  "category": "gempire:desolate_items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Case Remnants",
+      "item": "gempire:prismatic_glass_shards",
+      "text": "Shards leftover from breaking a protective case. Perhaps it can be used elsewhere?"
+    }
+  ]
+}

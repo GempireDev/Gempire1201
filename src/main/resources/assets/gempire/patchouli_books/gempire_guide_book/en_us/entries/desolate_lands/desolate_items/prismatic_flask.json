@@ -1,0 +1,21 @@
+{
+  "name": "Prismatic Flask",
+  "icon": "gempire:prismatic_flask",
+  "advancement": "gempire:desolate_lands/root",
+  "category": "gempire:desolate_items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "gempire:prismatic_flask",
+      "text": "A sturdy glass flask with iridescent colors, used to carry potent fluids."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "gempire:reinforced_prismatic_glass"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "gempire:prismatic_flask"
+    }
+  ]
+}

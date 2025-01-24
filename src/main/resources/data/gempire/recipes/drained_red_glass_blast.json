@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 2,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "gempire:drained_red_sand"
+  },
+  "result": {
+    "item": "gempire:drained_yellow_glass"
+  }
+}

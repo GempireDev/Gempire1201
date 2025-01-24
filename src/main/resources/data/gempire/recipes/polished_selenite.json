@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 2,
+  "cookingtime": 300,
+  "ingredient": {
+    "item": "gempire:selenite_chunk"
+  },
+  "result": {
+    "item": "gempire:polished_selenite"
+  }
+}

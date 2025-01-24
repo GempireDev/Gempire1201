@@ -1,0 +1,13 @@
+{
+  "name": "Ancient Marble",
+  "icon": "gempire:chiseled_ruined_marble_block",
+  "advancement": "gempire:root",
+  "category": "gempire:misc",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "gempire:ruined_marble_block",
+      "text": "Ancient marble, found in a variety of forms in a variety of loot chests and structures. Some forms are decorative!"
+    }
+  ]
+}

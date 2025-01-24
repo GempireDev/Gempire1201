@@ -14,6 +14,11 @@
     {
       "type": "patchouli:text",
       "text": "A ray-like creature found in the Mirrored Seas biome. Hostile to the player.$(br2)Killing an Opalized Mantashark may get you raw opal mantawings or an Opalized Tooth, which is useful in making Prismatic Shears."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gempire:cooked_opalized_mantawing",
+      "text": "Tastes just like chicken?..."
     }
   ]
 }

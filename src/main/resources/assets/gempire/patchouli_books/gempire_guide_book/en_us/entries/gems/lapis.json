@@ -13,7 +13,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "A transport gem that also uses water as a weapon and carves trenches in the earth with terraforming.$(br2)To get her to terraform, set her movement mode to stay with shift-right click and right click her with a pickaxe. Then, use /terraform and wait."
+      "text": "A transport gem that also uses water as a weapon and carves trenches in the earth to terraform.$(br2)To get her to terraform, set her movement mode to stay with shift-right click and right click her with a pickaxe. Then, use /terraform and wait."
     },
     {
       "type": "patchouli:text",

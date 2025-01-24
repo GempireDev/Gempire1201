@@ -1,0 +1,13 @@
+{
+  "name": "Barbatine",
+  "icon": "gempire:barbatine",
+  "advancement": "gempire:desolate_lands/root",
+  "category": "gempire:desolate_items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "gempire:barbatine",
+      "text": "A decorative form of peculiar sand that can be dyed any color of the rainbow."
+    }
+  ]
+}

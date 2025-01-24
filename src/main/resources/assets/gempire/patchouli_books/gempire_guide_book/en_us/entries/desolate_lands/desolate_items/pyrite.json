@@ -9,6 +9,10 @@
       "title": "Pyrite Ore",
       "item": "gempire:pyrite_ore",
       "text": "Shiny yellow ore that can be processed into decorative blocks. Don't let the golden tones fool you."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "It can be found underground anywhere in the Desolate Lands, at around Y level -20 and below."
     }
   ]
 }

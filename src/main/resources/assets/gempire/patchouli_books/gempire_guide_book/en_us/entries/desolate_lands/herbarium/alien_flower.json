@@ -8,7 +8,7 @@
       "type": "patchouli:spotlight",
       "title": "Alien Flower",
       "item": "gempire:alien_flower",
-      "text": "Alien flowers are a flower found in the Iridescent Plains biome."
+      "text": "Alien flowers are a flower found in the Iridescent Plains biome.$(br2)They can be consumed for a small, protective status effect and are used in the crafting of Thulite armor.$(br2)Brewing with them may increase the desired effects."
     }
   ]
 }

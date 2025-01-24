@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 2,
+  "cookingtime": 400,
+  "ingredient": {
+    "item": "gempire:drained_purple_Sand"
+  },
+  "result": {
+    "item": "gempire:drained_purple_glass"
+  }
+}

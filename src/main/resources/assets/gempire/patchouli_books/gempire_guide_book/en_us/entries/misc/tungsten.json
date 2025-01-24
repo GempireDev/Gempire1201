@@ -7,7 +7,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "gempire:tungsten_ingot",
-      "text": "Tungsten has various uses in crafting recipes and can be found underground."
+      "text": "Tungsten has various uses in crafting recipes and can be found underground on Y levels 80 all the way to -64.$(br2)The most common areas seem to be around Y level -10."
     }
   ]
 }

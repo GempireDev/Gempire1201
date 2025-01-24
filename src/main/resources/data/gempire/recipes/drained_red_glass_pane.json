@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "gempire:drained_red_glass"
+    }
+  },
+  "result": {
+    "count": 16,
+    "item": "gempire:drained_red_glass_pane"
+  }
+}

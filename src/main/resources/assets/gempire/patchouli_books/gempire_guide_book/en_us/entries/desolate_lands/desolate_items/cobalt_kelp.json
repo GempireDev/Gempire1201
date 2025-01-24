@@ -8,7 +8,16 @@
       "type": "patchouli:spotlight",
       "link_recipe ": true,
       "item": "gempire:cobalt_kelp",
-      "text": "An aquatic fibre very similar to the kelp on Earth, however with a far more cerulean hue.$(br2)It can be found of any of the oceans in the Desolate Lands, and can be smelted into Dried Cobalt Kelp.$(br2)It doesn't look like you can do anything with this Dried Cobalt Kelp yet, however."
+      "text": "An aquatic fibre very similar to the kelp on Earth, but with a far more cerulean hue."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "It can be found of any of the oceans in the Desolate Lands, and can be smelted into Dried Cobalt Kelp.$(br2)It doesn't look like you can do anything with this Dried Cobalt Kelp yet, however. Except maybe eat it as a little snack."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "gempire:dried_cobalt_kelp_from_smelting",
+      "text": "How to Dry Your Kelp."
     }
   ]
 }

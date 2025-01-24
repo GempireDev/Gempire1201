@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 2,
+  "cookingtime": 150,
+  "ingredient": {
+    "item": "gempire:polished_selenite"
+  },
+  "result": {
+    "item": "gempire:primed_selenite"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Primed Ice",
+  "icon": "gempire:primed_drained_ice",
+  "advancement": "gempire:root",
+  "category": "gempire:misc",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Primed Ice",
+      "item": "gempire:primed_ice,gempire:primed_packed_ice,gempire:primed_blue_ice,gempire:primed_drained_ice",
+      "text": "There are multiple variants of primed ice, usable by gems with the carving ability."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "gempire:primed_ice",
+      "recipe2": "gempire:primed_packed_ice"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "gempire:primed_blue_ice",
+      "recipe2": "gempire:primed_drained_ice"
+    }
+  ]
+}

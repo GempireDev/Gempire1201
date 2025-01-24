@@ -1,0 +1,17 @@
+{
+  "name": "Pink Sand",
+  "icon": "gempire:pink_sand",
+  "advancement": "gempire:desolate_lands/root",
+  "category": "gempire:desolate_items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "gempire:pink_sand",
+      "text": "A pretty pink form of sand that can be processed into sandstone then turned into various forms, such as walls and slabs."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "gempire:pink_sandstone"
+    }
+  ]
+}

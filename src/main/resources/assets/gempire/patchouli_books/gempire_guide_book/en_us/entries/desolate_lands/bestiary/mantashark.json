@@ -14,6 +14,11 @@
     {
       "type": "patchouli:text",
       "text": "A ray-like creature found in the Mirrored Seas biome. Drops raw mantawings. Hostile to the player."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gempire:cooked_mantawing",
+      "text": "Tastes just like chicken."
     }
   ]
 }

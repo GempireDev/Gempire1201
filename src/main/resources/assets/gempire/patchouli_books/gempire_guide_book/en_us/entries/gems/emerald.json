@@ -13,11 +13,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "A rare combat gem that when given an Eye of Ender in her inventory, returns you back home to your bed after you use the /recall command."
+      "text": "A rare combat gem that when given an Eye of Ender in her inventory, returns you back home to your bed after you use the /recall command.$(br2)Also radiates a Hero of the Village effect, to make bartering easier."
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Possible Abilities$() $(br)$(li)Tank$(li)Beefcake$(li)Powerhouse$(li)Unhinged$(li)Electrokinesis (NYI)$(br2) $(l)Definite Abilities$()$(br)$(li)Recall$(li)Negotiator"
+      "text": "$(l)Possible Abilities$() $(br)$(li)Tank$(li)Beefcake$(li)Powerhouse$(li)Unhinged$(li)Negotiator$(br2) $(l)Definite Abilities$()$(br)$(li)Recall$(li)Electrokinesis"
     },
     {
       "type": "patchouli:text",

@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The site of countless savage experiments done to create living weapons for colonization. Anyone who opposed a leaders will would become a subject, though it's not sure where these subjects are now."
+      "text": "The site of countless savage experiments done to create living weapons for colonization.$(br2)Anyone who opposed a leaders will would become a subject, though it's not sure where these subjects are now."
     },
     {
       "type": "patchouli:text",

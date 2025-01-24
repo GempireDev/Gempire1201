@@ -1,0 +1,24 @@
+{
+  "name": "Thulite",
+  "icon": "gempire:raw_thulite",
+  "advancement": "gempire:desolate_lands/root",
+  "category": "gempire:desolate_items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Thulite Ore",
+      "item": "gempire:thulite_ore",
+      "text": "Shiny pink ore that can be processed into ingots and blocks. Also useful for various crafting recipes."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "It can be found underground anywhere in the Iridescent Plains, at around Y levels 80 all the way to -64.$(br2)The most common areas seem to be around Y level -10."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Thulite Clusters",
+      "item": "gempire:thulite_cluster,gempire:thulite_tower",
+      "text": "There are also interesting growths of Thulite in certain pink biomes that crystal deer love to munch on."
+    }
+  ]
+}

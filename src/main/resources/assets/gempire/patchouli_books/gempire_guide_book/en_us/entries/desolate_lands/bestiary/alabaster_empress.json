@@ -8,8 +8,8 @@
       "type": "patchouli:entity",
       "entity": "gempire:alabaster_empress",
       "name": "The Empress",
-      "rotate": "false",
-      "scale": 0.8,
+      "scale": 0.5,
+      "offset": 0.5,
       "text": "The bestial remnants of a brilliant diamond who once ruled over their homeworld."
     },
     {

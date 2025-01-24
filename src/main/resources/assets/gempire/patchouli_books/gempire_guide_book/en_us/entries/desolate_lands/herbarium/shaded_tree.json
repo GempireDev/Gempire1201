@@ -1,0 +1,12 @@
+{
+  "name": "Shaded Trees",
+  "icon": "gempire:shaded_log",
+  "advancement": "gempire:desolate_lands/root",
+  "category": "gempire:herbarium",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Trees found in the Prismatic Gates. Their internal wood is strikingly dark and they can be used in crafting similarly to any overworld biome wood."
+    }
+  ]
+}

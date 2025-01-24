@@ -1,12 +1,12 @@
 {
   "name": "Communications Hub",
-  "icon": "minecraft:book",
+  "icon": "minecraft:nether_star",
   "advancement": "gempire:enter_comm_hub",
   "category": "gempire:structures",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "To be filled out..."
+      "text": "An old relic from when gems attempted to take over Earth. This is a structure built for communicating locally and beyond the stars."
     }
   ]
 }

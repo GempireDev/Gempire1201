@@ -1,9 +1,15 @@
 {
-  "name": "Prismatic Tools and You",
+  "name": "Prismatic Tools",
   "icon": "gempire:prismatic_ingot",
   "advancement": "gempire:desolate_lands/root",
   "category": "gempire:desolate_items",
   "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Prismatic Upgrade",
+      "item": "gempire:prismatic_upgrade_smithing_template",
+      "text": "You can upgrade various tools to their prismatic forms using a smithing template.$(br2)You can find this template in loot chests everywhere, if you're lucky."
+    },
     {
       "type": "patchouli:spotlight",
       "title": "Prismatic Pickaxe",
@@ -33,12 +39,6 @@
       "title": "Prismatic Hoe",
       "item": "gempire:prismatic_hoe",
       "text": "A garden hoe made with prismatic metal."
-    },
-    {
-      "type": "patchouli:spotlight",
-      "title": "Prismatic Flask",
-      "item": "gempire:prismatic_flask",
-      "text": "A glass flask with iridescent colors. Can be used to extract a crystal tear from stony hands."
     }
   ]
 }

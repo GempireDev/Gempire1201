@@ -1,6 +1,6 @@
 {
-  "name": "Armor",
+  "name": "Armory",
   "description": "A compendium of the many sets of armor available to the player.",
-  "icon": "gempire:thulite_cluster",
+  "icon": "gempire:thulite_chestplate",
   "secret": "false"
 }

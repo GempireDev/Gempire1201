@@ -1,0 +1,12 @@
+{
+  "name": "Verdant Pines",
+  "icon": "gempire:verdant_pine_log",
+  "advancement": "gempire:desolate_lands/root",
+  "category": "gempire:herbarium",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Trees found in the Alpine Forests. They have striking emerald bark with pale lime wood, and can be used in crafting similarly to any overworld biome wood."
+    }
+  ]
+}

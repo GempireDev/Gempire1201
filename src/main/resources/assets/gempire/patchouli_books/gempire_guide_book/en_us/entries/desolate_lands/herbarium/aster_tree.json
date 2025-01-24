@@ -1,0 +1,12 @@
+{
+  "name": "Aster Trees",
+  "icon": "gempire:aster_log",
+  "advancement": "gempire:desolate_lands/root",
+  "category": "gempire:herbarium",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Trees found in the Peculiar Precipice. While these trees are a little dried out and old, they can be used in crafting similarly to any overworld biome wood."
+    }
+  ]
+}

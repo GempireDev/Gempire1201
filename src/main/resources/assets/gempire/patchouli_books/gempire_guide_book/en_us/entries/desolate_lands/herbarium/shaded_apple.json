@@ -8,7 +8,7 @@
       "type": "patchouli:spotlight",
       "title": "Shaded Apples",
       "item": "gempire:shaded_apple",
-      "text": "A darkly colored apple variant that when consumed, grants resistance to blinding light."
+      "text": "A darkly colored apple variant that when consumed, grants resistance to blinding light.$(br2)Brewing with them may increase the desired effects.$(br2)Also useful for crafting platinum armor."
     }
   ]
 }

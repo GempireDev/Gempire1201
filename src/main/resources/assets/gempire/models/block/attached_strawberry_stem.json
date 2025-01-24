@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/stem_fruit",
+  "render_type": "minecraft:cutout",
   "textures": {
     "stem": "gempire:block/strawberry_stem",
     "upperstem": "gempire:block/attached_strawberry_stem"

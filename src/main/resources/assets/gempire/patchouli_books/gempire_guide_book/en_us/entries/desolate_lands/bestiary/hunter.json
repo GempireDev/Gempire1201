@@ -8,7 +8,9 @@
       "type": "patchouli:entity",
       "entity": "gempire:hunter",
       "name": "Resplendent Hunter",
-      "rotate": "true"
+      "rotate": "true",
+      "scale": 0.8,
+      "offset": 0.8
     },
     {
       "type": "patchouli:text",
