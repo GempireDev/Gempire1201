@@ -5,6 +5,7 @@ import com.gempire.events.GemFormEvent;
 import com.gempire.init.ModEntities;
 import com.gempire.items.ItemGem;
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -26,6 +27,17 @@ public class WhiteEssenceBlock extends LiquidBlock {
 
     int timer = 0;
 
+    public int readSludged(CompoundTag compound) {
+        String[] strings = compound.getString("crackShatter").split(",");
+        return Integer.parseInt(strings[3]);
+    }
+
+    public void writeSludged(CompoundTag compound) {
+        String[] strings = compound.getString("crackShatter").split(",");
+        String string = strings[0] + "," + strings[1] + "," + strings[2] + "," + 0 + "," + strings[4];
+        compound.putString("crackShatter", string);
+    }
+
     @Override
     public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
         if (entity instanceof ItemEntity) {
@@ -33,8 +45,8 @@ public class WhiteEssenceBlock extends LiquidBlock {
                 ItemGem itemGem = (ItemGem) (((ItemEntity) entity).getItem()).getItem();
                 ItemStack stack = ((ItemEntity) entity).getItem();
                 if ((itemGem).checkTags(stack)) {
-                    if (stack.getTag().getInt("sludgeAmount") >= 5) {
-                        stack.getTag().putInt("sludgeAmount", 0);
+                    if (readSludged(stack.getOrCreateTag()) >= 5) {
+                        writeSludged(stack.getOrCreateTag());
                     }
                 }
             } else if ((((ItemEntity) entity).getItem()).getItem() == Items.NAUTILUS_SHELL) {

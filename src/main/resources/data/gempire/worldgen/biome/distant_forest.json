@@ -22,7 +22,7 @@
       "tick_delay": 6000
     },
     "music": {
-      "sound": "gempire:remnants",
+      "sound": "gempire:fragments",
       "min_delay": 100,
       "max_delay": 200,
       "replace_current_music": true

@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#gempire:is_desolate",
+  "biomes": "gempire:iridescent_plains",
   "features": "gempire:thulite_placed",
   "step": "underground_ores"
 }

@@ -699,6 +699,9 @@ public class ModCreativeModeTabs {
                 populator.accept(ModItems.ABNORMAL_SAND.get());
                 populator.accept(ModItems.ABNORMAL_SANDSTONE.get());
 
+                populator.accept(ModItems.PECULIAR_SAND.get());
+                populator.accept(ModItems.PECULIAR_SANDSTONE.get());
+
                 populator.accept(ModBlocks.PINK_SAND.get());
                 populator.accept(ModBlocks.PINK_SANDSTONE.get());
                 populator.accept(ModBlocks.PINK_SANDSTONE_STAIRS.get());

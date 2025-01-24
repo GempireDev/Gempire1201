@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#gempire:is_desolate",
+  "biomes": "gempire:gilded_wastes",
   "features": "gempire:electrum_placed",
   "step": "underground_ores"
 }

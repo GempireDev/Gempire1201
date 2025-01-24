@@ -183,8 +183,8 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
     public boolean followingGarnet;
 
     public int abilityTicks;
-    int crackChance = 50;
-    int shatterChance = 200;
+    int crackChance = 150;
+    int shatterChance = 600;
     public boolean emerged;
 
     public static final int NUMBER_OF_SLOTS = 33;
@@ -436,6 +436,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         else if (this.isTinkerer()) return stack.getItem() instanceof DiggerItem || stack.getItem() instanceof BowItem || stack.getItem() instanceof AxeItem || stack.getItem() instanceof PickaxeItem || stack.getItem() instanceof ArmorItem || stack.getItem() instanceof DestabBase || stack.getItem() instanceof ItemShatterer;
         else if (this.isTorchBearer()) return stack.getItem() instanceof DiggerItem || stack.getItem() instanceof AxeItem || stack.getItem() instanceof PickaxeItem || stack.getItem() instanceof DestabBase || stack.getItem() instanceof ItemShatterer || stack.getItem() == Items.TORCH;
         else if (this.isFarmer()) return stack.getItem() instanceof DiggerItem || stack.getItem() instanceof AxeItem || stack.getItem() instanceof PickaxeItem || stack.getItem() instanceof DestabBase || stack.getItem() instanceof ItemShatterer || stack.getItem() == Items.WHEAT_SEEDS || stack.getItem() == Items.CARROT || stack.getItem() == Items.POTATO || stack.getItem() == Items.BEETROOT_SEEDS;
+        else if (this.isAmphibian()) return stack.getItem() instanceof DiggerItem || stack.getItem() instanceof AxeItem || stack.getItem() instanceof PickaxeItem || stack.getItem() instanceof DestabBase || stack.getItem() instanceof ItemShatterer || stack.getItem() == Items.HEART_OF_THE_SEA;
         else if (this.canCraft()) {
             boolean bool = false;
             for (int i = 0; i < getRecipeAmount(); i++) if (stack.getItem() == this.getInputItem(i)) bool = true;
@@ -2887,6 +2888,16 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         boolean flag = false;
         for(Ability ability : this.getAbilityPowers()){
             if(ability instanceof AbilityFarmer){
+                return flag = true;
+            }
+        }
+        return flag;
+    }
+
+    public boolean isAmphibian(){
+        boolean flag = false;
+        for(Ability ability : this.getAbilityPowers()){
+            if(ability instanceof AbilityAmphibian){
                 return flag = true;
             }
         }

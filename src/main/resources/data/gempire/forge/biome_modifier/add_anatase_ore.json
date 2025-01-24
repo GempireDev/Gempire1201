@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#gempire:is_desolate",
+  "biomes": "gempire:mirrored_seas",
   "features": "gempire:anatase_placed",
   "step": "underground_ores"
 }

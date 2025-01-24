@@ -34,6 +34,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.PRISMATIC_INGOT.get()
                 );
 
+        this.tag(ItemTags.SMELTS_TO_GLASS)
+                .add(ModItems.PINK_SAND.get(),
+                        ModItems.ABNORMAL_SAND.get(),
+                        ModItems.PECULIAR_SAND.get()
+                );
+
         this.tag(ItemTags.LOGS_THAT_BURN)
                 .add(ModItems.KALEIDOSCOPE_LOG.get(),
                         ModItems.STRIPPED_KALEIDOSCOPE_LOG.get(),

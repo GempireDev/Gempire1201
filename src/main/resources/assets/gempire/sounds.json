@@ -95,14 +95,6 @@
       }
     ]
   },
-  "music.desolate.distant_forest": {
-    "sounds": [
-      {
-        "name": "gempire:music/remnants",
-        "stream": true
-      }
-    ]
-  },
   "ambient.desolate.white": {
     "sounds": [
       {
