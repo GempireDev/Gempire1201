@@ -16,7 +16,7 @@
   },
   "parent": "gempire:root",
   "criteria": {
-    "gempire:strawberry_battlefield": {
+    "gempire:strawberry_fields": {
       "conditions": {
         "player": [
           {
@@ -24,7 +24,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "gempire:strawberry_battlefield"
+                "biome": "gempire:strawberry_fields"
               }
             }
           }
@@ -35,7 +35,7 @@
   },
   "requirements": [
     [
-      "gempire:strawberry_battlefield"
+      "gempire:strawberry_fields"
     ]
   ]
 }

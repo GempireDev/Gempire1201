@@ -157,7 +157,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DRAINED_BANDED_RED_STONE.get(),
                         ModBlocks.DRAINED_GREY_STONE.get(),
                         ModBlocks.DRAINED_GREY_STONE_2.get(),
-                        ModBlocks.DRAINED_BANDED_BLUE_STONE.get(),
+                        ModBlocks.DRAINED_BANDED_GREY_STONE.get(),
                         ModBlocks.DRAINED_BLUE_POLISHED_STONE.get(),
                         ModBlocks.DRAINED_BLUE_POLISHED_STONE_STAIRS.get(),
                         ModBlocks.DRAINED_BLUE_POLISHED_STONE_SLAB.get(),
