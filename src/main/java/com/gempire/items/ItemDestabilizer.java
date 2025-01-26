@@ -54,16 +54,16 @@ public class ItemDestabilizer extends DestabBase {
                 System.out.println("west "+pos);
             }
             if (context.getItemInHand().getItem() == ModItems.YELLOW_DESTABILIZER.get()) {
-                context.getLevel().setBlock(pos, Objects.requireNonNull(ModBlocks.YELLOW_DESTAB_WALL.get().getStateForPlacement(new BlockPlaceContext(context))), 0);
+                context.getLevel().setBlockAndUpdate(pos, ModBlocks.YELLOW_DESTAB_WALL.get().getStateForPlacement(new BlockPlaceContext(context)));
                 if (context.getLevel().getBlockState(pos) == ModBlocks.YELLOW_DESTAB_WALL.get().defaultBlockState()) context.getItemInHand().hurtAndBreak(5, context.getPlayer(), (p_43296_) -> p_43296_.broadcastBreakEvent(EquipmentSlot.MAINHAND));
             } else if (context.getItemInHand().getItem() == ModItems.PINK_DESTABILIZER.get()) {
-                context.getLevel().setBlock(pos, Objects.requireNonNull(ModBlocks.PINK_DESTAB_WALL.get().getStateForPlacement(new BlockPlaceContext(context))), 0);
+                context.getLevel().setBlockAndUpdate(pos, ModBlocks.PINK_DESTAB_WALL.get().getStateForPlacement(new BlockPlaceContext(context)));
                 if (context.getLevel().getBlockState(pos) == ModBlocks.PINK_DESTAB_WALL.get().defaultBlockState()) context.getItemInHand().hurtAndBreak(5, context.getPlayer(), (p_43296_) -> p_43296_.broadcastBreakEvent(EquipmentSlot.MAINHAND));
             } else if (context.getItemInHand().getItem() == ModItems.BLUE_DESTABILIZER.get()) {
-                context.getLevel().setBlock(pos, Objects.requireNonNull(ModBlocks.BLUE_DESTAB_WALL.get().getStateForPlacement(new BlockPlaceContext(context))), 0);
+                context.getLevel().setBlockAndUpdate(pos, ModBlocks.BLUE_DESTAB_WALL.get().getStateForPlacement(new BlockPlaceContext(context)));
                 if (context.getLevel().getBlockState(pos) == ModBlocks.BLUE_DESTAB_WALL.get().defaultBlockState()) context.getItemInHand().hurtAndBreak(5, context.getPlayer(), (p_43296_) -> p_43296_.broadcastBreakEvent(EquipmentSlot.MAINHAND));
             } else if (context.getItemInHand().getItem() == ModItems.WHITE_DESTABILIZER.get()) {
-                context.getLevel().setBlock(pos, Objects.requireNonNull(ModBlocks.WHITE_DESTAB_WALL.get().getStateForPlacement(new BlockPlaceContext(context))), 0);
+                context.getLevel().setBlockAndUpdate(pos, ModBlocks.WHITE_DESTAB_WALL.get().getStateForPlacement(new BlockPlaceContext(context)));
                 if (context.getLevel().getBlockState(pos) == ModBlocks.WHITE_DESTAB_WALL.get().defaultBlockState()) context.getItemInHand().hurtAndBreak(5, context.getPlayer(), (p_43296_) -> p_43296_.broadcastBreakEvent(EquipmentSlot.MAINHAND));
             }
         }
