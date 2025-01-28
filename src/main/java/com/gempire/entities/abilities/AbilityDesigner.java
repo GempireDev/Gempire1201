@@ -120,7 +120,7 @@ public class AbilityDesigner extends Ability implements ICraftingAbility {
         output.add(ModItems.PRISMATIC_DIAMOND_GLASS.get());
         //phosphorus lamp recipe
         input.add(Items.REDSTONE_LAMP);
-        input2.add(ModItems.SELENITE_CLUSTER.get());
+        input2.add(ModItems.SELENITE_CHUNK.get());
         output.add(ModItems.PHOSPHORUS_LAMP.get());
         //colored phosphorus lamp recipes
         input.add(ModItems.PHOSPHORUS_LAMP.get());
