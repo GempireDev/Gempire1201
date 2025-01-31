@@ -38,6 +38,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -251,28 +252,19 @@ public class ShellTE extends RandomizableContainerBlockEntity implements MenuPro
 
     public void HandleEssenceTick() {
         if (this.gravelConsumed == ShellTE.MAX_GRAVEL && this.sandConsumed == ShellTE.MAX_SAND && this.clayConsumed == ShellTE.MAX_CLAY && this.chromaConsumed) {
-                if (this.level.getBlockState(this.worldPosition.offset(ShellTE.direction(4))).getBlock() == ModBlocks.WHITE_ESSENCE_BLOCK.get()) {
-                    LiquidBlock block = (LiquidBlock) this.level.getBlockState(this.worldPosition.offset(ShellTE.direction(4))).getBlock();
-                    if (block.getFluid() == ModFluids.WHITE_ESSENCE.get()) {
-                        this.level.setBlockAndUpdate(this.worldPosition.offset(ShellTE.direction(4)), Blocks.AIR.defaultBlockState());
-                        this.essenceConsumed = true;
-                    }
-                }
+            if (this.level.getBlockState(this.worldPosition).getValue(BlockStateProperties.WATERLOGGED)) {
+                level.setBlock(worldPosition, (BlockState)level.getBlockState(worldPosition).setValue(BlockStateProperties.WATERLOGGED, false), 3);
+                this.essenceConsumed = true;
+            }
         } else if (this.gravelConsumed == ShellTE.MAX_GRAVEL/2 && this.sandConsumed == ShellTE.MAX_SAND/2 && this.clayConsumed == ShellTE.MAX_CLAY/2 && this.chromaConsumed) {
-            if (this.level.getBlockState(this.worldPosition.offset(ShellTE.direction(4))).getBlock() == ModBlocks.WHITE_ESSENCE_BLOCK.get()) {
-                LiquidBlock block = (LiquidBlock) this.level.getBlockState(this.worldPosition.offset(ShellTE.direction(4))).getBlock();
-                if (block.getFluid() == ModFluids.WHITE_ESSENCE.get()) {
-                    this.level.setBlockAndUpdate(this.worldPosition.offset(ShellTE.direction(4)), Blocks.AIR.defaultBlockState());
-                    this.essenceConsumed = true;
-                }
+            if (this.level.getBlockState(this.worldPosition).getValue(BlockStateProperties.WATERLOGGED)) {
+                level.setBlock(worldPosition, (BlockState)level.getBlockState(worldPosition).setValue(BlockStateProperties.WATERLOGGED, false), 3);
+                this.essenceConsumed = true;
             }
         } else if (this.gravelConsumed == ShellTE.MAX_GRAVEL/4 && this.sandConsumed == ShellTE.MAX_SAND/4 && this.clayConsumed == ShellTE.MAX_CLAY/4 && this.chromaConsumed) {
-            if (this.level.getBlockState(this.worldPosition.offset(ShellTE.direction(4))).getBlock() == ModBlocks.WHITE_ESSENCE_BLOCK.get()) {
-                LiquidBlock block = (LiquidBlock) this.level.getBlockState(this.worldPosition.offset(ShellTE.direction(4))).getBlock();
-                if (block.getFluid() == ModFluids.WHITE_ESSENCE.get()) {
-                    this.level.setBlockAndUpdate(this.worldPosition.offset(ShellTE.direction(4)), Blocks.AIR.defaultBlockState());
-                    this.essenceConsumed = true;
-                }
+            if (this.level.getBlockState(this.worldPosition).getValue(BlockStateProperties.WATERLOGGED)) {
+                level.setBlock(worldPosition, (BlockState)level.getBlockState(worldPosition).setValue(BlockStateProperties.WATERLOGGED, false), 3);
+                this.essenceConsumed = true;
             }
         }
     }

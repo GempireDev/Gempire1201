@@ -103,12 +103,11 @@ public abstract class EntityFlyingVehicleGem extends EntityGem implements Player
             }
         }
 
-        if (onGround()) {
+        if (onGround() && flying) {
             this.flying = false;
             this.jumping = false;
             this.descend = false;
             this.setElytraFlying(false);
-
         }
 
         if (this.level().isClientSide) {

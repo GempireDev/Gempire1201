@@ -56,6 +56,7 @@ public class SeaShrineStructure extends Structure {
      * it to spawn in specific biomes that aren't in the dimension they don't like if they wish.
      */
     public Optional<Structure.GenerationStub> findGenerationPoint(Structure.GenerationContext p_229391_) {
+
         Heightmap.Types $$1 = Heightmap.Types.OCEAN_FLOOR_WG;
         return onTopOfChunkCenter(p_229391_, $$1, (p_229394_) -> {
             this.generatePieces(p_229394_, p_229391_);

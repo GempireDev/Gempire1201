@@ -3411,6 +3411,9 @@ public class ModItems {
     public static final RegistryObject<Item> WARP_CORE = ITEMS.register("warp_core", () ->
             new Item(new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> WARP_SEED = ITEMS.register("warp_seed", () ->
+            new Item(new Item.Properties().stacksTo(1)));
+
     public static final RegistryObject<Item> CONFRACTOR = ITEMS.register("confractor", () ->
             new ItemShatterer(new Item.Properties().stacksTo(1).durability(20)));
 

@@ -174,6 +174,10 @@ public class GemSeedTE extends BlockEntity {
                 !(block instanceof GemSeedBlock) &&
                 !(block instanceof PowerCrystalBlock) &&
                 !(block instanceof PointedDripstoneBlock) &&
+                !(block instanceof LanternBlock) &&
+                !(block instanceof StairBlock) &&
+                !(block instanceof LadderBlock) &&
+                !(block instanceof ChainBlock) &&
                 !(block == ModBlocks.DRILL_BLOCK.get()) &&
                 !(block == ModBlocks.DRAINED_ICE.get()) &&
                 !(block == ModBlocks.DRAINED_LOG_CRACKED.get()) &&
@@ -439,18 +443,18 @@ public class GemSeedTE extends BlockEntity {
             AttributeModifier DEFECTIVE_SPEED = new AttributeModifier(UUID.randomUUID(), "gempireDefectiveSpeedModifier", -.1D, AttributeModifier.Operation.ADDITION);
             if (gem.isPrimary()) {
                 System.out.println("prime modifiers");
-                gem.getAttribute(Attributes.MAX_HEALTH).addPermanentModifier(PRIME);
-                gem.getAttribute(Attributes.MOVEMENT_SPEED).addPermanentModifier(PRIME_SPEED);
-                gem.getAttribute(Attributes.ATTACK_DAMAGE).addPermanentModifier(PRIME);
-                gem.getAttribute(Attributes.ATTACK_SPEED).addPermanentModifier(PRIME);
-                gem.getAttribute(Attributes.KNOCKBACK_RESISTANCE).addPermanentModifier(PRIME);
+                Objects.requireNonNull(gem.getAttribute(Attributes.MAX_HEALTH)).addPermanentModifier(PRIME);
+                Objects.requireNonNull(gem.getAttribute(Attributes.MOVEMENT_SPEED)).addPermanentModifier(PRIME_SPEED);
+                Objects.requireNonNull(gem.getAttribute(Attributes.ATTACK_DAMAGE)).addPermanentModifier(PRIME);
+                Objects.requireNonNull(gem.getAttribute(Attributes.ATTACK_SPEED)).addPermanentModifier(PRIME);
+                Objects.requireNonNull(gem.getAttribute(Attributes.KNOCKBACK_RESISTANCE)).addPermanentModifier(PRIME);
             } else if (gem.isDefective()) {
                 System.out.println("off colour modifiers");
-                gem.getAttribute(Attributes.MAX_HEALTH).addPermanentModifier(DEFECTIVE);
-                gem.getAttribute(Attributes.MOVEMENT_SPEED).addPermanentModifier(DEFECTIVE_SPEED);
-                gem.getAttribute(Attributes.ATTACK_DAMAGE).addPermanentModifier(DEFECTIVE);
-                gem.getAttribute(Attributes.ATTACK_SPEED).addPermanentModifier(DEFECTIVE);
-                gem.getAttribute(Attributes.KNOCKBACK_RESISTANCE).addPermanentModifier(DEFECTIVE);
+                Objects.requireNonNull(gem.getAttribute(Attributes.MAX_HEALTH)).addPermanentModifier(DEFECTIVE);
+                Objects.requireNonNull(gem.getAttribute(Attributes.MOVEMENT_SPEED)).addPermanentModifier(DEFECTIVE_SPEED);
+                Objects.requireNonNull(gem.getAttribute(Attributes.ATTACK_DAMAGE)).addPermanentModifier(DEFECTIVE);
+                Objects.requireNonNull(gem.getAttribute(Attributes.ATTACK_SPEED)).addPermanentModifier(DEFECTIVE);
+                Objects.requireNonNull(gem.getAttribute(Attributes.KNOCKBACK_RESISTANCE)).addPermanentModifier(DEFECTIVE);
             }
             System.out.println(gem.getCracked());
             gem.setPos(this.pos.getX() + .5f, this.pos.getY(), this.pos.getZ() + .5f);

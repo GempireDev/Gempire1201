@@ -59,9 +59,9 @@ public class AbilityAmphibian extends Ability implements IEffectAbility, IIdleAb
             if (holder.getItemBySlot(EquipmentSlot.MAINHAND).getItem() == Items.HEART_OF_THE_SEA) {
                 tick = true;
                 System.out.println("run");
+            } else {
+                for (UUID uuid : holder.OWNERS) holder.level().getPlayerByUUID(uuid).sendSystemMessage(Component.translatable("messages.gempire.entity.spodumene_sore"));
             }
-        } else {
-            for (UUID uuid : holder.OWNERS) holder.level().getPlayerByUUID(uuid).sendSystemMessage(Component.translatable("messages.gempire.entity.spodumene_sore"));
         }
         if (tick) ticks++;
         if (ticks > 15) {

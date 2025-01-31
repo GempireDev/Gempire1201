@@ -207,6 +207,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
     public BlockPos stopGoalsPos;
     public boolean enemyDying;
     public LivingEntity enemy;
+    public boolean poofed = false;
 
     public EntityGem assignedOwner;
     private static final DynamicCommandExceptionType ERROR_STRUCTURE_INVALID = new DynamicCommandExceptionType((p_207534_) -> {
@@ -489,8 +490,10 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         this.writeAbilityUtil(compound);
         this.writeUtil(compound);
         this.writeAssignedUtil(compound);
-        GemSavedData data = GemSavedData.getData(level().getServer());
-        if (!data.getGemData().contains(getGemID())) data.addToGemData(getGemID());
+        if (!level().isClientSide) {
+            GemSavedData data = GemSavedData.getData(level().getServer());
+            if (!data.getGemData().contains(getGemID())) data.addToGemData(getGemID());
+        }
         compound.putInt("gemID", this.getGemID());
         compound.putString("masterName", getMasterName());
         if (this.canLocateStructures()) compound.putInt("structureTime", this.structureTime);
@@ -1340,6 +1343,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
                     case 1 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will wander around"));
                     case 2 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now follow you"));
                     case 3 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now follow " + getAssignedName() + " " + getAssignedFacet() + " "+ getAssignedCut()));
+                    case 4 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now perform tasks"));
                     default -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now stay put"));
                 }
             } else if (ASSIGNED_ID != 0 ? this.getMovementType() == 3 : this.getMovementType() == 2) {
@@ -1439,7 +1443,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
                         setShatter(true);
                     }
                 } else if (!(source.getEntity() instanceof Player)) {
-                    if (roundAmount > hardness*2) {
+                    if (roundAmount > hardness*2 && !poofed) {
                         float excess = ((float)roundAmount-hardness) / 2;
                         float shatterChancef = shatterChance;
                         float crackChancef = crackChance;
@@ -1475,7 +1479,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
                             Objects.requireNonNull(this.spawnAtLocation(stack)).setExtendedLifetime();
                             this.setItemSlot(EquipmentSlot.OFFHAND, Items.AIR.getDefaultInstance());
                         }
-                    } else if (!(player.getMainHandItem().getItem() instanceof DestabBase)) {
+                    } else if (!(player.getMainHandItem().getItem() instanceof DestabBase) && !poofed) {
                         if (roundAmount > hardness*2) {
                             float excess = ((float)roundAmount-hardness) / 2;
                             float shatterChancef = shatterChance;
@@ -1524,6 +1528,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
                     setSludgeAmount(getSludgeAmount() + 1);
                 }
         }
+        poofed = false;
         return super.hurt(source, amount);
     }
 

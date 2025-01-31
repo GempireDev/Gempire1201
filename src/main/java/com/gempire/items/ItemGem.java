@@ -397,7 +397,7 @@ public class ItemGem extends Item {
                 GemFormEvent event = new GemFormEvent(gem, gem.blockPosition());
                 MinecraftForge.EVENT_BUS.post(event);
                 world.addFreshEntity(gem);
-                if (stack.getTag().getInt("gemID") != 0) {
+                if (stack.getOrCreateTag().getInt("gemID") != 0) {
                     gem.setGemID(stack.getTag().getInt("gemID"));
                 } else {
                     boolean flag = false;

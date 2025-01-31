@@ -80,6 +80,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SHADED_APPLE);
 
         simpleItem(ModItems.SLUDGE_GLOB);
+        simpleItem(ModItems.WARP_CORE);
+        simpleItem(ModItems.WARP_SEED);
 
         simpleItem(ModItems.BLUE_CRYSTAL_APPLE);
         simpleItem(ModItems.PURPLE_CRYSTAL_APPLE);

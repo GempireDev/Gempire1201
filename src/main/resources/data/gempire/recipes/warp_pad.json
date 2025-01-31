@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NIN",
+    "FSF",
+    "NIN"
+  ],
+  "key": {
+    "I": {
+      "item": "gempire:geode_crystal_block"
+    },
+    "S": {
+      "item": "gempire:warp_core"
+    },
+    "N": {
+      "item": "gempire:primed_selenite"
+    },
+    "F": {
+      "item": "gempire:special_shards"
+    }
+  },
+  "result": {
+    "item": "gempire:warp_pad"
+  }
+}

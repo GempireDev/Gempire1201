@@ -335,7 +335,8 @@ public class ModCreativeModeTabs {
                 populator.accept(ModItems.PRIME_BOOST.get());
                 populator.accept(ModItems.PRIMED_SLATE.get());
                 populator.accept(ModItems.SLATE.get());
-                //populator.accept(ModItems.INJECTOR_PANEL.get());
+                populator.accept(ModItems.WARP_CORE.get());
+                populator.accept(ModItems.WARP_SEED.get());
 
                 populator.accept(ModItems.INACTIVE_AQUAMARINE_BASE.get());
                 populator.accept(ModItems.INACTIVE_NEPHRITE_BASE.get());
@@ -920,7 +921,7 @@ public class ModCreativeModeTabs {
                 populator.accept(ModBlocks.CROCOSMIA.get());
                 populator.accept(ModBlocks.CLOVERS.get());
 
-                //populator.accept(ModBlocks.WARP_PAD.get());
+                populator.accept(ModBlocks.WARP_PAD.get());
                 populator.accept(ModBlocks.GALAXY_WARP.get());
             }).build()
     );

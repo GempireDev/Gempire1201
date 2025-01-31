@@ -43,6 +43,7 @@ public class RequestPoof {
                         gem.hurt(gem.damageSources().magic(), gem.getMaxHealth() * 20);
                         gem.setCracked(false);
                         gem.setShatter(false);
+                        gem.poofed = true;
                     }
                 }
             });

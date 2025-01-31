@@ -149,6 +149,10 @@
         {
           "type": "minecraft:item",
           "name": "gempire:special_shards"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gempire:warp_seed"
         }
       ],
       "rolls": 1.0

@@ -26,7 +26,7 @@ public class WarpConfigScreen extends AbstractContainerScreen<WarpConfigMenu> {
         super.init();
         this.titleLabelX = (this.imageWidth - this.font.width(this.title)) / 2;
         this.titleLabelY = 6;
-        EditBox name = new EditBox(this.font, this.leftPos + 24, this.topPos + 22, 104, 12, Component.translatable("container.warppads.warp_config.hint"));
+        EditBox name = new EditBox(this.font, this.leftPos + 38, this.topPos + 22, 104, 12, Component.translatable("container.warppads.warp_config.hint"));
         name.setCanLoseFocus(true);
         name.setTextColor(-1);
         name.setTextColorUneditable(-1);

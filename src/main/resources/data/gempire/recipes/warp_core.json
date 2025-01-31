@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NIN",
+    "GSF",
+    "NMN"
+  ],
+  "key": {
+    "I": {
+      "item": "gempire:platinum_block"
+    },
+    "N": {
+      "item": "gempire:prismatic_block"
+    },
+    "S": {
+      "item": "gempire:warp_seed"
+    },
+    "M": {
+      "item": "gempire:thulite_block"
+    },
+    "F": {
+      "item": "gempire:anatase_block"
+    },
+    "G": {
+      "item": "gempire:electrum_block"
+    }
+  },
+  "result": {
+    "item": "gempire:warp_core"
+  }
+}

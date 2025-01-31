@@ -1,5 +1,6 @@
 package com.gempire.blocks.machine;
 
+import com.gempire.blocks.SimpleWhiteEssenceloggedBlock;
 import com.gempire.init.ModFluids;
 import com.gempire.init.ModTE;
 import com.gempire.tileentities.ShellTE;
@@ -20,6 +21,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -36,13 +38,14 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.network.NetworkHooks;
 
-public class ShellBlock extends BaseEntityBlock implements EntityBlock {
+public class ShellBlock extends BaseEntityBlock implements EntityBlock, SimpleWhiteEssenceloggedBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+    public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final IntegerProperty STAGE = IntegerProperty.create("stage", 0, 2);
 
     public ShellBlock(Properties builder) {
         super(builder);
-        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(STAGE, 0));
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(STAGE, 0).setValue(WATERLOGGED, false));
     }
 
 
@@ -86,7 +89,7 @@ public class ShellBlock extends BaseEntityBlock implements EntityBlock {
     }
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING).add(STAGE);
+        builder.add(FACING,WATERLOGGED,STAGE);
     }
 
     /*@Override
@@ -174,5 +177,9 @@ public class ShellBlock extends BaseEntityBlock implements EntityBlock {
 
     public PushReaction getPistonPushReaction(BlockState p_60584_) {
         return PushReaction.IGNORE;
+    }
+
+    public FluidState getFluidState(BlockState p_54377_) {
+        return p_54377_.getValue(WATERLOGGED) ? ModFluids.WHITE_ESSENCE.get().getSource(false) : super.getFluidState(p_54377_);
     }
 }
