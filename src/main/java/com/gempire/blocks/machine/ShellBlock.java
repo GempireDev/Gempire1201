@@ -92,11 +92,6 @@ public class ShellBlock extends BaseEntityBlock implements EntityBlock, SimpleWh
         builder.add(FACING,WATERLOGGED,STAGE);
     }
 
-    /*@Override
-    public boolean canPlaceLiquid(BlockGetter worldIn, BlockPos pos, BlockState state, Fluid fluidIn) {
-        return !state.getValue(BlockStateProperties.WATERLOGGED) && fluidIn == ModFluids.WHITE_ESSENCE.get();
-    }*/
-
     @Override
     public void onRemove(BlockState state, Level worldIn, BlockPos pos, BlockState newState, boolean isMoving) {
         if (!state.is(newState.getBlock())) {

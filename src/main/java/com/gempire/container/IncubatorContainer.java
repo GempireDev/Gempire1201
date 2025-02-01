@@ -33,11 +33,6 @@ public class IncubatorContainer extends AbstractContainerMenu {
 
     public static final int TILE_INVENTORY_YPOS = 20;
     public static final int PLAYER_INVENTORY_YPOS = 51;
-    public static final ResourceLocation GRAVEL_PREVIEW = new ResourceLocation(Gempire.MODID,"textures/gui/gravel_preview.png");
-    public static final ResourceLocation SAND_PREVIEW = new ResourceLocation(Gempire.MODID,"textures/gui/sand_preview.png");
-    public static final ResourceLocation CLAY_PREVIEW = new ResourceLocation(Gempire.MODID,"textures/gui/clay_preview.png");
-    public static final ResourceLocation CHROMA_PREVIEW = new ResourceLocation(Gempire.MODID,"textures/gui/chroma_preview.png");
-    public static final ResourceLocation PREVIEW_ATLAS = new ResourceLocation(Gempire.MODID,"textures/gui/preview_atlas.png");
 
     public final ContainerLevelAccess canInteract;
 
@@ -46,7 +41,7 @@ public class IncubatorContainer extends AbstractContainerMenu {
     private final ContainerData data;
 
     public IncubatorContainer(int windowId, Inventory inv, FriendlyByteBuf extraData) {
-        this(windowId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
+        this(windowId, inv, getTileEntity(inv, extraData), new SimpleContainerData(2));
     }
 
     public IncubatorContainer(int windowID, Inventory playerInventory, BlockEntity entity, ContainerData data) {

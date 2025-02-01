@@ -80,7 +80,7 @@ public class PinkAltarBlock extends HorizontalDirectionalBlock implements Entity
     }
 
     public PushReaction getPistonPushReaction(BlockState state) {
-        return PushReaction.DESTROY;
+        return PushReaction.IGNORE;
     }
 
     public boolean isPathfindable(BlockState state, BlockGetter worldIn, BlockPos pos, PathComputationType type) {

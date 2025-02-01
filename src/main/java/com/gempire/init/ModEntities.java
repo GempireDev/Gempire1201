@@ -326,6 +326,15 @@ public class ModEntities {
                 .setShouldReceiveVelocityUpdates(true)
                 .build(new ResourceLocation(Gempire.MODID, "guardian_orb").toString());
     });
+
+    public static final RegistryObject<EntityType<OpalProjectileEntity>> OPAL_TOOTH = ENTITIES.register("opal_tooth", () -> {
+        return EntityType.Builder.<OpalProjectileEntity>of(OpalProjectileEntity::new, MobCategory.MISC)
+                .sized(0.25F, 0.25F)
+                .setTrackingRange(64)
+                .setUpdateInterval(10)
+                .setShouldReceiveVelocityUpdates(true)
+                .build(new ResourceLocation(Gempire.MODID, "opal_tooth").toString());
+    });
     public static final RegistryObject<EntityType<WaterOrbEntity>> WATER_ORB = ENTITIES.register("water_orb", () -> {
         return EntityType.Builder.<WaterOrbEntity>of(WaterOrbEntity::new, MobCategory.MISC)
                 .sized(0.25F, 0.25F)

@@ -338,7 +338,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CUT_PINK_SANDSTONE.get());
         this.add(ModBlocks.CUT_PINK_SANDSTONE_SLAB.get(), (block -> createSlabItemTable(ModBlocks.CUT_PINK_SANDSTONE_SLAB.get())));
         this.dropSelf(ModBlocks.CHISELED_PINK_SANDSTONE.get());
-        this.otherWhenSilkTouch(ModBlocks.DESOLATE_GRASS.get(), ModBlocks.DESOLATE_SOIL.get());
         this.dropSelf(ModBlocks.DESOLATE_SOIL.get());
         this.dropSelf(ModBlocks.PECULIAR_SAND.get());
         this.dropSelf(ModBlocks.PECULIAR_SANDSTONE.get());
@@ -611,6 +610,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         list.remove(ModBlocks.CONGEALED_BLUE_ESSENCE_BLOCK.get());
         list.remove(ModBlocks.CONGEALED_YELLOW_ESSENCE_BLOCK.get());
         list.remove(ModBlocks.CONGEALED_WHITE_ESSENCE_BLOCK.get());
+        list.remove(ModBlocks.DESOLATE_GRASS.get());
         return list;
     }
 

@@ -214,7 +214,9 @@ public class ModBlocks {
             new Block(BlockBehaviour.Properties.copy(Blocks.RAW_GOLD_BLOCK)));
 
     public static final RegistryObject<Block> THULITE_ORE = BLOCKS.register("thulite_ore", () ->
-            new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+            new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).lightLevel((state) -> {
+                return 5;
+            })));
 
     public static final RegistryObject<Block> THULITE_BLOCK = BLOCKS.register("thulite_block", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
@@ -223,7 +225,9 @@ public class ModBlocks {
             new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
 
     public static final RegistryObject<Block> ELECTRUM_ORE = BLOCKS.register("electrum_ore", () ->
-            new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+            new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).lightLevel((state) -> {
+                return 5;
+            })));
 
     public static final RegistryObject<Block> ELECTRUM_BLOCK = BLOCKS.register("electrum_block", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
@@ -232,7 +236,9 @@ public class ModBlocks {
             new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
 
     public static final RegistryObject<Block> ANATASE_ORE = BLOCKS.register("anatase_ore", () ->
-            new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+            new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).lightLevel((state) -> {
+                return 5;
+            })));
 
     public static final RegistryObject<Block> ANATASE_BLOCK = BLOCKS.register("anatase_block", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
@@ -241,7 +247,9 @@ public class ModBlocks {
             new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
 
     public static final RegistryObject<Block> PLATINUM_ORE = BLOCKS.register("platinum_ore", () ->
-            new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+            new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).lightLevel((state) -> {
+                return 5;
+            })));
 
     public static final RegistryObject<Block> PLATINUM_BLOCK = BLOCKS.register("platinum_block", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
@@ -1484,6 +1492,7 @@ public class ModBlocks {
                     .of()
                     .strength(3.0f, 6.0f)
                     .sound(SoundType.METAL)
+                    .noOcclusion()
             )
     );
 
@@ -1768,16 +1777,16 @@ public class ModBlocks {
             new Block(BlockBehaviour.Properties.copy(ModBlocks.DRAINED_ICE.get())));
 
     public static final RegistryObject<Block> PRIMED_ICE_STATUE = BLOCKS.register("primed_ice_statue", () ->
-            new LarimarStatueBlock(BlockBehaviour.Properties.copy(Blocks.ICE), 0));
+            new LarimarStatueBlock(BlockBehaviour.Properties.copy(Blocks.ICE).noOcclusion()));
 
     public static final RegistryObject<Block> PRIMED_PACKED_ICE_STATUE = BLOCKS.register("primed_packed_ice_statue", () ->
-            new LarimarStatueBlock(BlockBehaviour.Properties.copy(Blocks.PACKED_ICE), 1));
+            new LarimarStatueBlock(BlockBehaviour.Properties.copy(Blocks.PACKED_ICE).noOcclusion()));
 
     public static final RegistryObject<Block> PRIMED_BLUE_ICE_STATUE = BLOCKS.register("primed_blue_ice_statue", () ->
-            new LarimarStatueBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_ICE), 2));
+            new LarimarStatueBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_ICE).noOcclusion()));
 
     public static final RegistryObject<Block> PRIMED_DRAINED_ICE_STATUE = BLOCKS.register("primed_drained_ice_statue", () ->
-            new LarimarStatueBlock(BlockBehaviour.Properties.copy(ModBlocks.PRIMED_DRAINED_ICE.get()), 3));
+            new LarimarStatueBlock(BlockBehaviour.Properties.copy(ModBlocks.PRIMED_DRAINED_ICE.get()).noOcclusion()));
 
     public static final RegistryObject<Block> DRAINED_BLUE_POLISHED_STONE = BLOCKS.register("drained_blue_polished_stone", () ->
             new DrainedBlock(BlockBehaviour.Properties

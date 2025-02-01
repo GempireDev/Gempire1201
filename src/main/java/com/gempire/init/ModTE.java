@@ -1,6 +1,7 @@
 package com.gempire.init;
 
 import com.gempire.Gempire;
+import com.gempire.client.block.render.BlueIceStatueRenderer;
 import com.gempire.tileentities.*;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.registries.RegistryObject;
@@ -49,6 +50,19 @@ public class ModTE {
 
     public static final RegistryObject<BlockEntityType<WhiteAltarTE>> WHITE_ALTAR_TE = TILE_ENTITIES.register(
             "white_altar_te", () -> BlockEntityType.Builder.of(WhiteAltarTE::new, ModBlocks.WHITE_ALTAR.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<IceStatueTE>> ICE_STATUE_TE = TILE_ENTITIES.register(
+            "ice_statue_te", () -> BlockEntityType.Builder.of(IceStatueTE::new, ModBlocks.PRIMED_ICE_STATUE.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<PackedIceStatueTE>> PACKED_ICE_STATUE_TE = TILE_ENTITIES.register(
+            "packed_ice_statue_te", () -> BlockEntityType.Builder.of(PackedIceStatueTE::new, ModBlocks.PRIMED_PACKED_ICE_STATUE.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<BlueIceStatueTE>> BLUE_ICE_STATUE_TE = TILE_ENTITIES.register(
+            "blue_ice_statue_te", () -> BlockEntityType.Builder.of(BlueIceStatueTE::new, ModBlocks.PRIMED_BLUE_ICE_STATUE.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<DrainedIceStatueTE>> DRAINED_ICE_STATUE_TE = TILE_ENTITIES.register(
+            "drained_ice_statue_te", () -> BlockEntityType.Builder.of(DrainedIceStatueTE::new, ModBlocks.PRIMED_DRAINED_ICE_STATUE.get()).build(null));
+
 
     public static final RegistryObject<BlockEntityType<PedistalTE>> PEDISTAL_TE = TILE_ENTITIES.register(
             "pedistal_te", () -> BlockEntityType.Builder.of(PedistalTE::new, ModBlocks.PEDISTAL.get()).build(null));

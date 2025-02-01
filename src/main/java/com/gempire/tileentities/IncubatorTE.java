@@ -1,5 +1,6 @@
 package com.gempire.tileentities;
 
+import com.gempire.blocks.machine.ShellBlock;
 import com.gempire.container.IncubatorContainer;
 import com.gempire.entities.bases.EntityGem;
 import com.gempire.entities.bases.EntityVaryingGem;
@@ -217,6 +218,10 @@ public class IncubatorTE extends BaseContainerBlockEntity implements MenuProvide
             return false;
         }
         return true;
+    }
+
+    public ItemStack getBase() {
+        return this.getItem(IncubatorTE.GEM_BASE_INPUT_SLOT_INDEX);
     }
 
     public void HandleBaseTick() {
@@ -756,6 +761,7 @@ public class IncubatorTE extends BaseContainerBlockEntity implements MenuProvide
             if (primer == 2) incubationTime = incubationTime/2;
             if (incubationProgress < incubationTime) {
                 incubationProgress++;
+                if (incubationProgress <= 5) this.level.sendBlockUpdated(this.worldPosition, this.getBlockState(), this.getBlockState(), 2);
                 System.out.println(incubationProgress);
             } else {
                 incubationProgress = 0;
@@ -969,6 +975,7 @@ public class IncubatorTE extends BaseContainerBlockEntity implements MenuProvide
         this.chromaConsumed = false;
         this.baseConsumed = false;
         this.chromaColor = 0;
+        this.level.sendBlockUpdated(this.worldPosition, this.getBlockState(), this.getBlockState(), 2);
     }
 
     //CONTAINER STUFF

@@ -79,7 +79,7 @@ public class YellowAltarBlock extends HorizontalDirectionalBlock implements Enti
     }
 
     public PushReaction getPistonPushReaction(BlockState state) {
-        return PushReaction.DESTROY;
+        return PushReaction.IGNORE;
     }
 
     public boolean isPathfindable(BlockState state, BlockGetter worldIn, BlockPos pos, PathComputationType type) {

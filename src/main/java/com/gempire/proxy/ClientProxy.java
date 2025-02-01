@@ -3,15 +3,13 @@ package com.gempire.proxy;
 import com.gempire.Gempire;
 import com.gempire.aura.AuraOverlay;
 import com.gempire.client.block.model.WhiteAltarModel;
-import com.gempire.client.block.render.BlueAltarRenderer;
-import com.gempire.client.block.render.PinkAltarRenderer;
-import com.gempire.client.block.render.WhiteAltarRenderer;
-import com.gempire.client.block.render.YellowAltarRenderer;
+import com.gempire.client.block.render.*;
 import com.gempire.client.entity.model.*;
 import com.gempire.client.entity.render.*;
 import com.gempire.client.screen.*;
 import com.gempire.client.screen.warppad.WarpConfigScreen;
 import com.gempire.client.screen.warppad.WarpSelectionScreen;
+import com.gempire.client.ter.IncubatorTER;
 import com.gempire.client.ter.ShellTER;
 import com.gempire.entities.bases.EntityFlyingVehicleGem;
 import com.gempire.fluids.ModFluidTypes;
@@ -78,6 +76,11 @@ public class ClientProxy {
         event.registerBlockEntityRenderer(ModTE.YELLOW_ALTAR_TE.get(), YellowAltarRenderer::new);
         event.registerBlockEntityRenderer(ModTE.WHITE_ALTAR_TE.get(), WhiteAltarRenderer::new);
 
+        event.registerBlockEntityRenderer(ModTE.ICE_STATUE_TE.get(), IceStatueRenderer::new);
+        event.registerBlockEntityRenderer(ModTE.PACKED_ICE_STATUE_TE.get(), PackedIceStatueRenderer::new);
+        event.registerBlockEntityRenderer(ModTE.BLUE_ICE_STATUE_TE.get(), BlueIceStatueRenderer::new);
+        event.registerBlockEntityRenderer(ModTE.DRAINED_ICE_STATUE_TE.get(), DrainedIceStatueRenderer::new);
+
         //RenderingRegistry.registerEntityRenderingHandler(ModEntities.TEST.get(), RenderTestEntity::new);
         event.registerEntityRenderer(ModEntities.HUNTER.get(), RenderHunter::new);
         event.registerEntityRenderer(ModEntities.CRAWLER.get(), RenderCrawler::new);
@@ -140,6 +143,7 @@ public class ClientProxy {
         event.registerEntityRenderer(ModEntities.WHITE_ATTACK.get(), WhiteAttackRenderer::new);
         event.registerEntityRenderer(ModEntities.LIFE_RETURN.get(), LifeReturnRenderer::new);
         event.registerEntityRenderer(ModEntities.WATER_ORB.get(), ThrownItemRenderer::new);
+        event.registerEntityRenderer(ModEntities.OPAL_TOOTH.get(), ThrownItemRenderer::new);
         event.registerEntityRenderer(ModEntities.ELECTROKINESIS_LIGHTNING.get(), ElectrokinesisLightningRenderer::new);
         event.registerEntityRenderer(ModEntities.HUNTRESS_LIGHTNING.get(), HuntressLightningRenderer::new);
 
@@ -157,6 +161,7 @@ public class ClientProxy {
         MenuScreens.register(ModContainers.WARP_CONFIG.get(), WarpConfigScreen::new);
 
         event.registerBlockEntityRenderer(ModTE.SHELL_TE.get(), ShellTER::new);
+        event.registerBlockEntityRenderer(ModTE.INCUBATOR_TE.get(), IncubatorTER::new);
 
         Sheets.addWoodType(ModWoodTypes.DISTANT);
         Sheets.addWoodType(ModWoodTypes.CRYSTAL);
