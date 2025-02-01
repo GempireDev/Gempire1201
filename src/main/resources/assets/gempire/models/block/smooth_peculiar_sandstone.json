@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "gempire:block/peculiar_sandstone_top"
+  }
+}

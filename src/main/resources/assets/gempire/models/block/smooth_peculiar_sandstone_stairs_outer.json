@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "gempire:block/peculiar_sandstone_top",
+    "side": "gempire:block/peculiar_sandstone_top",
+    "top": "gempire:block/peculiar_sandstone_top"
+  }
+}

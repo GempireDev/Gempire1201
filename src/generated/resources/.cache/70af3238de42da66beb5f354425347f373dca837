@@ -1,4 +1,4 @@
-// 1.20.1	2025-01-31T15:25:18.804395	Block Tags
+// 1.20.1	2025-02-01T19:12:43.089011	Block Tags
 3d642b3b90a1e6b43daab61cf1557711f2e0cadd data/forge/tags/blocks/gravel.json
 2574da384122fba78e2b405c5d23945f16e85f1d data/forge/tags/blocks/stone.json
 2574da384122fba78e2b405c5d23945f16e85f1d data/gempire/tags/blocks/desolate_ore_replaceables.json
@@ -19,4 +19,4 @@ f8dfe1e6790618ad91ace7597ce1346f46147626 data/minecraft/tags/blocks/logs.json
 68251627312c52a9a564f5eb223c2a0973847160 data/minecraft/tags/blocks/needs_iron_tool.json
 6acb5c4539fb62302489f542a4ffb6543e30281e data/minecraft/tags/blocks/planks.json
 9b245733062cb33234df10d05982bc2385e2d002 data/minecraft/tags/blocks/sand.json
-321dcbca56fff0d0d05156bd520e3e61c521b55c data/minecraft/tags/blocks/walls.json
+6ba5fdd3c6f8a635ae4e404e52d68553055cdab9 data/minecraft/tags/blocks/walls.json

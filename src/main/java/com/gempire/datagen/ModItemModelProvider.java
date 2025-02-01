@@ -221,6 +221,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ASTER_HANGING_SIGN);
 
         wallItem(ModBlocks.PINK_SANDSTONE_WALL, ModBlocks.PINK_SANDSTONE);
+        wallItem(ModBlocks.ABNORMAL_SANDSTONE_WALL, ModBlocks.ABNORMAL_SANDSTONE);
+        wallItem(ModBlocks.PECULIAR_SANDSTONE_WALL, ModBlocks.PECULIAR_SANDSTONE);
         wallItem(ModBlocks.PEGMATITE_WALL, ModBlocks.PEGMATITE);
         wallItem(ModBlocks.RYOLITE_WALL, ModBlocks.RYOLITE_BLOCK);
         wallItem(ModBlocks.POLISHED_RYOLITE_WALL, ModBlocks.POLISHED_RYOLITE_BLOCK);

@@ -1,4 +1,4 @@
-// 1.20.1	2025-01-12T12:43:16.953421	Block States: gempire
+// 1.20.1	2025-02-01T19:12:43.077618	Block States: gempire
 e9fe90a8f74e0c4a6a77ee6c2135937e92bccf11 assets/gempire/blockstates/abnormal_sand.json
 0f70fed0bd5cf48d690237a733ca46e40a1a640e assets/gempire/blockstates/anatase_block.json
 aa2054acb7f133f701e884350d8c9532c05ec7a0 assets/gempire/blockstates/anatase_ore.json
@@ -675,6 +675,8 @@ c0f8df3272f00b6ea7bbd80983b159fe9edb2ba3 assets/gempire/models/block/yellow_latt
 8db078619d35877a8770b15badbb83a237ff27cf assets/gempire/models/block/yellow_lattice_side_alt.json
 1e2f29c62e5578a153b774572cf865eafaa96700 assets/gempire/models/item/abnormal_sand.json
 eee0431321de46a0ba5d004afb54fa5d04e2f3fe assets/gempire/models/item/abnormal_sandstone.json
+76a18181db094d0edc2513ffccac4fb1a7b9e4f5 assets/gempire/models/item/abnormal_sandstone_slab.json
+962a41360087031db4a5d74186c082bf032c0138 assets/gempire/models/item/abnormal_sandstone_stairs.json
 3549cb47649ead40f21d1c925c724551ac2231a3 assets/gempire/models/item/anatase_block.json
 4bfdc8ae9855ee51408910b978eb27fce981fcbf assets/gempire/models/item/anatase_ore.json
 c29a811ce3a5b8b84b7b38355ad7bd1efdfd2d86 assets/gempire/models/item/aster_fence_gate.json
@@ -759,6 +761,8 @@ ae107dbcaa0484d3f8fdff2cf80490d595e5a385 assets/gempire/models/item/orange_diamo
 2505175ce5601bbcce177c9a41cbd5729bdb1d42 assets/gempire/models/item/orange_phosphorus_lamp.json
 421448fd7ab6d0f4e6fcbc4de11daa2c546be664 assets/gempire/models/item/peculiar_sand.json
 804df1504c91d44be75424b8badf0b73c0c191ea assets/gempire/models/item/peculiar_sandstone.json
+1725a7bf3ce0a68bb043857001987e929d63e031 assets/gempire/models/item/peculiar_sandstone_slab.json
+7b976f59be0079d9832c3d7023e175ac4a0da4d9 assets/gempire/models/item/peculiar_sandstone_stairs.json
 22e3979632c8b770440b1d35f96cab8cc89153b2 assets/gempire/models/item/pegmatite.json
 5d26e8adf87f8c160999464ac8387054c51524ee assets/gempire/models/item/pegmatite_slab.json
 567b636ada60071f8d928f61e73f63a55263b1a6 assets/gempire/models/item/pegmatite_stairs.json
@@ -818,6 +822,12 @@ ab3f96c0fe46ded2ecd315377cbd2b7d93895e6b assets/gempire/models/item/shaded_slab.
 7ffce1a7958feef8462275384f1878d644daad80 assets/gempire/models/item/shaded_stairs.json
 1526a62010a58c96371883dfb010bf3edb175610 assets/gempire/models/item/shaded_trapdoor.json
 ff88d14932bf149ccd0d57843d23f5e0a1451256 assets/gempire/models/item/shaded_wood.json
+9816f10ddd0526eb153a4fb21b579253dd0b7d1f assets/gempire/models/item/smooth_abnormal_sandstone.json
+2b469e0e3a290edc55958f2801bd40fe36925ee6 assets/gempire/models/item/smooth_abnormal_sandstone_slab.json
+bd86478ec031893f2f86a590e5e22f6eac713078 assets/gempire/models/item/smooth_abnormal_sandstone_stairs.json
+b2c980fdd764032f696b4d62775bd77a3711b5f4 assets/gempire/models/item/smooth_peculiar_sandstone.json
+ff0fc9495f841529c532e0f61e59881e16c56980 assets/gempire/models/item/smooth_peculiar_sandstone_slab.json
+88b8f4706823eab1e356e9c8749681443bbb1279 assets/gempire/models/item/smooth_peculiar_sandstone_stairs.json
 7faf0ee8d43118e824463568773b86e6b14eafec assets/gempire/models/item/smooth_pink_sandstone.json
 0f43674a053bdf297d4310836ee617719b088442 assets/gempire/models/item/smooth_pink_sandstone_slab.json
 bf08ee102de6afeb06e65e56ff9940602680f663 assets/gempire/models/item/smooth_pink_sandstone_stairs.json

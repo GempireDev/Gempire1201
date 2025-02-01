@@ -442,7 +442,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.CRYSTAL_FENCE_GATE.get());
 
         this.tag(BlockTags.WALLS)
-                .add(ModBlocks.PINK_SANDSTONE_WALL.get())
+                .add(ModBlocks.PINK_SANDSTONE_WALL.get(),ModBlocks.PECULIAR_SANDSTONE_WALL.get(),ModBlocks.ABNORMAL_SANDSTONE_WALL.get())
                 .add(ModBlocks.PEGMATITE_WALL.get())
                 .add(ModBlocks.COBBLED_PEGMATITE_WALL.get())
                 .add(ModBlocks.RYOLITE_WALL.get())

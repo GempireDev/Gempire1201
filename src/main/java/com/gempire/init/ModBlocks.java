@@ -143,11 +143,47 @@ public class ModBlocks {
     public static final RegistryObject<Block> PECULIAR_SANDSTONE = BLOCKS.register("peculiar_sandstone", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
 
+    public static final RegistryObject<Block> PECULIAR_SANDSTONE_SLAB = BLOCKS.register("peculiar_sandstone_slab", () ->
+            new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB)));
+
+    public static final RegistryObject<Block> PECULIAR_SANDSTONE_STAIRS = BLOCKS.register("peculiar_sandstone_stairs", () ->
+            new StairBlock(() -> ModBlocks.PECULIAR_SANDSTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS)));
+
+    public static final RegistryObject<Block> PECULIAR_SANDSTONE_WALL = BLOCKS.register("peculiar_sandstone_wall", () ->
+            new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL)));
+
+    public static final RegistryObject<Block> SMOOTH_PECULIAR_SANDSTONE = BLOCKS.register("smooth_peculiar_sandstone", () ->
+            new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+
+    public static final RegistryObject<Block> SMOOTH_PECULIAR_SANDSTONE_SLAB = BLOCKS.register("smooth_peculiar_sandstone_slab", () ->
+            new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB)));
+
+    public static final RegistryObject<Block> SMOOTH_PECULIAR_SANDSTONE_STAIRS = BLOCKS.register("smooth_peculiar_sandstone_stairs", () ->
+            new StairBlock(() -> ModBlocks.SMOOTH_PECULIAR_SANDSTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS)));
+
     public static final RegistryObject<Block> ABNORMAL_SAND = BLOCKS.register("abnormal_sand", () ->
             new SandBlock(11098145, BlockBehaviour.Properties.copy(Blocks.SAND)));
 
     public static final RegistryObject<Block> ABNORMAL_SANDSTONE = BLOCKS.register("abnormal_sandstone", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+
+    public static final RegistryObject<Block> ABNORMAL_SANDSTONE_SLAB = BLOCKS.register("abnormal_sandstone_slab", () ->
+            new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB)));
+
+    public static final RegistryObject<Block> ABNORMAL_SANDSTONE_STAIRS = BLOCKS.register("abnormal_sandstone_stairs", () ->
+            new StairBlock(() -> ModBlocks.ABNORMAL_SANDSTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS)));
+
+    public static final RegistryObject<Block> ABNORMAL_SANDSTONE_WALL = BLOCKS.register("abnormal_sandstone_wall", () ->
+            new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL)));
+
+    public static final RegistryObject<Block> SMOOTH_ABNORMAL_SANDSTONE = BLOCKS.register("smooth_abnormal_sandstone", () ->
+            new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+
+    public static final RegistryObject<Block> SMOOTH_ABNORMAL_SANDSTONE_SLAB = BLOCKS.register("smooth_abnormal_sandstone_slab", () ->
+            new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB)));
+
+    public static final RegistryObject<Block> SMOOTH_ABNORMAL_SANDSTONE_STAIRS = BLOCKS.register("smooth_abnormal_sandstone_stairs", () ->
+            new StairBlock(() -> ModBlocks.SMOOTH_ABNORMAL_SANDSTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS)));
 
     public static final RegistryObject<Block> PINCULE = BLOCKS.register("pincule", () ->
             new PinculeBlock(BlockBehaviour.Properties.copy(Blocks.CACTUS)));

@@ -474,11 +474,47 @@ public class ModItems {
     public static final RegistryObject<Item> PECULIAR_SANDSTONE = ITEMS.register("peculiar_sandstone", () ->
             new BlockItem(ModBlocks.PECULIAR_SANDSTONE.get(), new Item.Properties()));
 
+    public static final RegistryObject<Item> PECULIAR_SANDSTONE_SLAB = ITEMS.register("peculiar_sandstone_slab", () ->
+            new BlockItem(ModBlocks.PECULIAR_SANDSTONE_SLAB.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> PECULIAR_SANDSTONE_STAIRS = ITEMS.register("peculiar_sandstone_stairs", () ->
+            new BlockItem(ModBlocks.PECULIAR_SANDSTONE_STAIRS.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> PECULIAR_SANDSTONE_WALL = ITEMS.register("peculiar_sandstone_wall", () ->
+            new BlockItem(ModBlocks.PECULIAR_SANDSTONE_WALL.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> SMOOTH_PECULIAR_SANDSTONE = ITEMS.register("smooth_peculiar_sandstone", () ->
+            new BlockItem(ModBlocks.SMOOTH_PECULIAR_SANDSTONE.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> SMOOTH_PECULIAR_SANDSTONE_SLAB = ITEMS.register("smooth_peculiar_sandstone_slab", () ->
+            new BlockItem(ModBlocks.SMOOTH_PECULIAR_SANDSTONE_SLAB.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> SMOOTH_PECULIAR_SANDSTONE_STAIRS = ITEMS.register("smooth_peculiar_sandstone_stairs", () ->
+            new BlockItem(ModBlocks.SMOOTH_PECULIAR_SANDSTONE_STAIRS.get(), new Item.Properties()));
+
     public static final RegistryObject<Item> ABNORMAL_SAND = ITEMS.register("abnormal_sand", () ->
             new BlockItem(ModBlocks.ABNORMAL_SAND.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> ABNORMAL_SANDSTONE = ITEMS.register("abnormal_sandstone", () ->
             new BlockItem(ModBlocks.ABNORMAL_SANDSTONE.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> ABNORMAL_SANDSTONE_SLAB = ITEMS.register("abnormal_sandstone_slab", () ->
+            new BlockItem(ModBlocks.ABNORMAL_SANDSTONE_SLAB.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> ABNORMAL_SANDSTONE_STAIRS = ITEMS.register("abnormal_sandstone_stairs", () ->
+            new BlockItem(ModBlocks.ABNORMAL_SANDSTONE_STAIRS.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> ABNORMAL_SANDSTONE_WALL = ITEMS.register("abnormal_sandstone_wall", () ->
+            new BlockItem(ModBlocks.ABNORMAL_SANDSTONE_WALL.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> SMOOTH_ABNORMAL_SANDSTONE = ITEMS.register("smooth_abnormal_sandstone", () ->
+            new BlockItem(ModBlocks.SMOOTH_ABNORMAL_SANDSTONE.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> SMOOTH_ABNORMAL_SANDSTONE_SLAB = ITEMS.register("smooth_abnormal_sandstone_slab", () ->
+            new BlockItem(ModBlocks.SMOOTH_ABNORMAL_SANDSTONE_SLAB.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> SMOOTH_ABNORMAL_SANDSTONE_STAIRS = ITEMS.register("smooth_abnormal_sandstone_stairs", () ->
+            new BlockItem(ModBlocks.SMOOTH_ABNORMAL_SANDSTONE_STAIRS.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> PINCULE = ITEMS.register("pincule", () ->
             new BlockItem(

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "gempire:abnormal_sandstone"
+  },
+  "result": "gempire:abnormal_sandstone_wall"
+}

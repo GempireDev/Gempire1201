@@ -697,11 +697,23 @@ public class ModCreativeModeTabs {
                 populator.accept(ModBlocks.POLISHED_SELENITE_WALL.get());
                 populator.accept(ModBlocks.PRIMED_SELENITE.get());
 
-                populator.accept(ModItems.ABNORMAL_SAND.get());
-                populator.accept(ModItems.ABNORMAL_SANDSTONE.get());
+                populator.accept(ModBlocks.ABNORMAL_SAND.get());
+                populator.accept(ModBlocks.ABNORMAL_SANDSTONE.get());
+                populator.accept(ModBlocks.ABNORMAL_SANDSTONE_STAIRS.get());
+                populator.accept(ModBlocks.ABNORMAL_SANDSTONE_SLAB.get());
+                populator.accept(ModBlocks.ABNORMAL_SANDSTONE_WALL.get());
+                populator.accept(ModBlocks.SMOOTH_ABNORMAL_SANDSTONE.get());
+                populator.accept(ModBlocks.SMOOTH_ABNORMAL_SANDSTONE_STAIRS.get());
+                populator.accept(ModBlocks.SMOOTH_ABNORMAL_SANDSTONE_SLAB.get());
 
-                populator.accept(ModItems.PECULIAR_SAND.get());
-                populator.accept(ModItems.PECULIAR_SANDSTONE.get());
+                populator.accept(ModBlocks.PECULIAR_SAND.get());
+                populator.accept(ModBlocks.PECULIAR_SANDSTONE.get());
+                populator.accept(ModBlocks.PECULIAR_SANDSTONE_STAIRS.get());
+                populator.accept(ModBlocks.PECULIAR_SANDSTONE_SLAB.get());
+                populator.accept(ModBlocks.PECULIAR_SANDSTONE_WALL.get());
+                populator.accept(ModBlocks.SMOOTH_PECULIAR_SANDSTONE.get());
+                populator.accept(ModBlocks.SMOOTH_PECULIAR_SANDSTONE_STAIRS.get());
+                populator.accept(ModBlocks.SMOOTH_PECULIAR_SANDSTONE_SLAB.get());
 
                 populator.accept(ModBlocks.PINK_SAND.get());
                 populator.accept(ModBlocks.PINK_SANDSTONE.get());
