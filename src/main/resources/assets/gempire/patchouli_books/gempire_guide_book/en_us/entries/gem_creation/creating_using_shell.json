@@ -30,7 +30,7 @@
     {
       "type": "patchouli:text",
       "title": "Creating a Pearl",
-      "text": "In order to use Shell, you will need to place the Shell over a block of White Gem essence, then insert 16 Gravel at the top, 16 Sand on the left, 16 Clay Balls on the right, and a Chroma of your choice at the bottom.$(br2)As time passes it'll slowly drain these materials, and once it's finished it will create a Pearl for you to collect."
+      "text": "In order to use Shell, you will need to place the Shell into a small hole and shift-right click it with a bottle of White Gem Essence.$(b2)Then insert 16 Gravel at the top, 16 Sand on the left, 16 Clay Balls on the right and a Chroma of your choice at the bottom.$(br2)As time passes it'll slowly drain these materials, and once it's finished it will create a Pearl for you to collect."
     },
     {
       "type": "patchouli:text",
