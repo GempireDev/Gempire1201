@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Spelunker is an ability that lets gems seek out mob spawner blocks."
+      "text": "Spelunker is an ability that lets gems seek out mob spawner blocks. Give them a pickaxe and set them to stay, coordinates will be inputted into the chatbox."
     },
     {
       "type": "patchouli:text",
