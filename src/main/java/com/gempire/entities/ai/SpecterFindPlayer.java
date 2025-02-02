@@ -10,6 +10,8 @@ import java.util.List;
 
 public class SpecterFindPlayer extends Goal {
 
+    //TODO: FIX SPECTER AI
+
     EntitySpecter specter;
     Player player;
 

@@ -15,6 +15,8 @@ import net.minecraftforge.common.PlantType;
 import java.util.Iterator;
 
 public class PinculeBlock extends CactusBlock {
+
+    //TODO: FRUITING PINCULES
     public PinculeBlock(Properties p_51136_) {
         super(p_51136_);
     }

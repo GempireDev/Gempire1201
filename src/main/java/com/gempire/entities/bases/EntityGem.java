@@ -85,7 +85,6 @@ import java.io.IOException;
 import java.util.*;
 
 public abstract class EntityGem extends PathfinderMob implements RangedAttackMob, Container, MenuProvider, ContainerListener {
-    //public static DataParameter<Optional<UUID>> OWNER_ID = EntityDataManager.<Optional<UUID>>createKey(EntityGem.class, DataSerializers.OPTIONAL_UNIQUE_ID);
     public static final EntityDataAccessor<Boolean> HAS_CUSTOM_NAME = SynchedEntityData.<Boolean>defineId(EntityGem.class, EntityDataSerializers.BOOLEAN);
     public static final EntityDataAccessor<Boolean> EMOTIONAL = SynchedEntityData.<Boolean>defineId(EntityGem.class, EntityDataSerializers.BOOLEAN);
     public static final EntityDataAccessor<Integer> SKIN_COLOR = SynchedEntityData.<Integer>defineId(EntityGem.class, EntityDataSerializers.INT);
@@ -1330,6 +1329,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         setAssignedCut(cut);
     }
 
+    //TODO: IMPLEMENT PHYSICAL MOVEMENT TYPE
     public void cycleMovementAI(Player player){
         if (!this.getRebelled() && !(this.getSludgeAmount() >= 5)) {
             //Cycles through the various movement types.

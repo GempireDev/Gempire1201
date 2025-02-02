@@ -8,6 +8,7 @@ import net.minecraft.network.chat.Component;
 
 public class AbilityLumberjack extends Ability implements IPhysicalAbility {
 
+    //TODO: IMPLEMENT LUMBERJACK
     public AbilityLumberjack(){
         super("lumberjack", 3);
     }

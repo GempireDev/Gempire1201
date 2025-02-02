@@ -66,6 +66,8 @@ import org.jetbrains.annotations.NotNull;
 import org.w3c.dom.Attr;
 
 public class ItemGem extends Item {
+
+    //TODO: FIX GEM ITEMS DYING
     public final String ID;
     int coundownMax = 600;
     int countdown = 600;

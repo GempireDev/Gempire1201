@@ -4,6 +4,7 @@ import com.gempire.init.ModStructures;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.heightproviders.HeightProvider;
@@ -12,8 +13,11 @@ import net.minecraft.world.level.levelgen.structure.StructureType;
 import net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder;
 
 import java.util.Optional;
+import java.util.function.Consumer;
 
 public class SeaShrineStructure extends Structure {
+    //TODO: FIX SEA SHRINE SPAWNING
+
     // A custom codec that changes the size limit for our code_structure_sky_fan.json's config to not be capped at 7.
     // With this, we can have a structure with a size limit up to 30 if we want to have extremely long branches of pieces in the structure.
     public static final Codec<SeaShrineStructure> CODEC = RecordCodecBuilder.<SeaShrineStructure>mapCodec(instance ->
@@ -61,6 +65,14 @@ public class SeaShrineStructure extends Structure {
         return onTopOfChunkCenter(p_229391_, $$1, (p_229394_) -> {
             this.generatePieces(p_229394_, p_229391_);
         });
+    }
+
+    protected static Optional<GenerationStub> onTopOfChunkCenter(GenerationContext p_226586_, Heightmap.Types p_226587_, Consumer<StructurePiecesBuilder> p_226588_) {
+        ChunkPos chunkpos = p_226586_.chunkPos();
+        int i = chunkpos.getMiddleBlockX();
+        int j = chunkpos.getMiddleBlockZ();
+        int k = p_226586_.chunkGenerator().getFirstOccupiedHeight(i, j, p_226587_, p_226586_.heightAccessor(), p_226586_.randomState());
+        return Optional.of(new GenerationStub(new BlockPos(i, k, j), p_226588_));
     }
 
     private void generatePieces(StructurePiecesBuilder p_229396_, Structure.GenerationContext p_229397_) {

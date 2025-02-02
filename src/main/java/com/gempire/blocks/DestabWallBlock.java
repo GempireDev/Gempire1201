@@ -31,6 +31,8 @@ import java.util.Map;
 import java.util.Optional;
 
 public class DestabWallBlock extends HorizontalDirectionalBlock {
+
+    //TODO: FIX ONE SIDED ISSUE
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
     public EntityGem gem;
     public VoxelShape shapeEW = Block.box(0, 0, 7, 16, 16, 9);

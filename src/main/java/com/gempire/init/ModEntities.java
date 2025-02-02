@@ -28,7 +28,7 @@ public class ModEntities {
     // Entity Types
 
     public static final RegistryObject<EntityType<EntityBeastmasterWolf>> BEASTMASTER_WOLF = ENTITIES.register("beastmaster_wolf",
-            () -> EntityType.Builder.of(EntityBeastmasterWolf::new, MobCategory.CREATURE)
+            () -> EntityType.Builder.<EntityBeastmasterWolf>of(EntityBeastmasterWolf::new, MobCategory.CREATURE)
                     .sized(0.6F, 0.85F) // Hitbox Size
                     .build(new ResourceLocation(Gempire.MODID, "beastmaster_wolf").toString()));
 

@@ -101,7 +101,7 @@ public class ClientProxy {
         event.registerEntityRenderer(ModEntities.IRIDESCENT_PALADIN.get(), RenderIridescentPaladin::new);
          */
         //event.registerEntityRenderer(ModEntities.PEPO.get(), RenderPepo::new);
-        event.registerEntityRenderer(ModEntities.BEASTMASTER_WOLF.get(), RenderBeastmasterWolf::new);
+        event.registerEntityRenderer(ModEntities.BEASTMASTER_WOLF.get(), m -> new RenderBeastmasterWolf(m, new ModelBeastmasterWolf<>(m.bakeLayer(ModelBeastmasterWolf.LAYER_LOCATION))));
         event.registerEntityRenderer(ModEntities.COBALT_GUARDIAN.get(), RenderCobaltGuardian::new);
         event.registerEntityRenderer(ModEntities.MANTASHARK.get(), RenderMantaShark::new);
         event.registerEntityRenderer(ModEntities.OPAL_MANTASHARK.get(), RenderOpalMantaShark::new);
@@ -232,7 +232,7 @@ public class ClientProxy {
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ModelSpecter.LAYER_LOCATION, ModelSpecter::createBodyLayer);
         event.registerLayerDefinition(ModelPepo.LAYER_LOCATION, ModelPepo::createBodyLayer);
-        event.registerLayerDefinition(ModelBeastmasterWolf.BEASTMASTER_WOLF, ModelBeastmasterWolf::createBodyLayer);
+        event.registerLayerDefinition(ModelBeastmasterWolf.LAYER_LOCATION, ModelBeastmasterWolf::createBodyLayer);
         event.registerLayerDefinition(ModelPebble.LAYER_LOCATION_P, ModelPebble::createBodyLayer);
         event.registerLayerDefinition(ModelPebble.LAYER_LOCATION_M, ModelPebble::createBodyLayer);
         event.registerLayerDefinition(ModelPebble.LAYER_LOCATION_S, ModelPebble::createBodyLayer);

@@ -30,6 +30,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EntityAITerraform extends Goal {
+    //TODO: FIX ITEMS TO INVENTORY
     public EntityLapis follower;
     public BlockPos target;
     public BlockPos startPos;

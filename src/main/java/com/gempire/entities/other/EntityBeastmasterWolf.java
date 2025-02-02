@@ -1,7 +1,11 @@
 package com.gempire.entities.other;
 
-import com.gempire.Gempire;
+import com.gempire.entities.ai.FollowGemGoal;
+import com.gempire.entities.ai.GemHurtByTargetGoal;
+import com.gempire.entities.ai.GemHurtTargetGoal;
 import com.gempire.entities.bases.EntityGem;
+import com.gempire.entities.bases.GemTamableAnimal;
+import com.gempire.init.ModEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
@@ -16,8 +20,6 @@ import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.TimeUtil;
 import net.minecraft.util.valueproviders.UniformInt;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -25,7 +27,6 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.*;
 import net.minecraft.world.entity.animal.Animal;
-import net.minecraft.world.entity.animal.Turtle;
 import net.minecraft.world.entity.animal.Wolf;
 import net.minecraft.world.entity.animal.horse.AbstractHorse;
 import net.minecraft.world.entity.animal.horse.Llama;
@@ -47,9 +48,12 @@ import java.util.UUID;
 import java.util.function.Predicate;
 
 public class EntityBeastmasterWolf extends GemTamableAnimal implements NeutralMob {
-    private static final EntityDataAccessor<Boolean> DATA_INTERESTED_ID = SynchedEntityData.defineId(Wolf.class, EntityDataSerializers.BOOLEAN);
-    private static final EntityDataAccessor<Integer> DATA_COLLAR_COLOR = SynchedEntityData.defineId(Wolf.class, EntityDataSerializers.INT);
-    private static final EntityDataAccessor<Integer> DATA_REMAINING_ANGER_TIME = SynchedEntityData.defineId(Wolf.class, EntityDataSerializers.INT);
+    public static final EntityDataAccessor<Integer> SKIN_COLOR = SynchedEntityData.<Integer>defineId(EntityBeastmasterWolf.class, EntityDataSerializers.INT);
+    public static final EntityDataAccessor<Integer> HAIR_COLOR = SynchedEntityData.<Integer>defineId(EntityBeastmasterWolf.class, EntityDataSerializers.INT);
+    public static final EntityDataAccessor<Integer> GEM_COLOR = SynchedEntityData.<Integer>defineId(EntityBeastmasterWolf.class, EntityDataSerializers.INT);
+    private static final EntityDataAccessor<Boolean> DATA_INTERESTED_ID = SynchedEntityData.defineId(EntityBeastmasterWolf.class, EntityDataSerializers.BOOLEAN);
+    private static final EntityDataAccessor<Integer> DATA_COLLAR_COLOR = SynchedEntityData.defineId(EntityBeastmasterWolf.class, EntityDataSerializers.INT);
+    private static final EntityDataAccessor<Integer> DATA_REMAINING_ANGER_TIME = SynchedEntityData.defineId(EntityBeastmasterWolf.class, EntityDataSerializers.INT);
     public static final Predicate<LivingEntity> PREY_SELECTOR = (p_275109_) -> {
         EntityType<?> entitytype = p_275109_.getType();
         return entitytype == EntityType.SHEEP || entitytype == EntityType.RABBIT || entitytype == EntityType.FOX;
@@ -73,22 +77,27 @@ public class EntityBeastmasterWolf extends GemTamableAnimal implements NeutralMo
         this.setPathfindingMalus(BlockPathTypes.DANGER_POWDER_SNOW, -1.0F);
     }
 
+    public EntityBeastmasterWolf(Level level, EntityGem owner) {
+        super(ModEntities.BEASTMASTER_WOLF.get(), level);
+        this.setOwnerID(owner.getGemID());
+        this.setTame(true);
+        this.setPathfindingMalus(BlockPathTypes.POWDER_SNOW, -1.0F);
+        this.setPathfindingMalus(BlockPathTypes.DANGER_POWDER_SNOW, -1.0F);
+    }
+
     protected void registerGoals() {
         this.goalSelector.addGoal(1, new FloatGoal(this));
-        //this.goalSelector.addGoal(2, new SitWhenOrderedToGoal(this));
+        this.targetSelector.addGoal(1, new GemHurtByTargetGoal(this));
+        this.targetSelector.addGoal(2, new GemHurtTargetGoal(this));
         this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, 0.4F));
         this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.0D, true));
-        //this.goalSelector.addGoal(6, new FollowOwnerGoal(this, 1.0D, 10.0F, 2.0F, false));
+        this.goalSelector.addGoal(6, new FollowGemGoal(this, 1.0D, 10.0F, 2.0F, false));
         this.goalSelector.addGoal(7, new BreedGoal(this, 1.0D));
         this.goalSelector.addGoal(8, new WaterAvoidingRandomStrollGoal(this, 1.0D));
         this.goalSelector.addGoal(10, new LookAtPlayerGoal(this, Player.class, 8.0F));
         this.goalSelector.addGoal(10, new RandomLookAroundGoal(this));
-        //this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
-        //this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
         this.targetSelector.addGoal(3, (new HurtByTargetGoal(this)).setAlertOthers());
         this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, Player.class, 10, true, false, this::isAngryAt));
-        //this.targetSelector.addGoal(5, new NonTameRandomTargetGoal<>(this, Animal.class, false, PREY_SELECTOR));
-        //this.targetSelector.addGoal(6, new NonTameRandomTargetGoal<>(this, Turtle.class, false, Turtle.BABY_ON_LAND_SELECTOR));
         this.targetSelector.addGoal(7, new NearestAttackableTargetGoal<>(this, AbstractSkeleton.class, false));
         this.targetSelector.addGoal(8, new ResetUniversalAngerTargetGoal<>(this, true));
     }
@@ -97,8 +106,35 @@ public class EntityBeastmasterWolf extends GemTamableAnimal implements NeutralMo
         return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F).add(Attributes.MAX_HEALTH, 8.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
     }
 
+    public int getSkinColor(){
+        return this.entityData.get(EntityBeastmasterWolf.SKIN_COLOR);
+    }
+
+    public void setSkinColor(int value){
+        this.entityData.set(EntityBeastmasterWolf.SKIN_COLOR, value);
+    }
+
+    public int getHairColor(){
+        return this.entityData.get(EntityBeastmasterWolf.HAIR_COLOR);
+    }
+
+    public void setHairColor(int value){
+        this.entityData.set(EntityBeastmasterWolf.HAIR_COLOR, value);
+    }
+
+    public int getGemColor(){
+        return this.entityData.get(EntityBeastmasterWolf.GEM_COLOR);
+    }
+
+    public void setGemColor(int value){
+        this.entityData.set(EntityBeastmasterWolf.GEM_COLOR, value);
+    }
+
     protected void defineSynchedData() {
         super.defineSynchedData();
+        this.entityData.define(SKIN_COLOR, 0);
+        this.entityData.define(GEM_COLOR, 0);
+        this.entityData.define(HAIR_COLOR, 0);
         this.entityData.define(DATA_INTERESTED_ID, false);
         this.entityData.define(DATA_COLLAR_COLOR, DyeColor.RED.getId());
         this.entityData.define(DATA_REMAINING_ANGER_TIME, 0);
@@ -108,14 +144,20 @@ public class EntityBeastmasterWolf extends GemTamableAnimal implements NeutralMo
         this.playSound(SoundEvents.WOLF_STEP, 0.15F, 1.0F);
     }
 
-    public void addAdditionalSaveData(CompoundTag p_30418_) {
-        super.addAdditionalSaveData(p_30418_);
-        p_30418_.putByte("CollarColor", (byte)this.getCollarColor().getId());
-        this.addPersistentAngerSaveData(p_30418_);
+    public void addAdditionalSaveData(CompoundTag tag) {
+        super.addAdditionalSaveData(tag);
+        tag.putInt("Skin", getSkinColor());
+        tag.putInt("Hair", getHairColor());
+        tag.putInt("Gem", getGemColor());
+        tag.putByte("CollarColor", (byte)this.getCollarColor().getId());
+        this.addPersistentAngerSaveData(tag);
     }
 
     public void readAdditionalSaveData(CompoundTag p_30402_) {
         super.readAdditionalSaveData(p_30402_);
+        setSkinColor(p_30402_.getInt("Skin"));
+        setHairColor(p_30402_.getInt("Hair"));
+        setGemColor(p_30402_.getInt("Gem"));
         if (p_30402_.contains("CollarColor", 99)) {
             this.setCollarColor(DyeColor.byId(p_30402_.getInt("CollarColor")));
         }
@@ -350,14 +392,12 @@ public class EntityBeastmasterWolf extends GemTamableAnimal implements NeutralMo
     }
 
     @Nullable
-    public Wolf getBreedOffspring(ServerLevel p_149088_, AgeableMob p_149089_) {
-        Wolf wolf = EntityType.WOLF.create(p_149088_);
+    public EntityBeastmasterWolf getBreedOffspring(ServerLevel p_149088_, AgeableMob p_149089_) {
+        EntityBeastmasterWolf wolf = ModEntities.BEASTMASTER_WOLF.get().create(p_149088_);
         if (wolf != null) {
-            UUID uuid = this.getOwnerUUID();
-            if (uuid != null) {
-                wolf.setOwnerUUID(uuid);
-                wolf.setTame(true);
-            }
+            int id = this.getOwnerID();
+            wolf.setOwnerID(id);
+            wolf.setTame(true);
         }
 
         return wolf;

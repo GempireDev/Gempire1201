@@ -1,33 +1,23 @@
-package com.gempire.entities.other;
+package com.gempire.entities.bases;
 
-import com.gempire.entities.bases.EntityGem;
-import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.players.OldUsersConverter;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.OwnableEntity;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.scores.Team;
 
 import javax.annotation.Nullable;
-import java.util.Optional;
-import java.util.UUID;
 
-public abstract class GemTamableAnimal extends Animal implements OwnableEntity {
-    protected static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(net.minecraft.world.entity.TamableAnimal.class, EntityDataSerializers.BYTE);
-    protected static final EntityDataAccessor<Optional<UUID>> DATA_OWNERUUID_ID = SynchedEntityData.defineId(net.minecraft.world.entity.TamableAnimal.class, EntityDataSerializers.OPTIONAL_UUID);
+public abstract class GemTamableAnimal extends Animal implements GemOwnableEntity {
+    protected static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(GemTamableAnimal.class, EntityDataSerializers.BYTE);
+    protected static final EntityDataAccessor<Integer> DATA_OWNER_ID = SynchedEntityData.defineId(GemTamableAnimal.class, EntityDataSerializers.INT);
     private boolean orderedToSit;
 
     protected GemTamableAnimal(EntityType<? extends GemTamableAnimal> p_21803_, Level p_21804_) {
@@ -38,35 +28,24 @@ public abstract class GemTamableAnimal extends Animal implements OwnableEntity {
     protected void defineSynchedData() {
         super.defineSynchedData();
         this.entityData.define(DATA_FLAGS_ID, (byte)0);
-        this.entityData.define(DATA_OWNERUUID_ID, Optional.empty());
+        this.entityData.define(DATA_OWNER_ID, 0);
     }
 
     public void addAdditionalSaveData(CompoundTag p_21819_) {
         super.addAdditionalSaveData(p_21819_);
-        if (this.getOwnerUUID() != null) {
-            p_21819_.putUUID("Owner", this.getOwnerUUID());
-        }
+        p_21819_.putInt("Owner", this.getOwnerID());
 
         p_21819_.putBoolean("Sitting", this.orderedToSit);
     }
 
     public void readAdditionalSaveData(CompoundTag p_21815_) {
         super.readAdditionalSaveData(p_21815_);
-        UUID uuid;
-        if (p_21815_.hasUUID("Owner")) {
-            uuid = p_21815_.getUUID("Owner");
-        } else {
-            String s = p_21815_.getString("Owner");
-            uuid = OldUsersConverter.convertMobOwnerIfNecessary(this.getServer(), s);
-        }
-
-        if (uuid != null) {
-            try {
-                this.setOwnerUUID(uuid);
-                this.setTame(true);
-            } catch (Throwable throwable) {
-                this.setTame(false);
-            }
+        int id = p_21815_.getInt("Owner");
+        try {
+            this.setOwnerID(id);
+            this.setTame(true);
+        } catch (Throwable throwable) {
+            this.setTame(false);
         }
 
         this.orderedToSit = p_21815_.getBoolean("Sitting");
@@ -136,55 +115,30 @@ public abstract class GemTamableAnimal extends Animal implements OwnableEntity {
     }
 
     @Nullable
-    public UUID getOwnerUUID() {
-        return this.entityData.get(DATA_OWNERUUID_ID).orElse((UUID)null);
+    public int getOwnerID() {
+        return this.entityData.get(DATA_OWNER_ID);
     }
 
-    public void setOwnerUUID(@Nullable UUID p_21817_) {
-        this.entityData.set(DATA_OWNERUUID_ID, Optional.ofNullable(p_21817_));
+    public void setOwnerID(int p_21817_) {
+        this.entityData.set(DATA_OWNER_ID, p_21817_);
     }
 
     public void tame(EntityGem p_21829_) {
         this.setTame(true);
-        this.setOwnerUUID(p_21829_.getUUID());
+        this.setOwnerID(p_21829_.getGemID());
     }
 
     public boolean canAttack(LivingEntity p_21822_) {
         return this.isOwnedBy(p_21822_) ? false : super.canAttack(p_21822_);
     }
 
-    public boolean isOwnedBy(LivingEntity p_21831_) {
-        return p_21831_ == this.getOwner();
+    public boolean isOwnedBy(LivingEntity entity) {
+        if (entity instanceof EntityGem) return ((EntityGem) entity).getGemID() == this.getOwnerID();
+        else return false;
     }
 
     public boolean wantsToAttack(LivingEntity p_21810_, LivingEntity p_21811_) {
         return true;
-    }
-
-    public Team getTeam() {
-        if (this.isTame()) {
-            LivingEntity livingentity = this.getOwner();
-            if (livingentity != null) {
-                return livingentity.getTeam();
-            }
-        }
-
-        return super.getTeam();
-    }
-
-    public boolean isAlliedTo(Entity p_21833_) {
-        if (this.isTame()) {
-            LivingEntity livingentity = this.getOwner();
-            if (p_21833_ == livingentity) {
-                return true;
-            }
-
-            if (livingentity != null) {
-                return livingentity.isAlliedTo(p_21833_);
-            }
-        }
-
-        return super.isAlliedTo(p_21833_);
     }
 
     public void die(DamageSource p_21809_) {
