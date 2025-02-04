@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "gempire:pink_pincule",
+    "gempire:orange_pincule",
+    "gempire:yellow_pincule",
+    "gempire:green_pincule",
+    "gempire:blue_pincule",
+    "gempire:purple_pincule"
+  ]
+}

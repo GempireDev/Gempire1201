@@ -185,7 +185,22 @@ public class ModBlocks {
     public static final RegistryObject<Block> SMOOTH_ABNORMAL_SANDSTONE_STAIRS = BLOCKS.register("smooth_abnormal_sandstone_stairs", () ->
             new StairBlock(() -> ModBlocks.SMOOTH_ABNORMAL_SANDSTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS)));
 
-    public static final RegistryObject<Block> PINCULE = BLOCKS.register("pincule", () ->
+    public static final RegistryObject<Block> PURPLE_PINCULE = BLOCKS.register("purple_pincule", () ->
+            new PinculeBlock(BlockBehaviour.Properties.copy(Blocks.CACTUS)));
+
+    public static final RegistryObject<Block> ORANGE_PINCULE = BLOCKS.register("orange_pincule", () ->
+            new PinculeBlock(BlockBehaviour.Properties.copy(Blocks.CACTUS)));
+
+    public static final RegistryObject<Block> YELLOW_PINCULE = BLOCKS.register("yellow_pincule", () ->
+            new PinculeBlock(BlockBehaviour.Properties.copy(Blocks.CACTUS)));
+
+    public static final RegistryObject<Block> GREEN_PINCULE = BLOCKS.register("green_pincule", () ->
+            new PinculeBlock(BlockBehaviour.Properties.copy(Blocks.CACTUS)));
+
+    public static final RegistryObject<Block> BLUE_PINCULE = BLOCKS.register("blue_pincule", () ->
+            new PinculeBlock(BlockBehaviour.Properties.copy(Blocks.CACTUS)));
+
+    public static final RegistryObject<Block> PINK_PINCULE = BLOCKS.register("pink_pincule", () ->
             new PinculeBlock(BlockBehaviour.Properties.copy(Blocks.CACTUS)));
 
     public static final RegistryObject<Block> PURIFIED_PRISMATIC_GLASS = BLOCKS.register("purified_prismatic_glass", () ->

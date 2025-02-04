@@ -516,12 +516,44 @@ public class ModItems {
     public static final RegistryObject<Item> SMOOTH_ABNORMAL_SANDSTONE_STAIRS = ITEMS.register("smooth_abnormal_sandstone_stairs", () ->
             new BlockItem(ModBlocks.SMOOTH_ABNORMAL_SANDSTONE_STAIRS.get(), new Item.Properties()));
 
-    public static final RegistryObject<Item> PINCULE = ITEMS.register("pincule", () ->
+    public static final RegistryObject<Item> PURPLE_PINCULE = ITEMS.register("purple_pincule", () ->
             new BlockItem(
-                    ModBlocks.PINCULE.get(),
+                    ModBlocks.PURPLE_PINCULE.get(),
                     new Item.Properties()
             )
     );
+
+    public static final RegistryObject<Item> ORANGE_PINCULE = ITEMS.register("orange_pincule", () ->
+            new BlockItem(
+                    ModBlocks.ORANGE_PINCULE.get(),
+                    new Item.Properties()
+            )
+    );
+    public static final RegistryObject<Item> YELLOW_PINCULE = ITEMS.register("yellow_pincule", () ->
+            new BlockItem(
+                    ModBlocks.YELLOW_PINCULE.get(),
+                    new Item.Properties()
+            )
+    );
+    public static final RegistryObject<Item> GREEN_PINCULE = ITEMS.register("green_pincule", () ->
+            new BlockItem(
+                    ModBlocks.GREEN_PINCULE.get(),
+                    new Item.Properties()
+            )
+    );
+    public static final RegistryObject<Item> BLUE_PINCULE = ITEMS.register("blue_pincule", () ->
+            new BlockItem(
+                    ModBlocks.BLUE_PINCULE.get(),
+                    new Item.Properties()
+            )
+    );
+    public static final RegistryObject<Item> PINK_PINCULE = ITEMS.register("pink_pincule", () ->
+            new BlockItem(
+                    ModBlocks.PINK_PINCULE.get(),
+                    new Item.Properties()
+            )
+    );
+
 
     public static final RegistryObject<Item> PURIFIED_PRISMATIC_GLASS = ITEMS.register("purified_prismatic_glass", () ->
             new BlockItem(
@@ -3409,6 +3441,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> SPODUMENE_PIECE = ITEMS.register("spodumene_piece", () ->
             new Item(new Item.Properties().stacksTo(64).food(ModFoods.SPODUMENE_PIECE)));
+
+    public static final RegistryObject<Item> PINCULE_FRUIT = ITEMS.register("pincule_fruit", () ->
+            new Item(new Item.Properties().stacksTo(64).food(ModFoods.PINCULE_FRUIT)));
+
     public static final RegistryObject<Item> ICE_SHARD = ITEMS.register("ice_shard", () ->
             new Item(new Item.Properties().stacksTo(64)));
     public static final RegistryObject<Item> ACID_SPIT = ITEMS.register("acid_spit", () ->

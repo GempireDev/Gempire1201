@@ -28,6 +28,8 @@ public class ModFoods {
         return new MobEffectInstance(ModEffects.FLORAL_PROTECTION.get(), 400, 4);
     }, 1).build();
 
+    public static final FoodProperties PINCULE_FRUIT = (new FoodProperties.Builder()).nutrition(3).saturationMod(0.3F).build();
+
     public static final FoodProperties RAW_MANTAWING = (new FoodProperties.Builder()).nutrition(3).saturationMod(0.3F).meat().build();
     public static final FoodProperties COOKED_MANTAWING = (new FoodProperties.Builder()).nutrition(6).saturationMod(0.6F).meat().build();
     public static final FoodProperties RAW_OPALIZED_MANTAWING = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.4F).meat().build();

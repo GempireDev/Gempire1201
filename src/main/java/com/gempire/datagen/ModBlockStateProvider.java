@@ -427,7 +427,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.CUT_PINK_SANDSTONE);
         blockItem(ModBlocks.CHISELED_PINK_SANDSTONE);
 
-        blockItem(ModBlocks.PINCULE);
+        blockItem(ModBlocks.PURPLE_PINCULE);
+        blockItem(ModBlocks.ORANGE_PINCULE);
+        blockItem(ModBlocks.YELLOW_PINCULE);
+        blockItem(ModBlocks.GREEN_PINCULE);
+        blockItem(ModBlocks.BLUE_PINCULE);
+        blockItem(ModBlocks.PINK_PINCULE);
 
         blockItem(ModBlocks.DESOLATE_GRASS);
 

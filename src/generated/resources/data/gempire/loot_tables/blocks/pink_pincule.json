@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "gempire:pincule"
+          "name": "gempire:pink_pincule"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "gempire:blocks/pincule"
+  "random_sequence": "gempire:blocks/pink_pincule"
 }

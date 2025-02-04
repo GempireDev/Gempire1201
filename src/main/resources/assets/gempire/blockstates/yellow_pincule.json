@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "flowered=0": {
+      "model": "gempire:block/yellow_pincule"
+    },
+    "flowered=1": {
+      "model": "gempire:block/yellow_pincule_flowering"
+    },
+    "flowered=2": {
+      "model": "gempire:block/yellow_pincule_fruiting"
+    }
+  }
+}

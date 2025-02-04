@@ -1,9 +1,9 @@
 {   "parent": "block/block",
   "textures": {
-    "particle": "gempire:block/pincule_side",
-    "bottom": "gempire:block/pincule_bottom",
-    "top": "gempire:block/pincule_top",
-    "side": "gempire:block/pincule_side"
+    "particle": "gempire:block/purple_pincule_side",
+    "bottom": "gempire:block/purple_pincule_bottom",
+    "top": "gempire:block/purple_pincule_top",
+    "side": "gempire:block/purple_pincule_fruiting"
   },
   "render_type": "cutout",
   "elements": [

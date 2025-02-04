@@ -1,13 +1,13 @@
 {
   "name": "Pincule",
-  "icon": "gempire:pincule",
+  "icon": "gempire:purple_pincule",
   "advancement": "gempire:desolate_lands/root",
   "category": "gempire:herbarium",
   "pages": [
     {
       "type": "patchouli:spotlight",
       "title": "Pincule",
-      "item": "gempire:pincule",
+      "item": "#gempire:pincule",
       "text": "A prickly purple pint-sized peculiar cactus. Found in the Abnormal Desert biome."
     },
     {

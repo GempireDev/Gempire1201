@@ -101,6 +101,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PRIMED_SLATE);
 
         simpleItem(ModItems.SPODUMENE_PIECE);
+        simpleItem(ModItems.PINCULE_FRUIT);
 
         simpleItem(ModItems.ACID_SPIT);
         simpleItem(ModItems.GUARDIAN_ORB);

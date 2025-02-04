@@ -313,6 +313,7 @@ public class ModCreativeModeTabs {
                 populator.accept(ModItems.CONGEALED_WHITE_ESSENCE.get());
 
                 populator.accept(ModItems.STRAWBERRY.get());
+                populator.accept(ModItems.PINCULE_FRUIT.get());
                 populator.accept(ModItems.COBALT_KELP.get());
                 populator.accept(ModItems.DRIED_COBALT_KELP.get());
                 populator.accept(ModBlocks.AQUATIC_FIBRE.get());
@@ -732,7 +733,12 @@ public class ModCreativeModeTabs {
                 populator.accept(ModItems.DESOLATE_GRASS.get());
                 populator.accept(ModItems.DESOLATE_SOIL.get());
 
-                populator.accept(ModItems.PINCULE.get());
+                populator.accept(ModItems.PINK_PINCULE.get());
+                populator.accept(ModItems.ORANGE_PINCULE.get());
+                populator.accept(ModItems.YELLOW_PINCULE.get());
+                populator.accept(ModItems.GREEN_PINCULE.get());
+                populator.accept(ModItems.BLUE_PINCULE.get());
+                populator.accept(ModItems.PURPLE_PINCULE.get());
 
                 populator.accept(ModBlocks.THULITE_CLUSTER.get());
                 populator.accept(ModBlocks.THULITE_TOWER.get());

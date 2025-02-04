@@ -46,7 +46,12 @@
       "minecraft:glow_lichen",
       "minecraft:patch_grass_badlands",
       "minecraft:patch_dead_bush_2",
-      "gempire:patch_pincule",
+      "gempire:patch_pink_pincule",
+      "gempire:patch_orange_pincule",
+      "gempire:patch_yellow_pincule",
+      "gempire:patch_green_pincule",
+      "gempire:patch_blue_pincule",
+      "gempire:patch_purple_pincule",
       "gempire:aquatic_fibre_normal",
       "gempire:aquatic_fibre_deep"
     ],

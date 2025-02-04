@@ -355,7 +355,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SMOOTH_ABNORMAL_SANDSTONE.get());
         this.add(ModBlocks.SMOOTH_ABNORMAL_SANDSTONE_SLAB.get(), (block -> createSlabItemTable(ModBlocks.SMOOTH_ABNORMAL_SANDSTONE_SLAB.get())));
         this.dropSelf(ModBlocks.SMOOTH_ABNORMAL_SANDSTONE_STAIRS.get());
-        this.dropSelf(ModBlocks.PINCULE.get());
+        this.dropSelf(ModBlocks.PURPLE_PINCULE.get());
+        this.dropSelf(ModBlocks.ORANGE_PINCULE.get());
+        this.dropSelf(ModBlocks.YELLOW_PINCULE.get());
+        this.dropSelf(ModBlocks.GREEN_PINCULE.get());
+        this.dropSelf(ModBlocks.BLUE_PINCULE.get());
+        this.dropSelf(ModBlocks.PINK_PINCULE.get());
         this.add(ModBlocks.COBALT_KELP.get(), (block -> createSingleItemTable(ModItems.COBALT_KELP.get())));
         this.add(ModBlocks.COBALT_KELP_PLANT.get(), (block -> createSingleItemTable(ModItems.COBALT_KELP.get())));
         this.dropSelf(ModBlocks.AQUATIC_FIBRE.get());
