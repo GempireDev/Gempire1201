@@ -3410,7 +3410,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> STRAWBERRY_BLOCK = BLOCKS.register("strawberry_block", () ->
             new StrawberryBlock(Block.Properties.of()
-                    .strength(3.0f, 4.0f)
+                    .strength(1f)
                     .sound(SoundType.WART_BLOCK)
             )
     );
