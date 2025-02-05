@@ -3,7 +3,6 @@ package com.gempire;
 import com.gempire.config.GempireClientConfigs;
 import com.gempire.config.GempireCommonConfigs;
 import com.gempire.config.GempireServerConfigs;
-import com.gempire.entities.bases.EntityFusion;
 import com.gempire.entities.bosses.base.EntityAlabasterEmpress;
 import com.gempire.entities.bosses.base.EntityAmberHuntress;
 import com.gempire.entities.bosses.base.EntityCobaltGuardian;
@@ -14,6 +13,7 @@ import com.gempire.entities.gems.starter.EntityNacre;
 import com.gempire.entities.gems.starter.EntityPebble;
 import com.gempire.entities.gems.starter.EntityShale;
 import com.gempire.entities.other.*;
+import com.gempire.fluids.ModFluidTypes;
 import com.gempire.init.*;
 import com.gempire.proxy.CommonProxy;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -54,18 +54,35 @@ public class Gempire
 
     public Gempire() {
 
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         // Register the setup method for modloading
-        modEventBus.addListener(this::setup);
+        bus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
-        modEventBus.addListener(this::enqueueIMC);
+        bus.addListener(this::enqueueIMC);
         // Register the processIMC method for modloading
-        modEventBus.addListener(this::processIMC);
+        bus.addListener(this::processIMC);
 
-        modEventBus.addListener(this::EntityAttributes);
+        bus.addListener(this::EntityAttributes);
         //FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onClientSetup);
 
-        RegistryHandler.init();
+        ModSounds.SOUNDS.register(bus);
+        ModBlocks.BLOCKS.register(bus);
+        ModItems.ITEMS.register(bus);
+        ModFluids.FLUIDS.register(bus);
+        ModFluids.FLUID_TYPES.register(bus);
+        ModFluidTypes.register(bus);
+        ModTE.TILE_ENTITIES.register(bus);
+        ModContainers.CONTAINERS.register(bus);
+        ModEntities.ENTITIES.register(bus);
+        ModFeatures.FEATURES.register(bus);
+        ModEffects.MOB_EFFECTS.register(bus);
+        ModEnchants.ENCHANTS.register(bus);
+        ModCreativeModeTabs.CREATIVE_MODE_TABS.register(bus);
+        ModPotions.POTIONS.register(bus);
+        ModStructures.DEFERRED_REGISTRY_STRUCTURE.register(bus);
+        ModStructures.STRUCTURE_PIECE_TYPE_DEFERRED_REGISTER.register(bus);
+        ModParticles.PARTICLE_TYPES.register(bus);
+        ModBannerPatterns.BANNER_PATTERNS.register(bus);
 
         GeckoLib.initialize();
 
@@ -77,7 +94,7 @@ public class Gempire
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(new EventHandler());
         MinecraftForge.EVENT_BUS.register(CommonProxy.class);
-        modEventBus.addListener(this::addCreative);
+        bus.addListener(this::addCreative);
     }
 
     public void EntityAttributes(final EntityAttributeCreationEvent event){
@@ -151,7 +168,6 @@ public class Gempire
 
         event.put(ModEntities.LARIMAR.get(), EntityLarimar.registerAttributes().build());
 
-        event.put(ModEntities.FUSION.get(), EntityFusion.registerAttributes().build());
 
         event.put(ModEntities.MORGANITE.get(), EntityMorganite.registerAttributes().build());
 

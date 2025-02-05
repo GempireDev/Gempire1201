@@ -142,7 +142,6 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
     public static final EntityDataAccessor<Boolean> DISPLAY = SynchedEntityData.<Boolean>defineId(EntityGem.class, EntityDataSerializers.BOOLEAN);
 
 
-    public boolean isCut;
     public ArrayList<Ability> ABILITY_POWERS = new ArrayList<>();
     public ArrayList<UUID> OWNERS = new ArrayList<>();
     public UUID MASTER_OWNER;
@@ -158,8 +157,6 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
     public int initalSkinVariant = 0;
     public boolean setSkinVariantOnInitialSpawn = true;
 
-    public int areaCounter = 100;
-    public int maxAreaCounter = 100;
     public int focusCounter = 100;
     public int maxFocusCounter = 100;
     public int ticking;
@@ -173,7 +170,6 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
 
     public boolean isHostile;
 
-    public Item input;
     public int focusLevel = 2;
 
     public float rebelPoints = 0.1F;
@@ -191,9 +187,6 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
 
     public Player currentPlayer;
 
-    public static final SimpleCommandExceptionType LOCATE_FAILED_EXCEPTION = new SimpleCommandExceptionType(Component.translatable("commands.gempire.faillocate"));
-    public static final SimpleCommandExceptionType RECALL_FAILED_EXCEPTION = new SimpleCommandExceptionType(Component.translatable("commands.gempire.failrecall"));
-    public int maxStructureTime = 5 * 20;
     public int structureTime = 0;
     public ArrayList<String> structures = new ArrayList<>();
     public ArrayList<String> biomes = new ArrayList<>();
@@ -208,7 +201,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
     public LivingEntity enemy;
     public boolean poofed = false;
 
-    public EntityGem assignedOwner;
+
     private static final DynamicCommandExceptionType ERROR_STRUCTURE_INVALID = new DynamicCommandExceptionType((p_207534_) -> {
         return Component.translatable("commands.gempire.nounderstand", p_207534_);
     });
@@ -2688,6 +2681,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
 
     public void fuse(EntityGem other) {
         System.out.println("fusion attempt");
+        /*
         EntityFusion fusion = new EntityFusion(ModEntities.FUSION.get(), level());
         fusion.combineNBT(this.getPersistentData(), other.getPersistentData());
         fusion.setPos(this.position());
@@ -2699,7 +2693,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
             level().getPlayerByUUID(owner).sendSystemMessage(Component.literal(this.getName() + " and " + other.getName() + " fused to make " + fusion.getName()));
         }
         other.remove(RemovalReason.DISCARDED);
-        remove(RemovalReason.DISCARDED);
+        remove(RemovalReason.DISCARDED);*/
     }
 
     @Override

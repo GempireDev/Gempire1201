@@ -1,7 +1,6 @@
 package com.gempire.client.entity.model;
 
 import com.gempire.Gempire;
-import com.gempire.entities.bases.EntityFusion;
 import com.gempire.entities.bases.EntityGem;
 import com.google.common.collect.ImmutableList;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -19,7 +18,7 @@ import net.minecraft.world.entity.HumanoidArm;
  * Created using Tabula 8.0.0
  */
 
-public class ModelFusion<T extends EntityFusion> extends ModelFusionBase<T> {
+public class ModelFusion<T extends EntityGem> extends ModelFusionBase<T> {
     public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
             new ResourceLocation(Gempire.MODID, "ruby"), "main");
     public ModelPart head;

@@ -1,7 +1,6 @@
 package com.gempire.items;
 
 import com.gempire.Gempire;
-import com.gempire.entities.bases.EntityFusion;
 import com.gempire.entities.bases.EntityGem;
 import com.gempire.entities.bases.EntityStarterGem;
 import com.gempire.entities.gems.EntityPearl;
@@ -503,25 +502,6 @@ public class ItemGem extends Item {
         gem.writeCraft(tag);
         gem.writeScale(tag);
         gem.writeIDs(tag);
-        gem.writeColour(tag);
-        gem.writeVariant(tag);
-        gem.writeRebelColour(tag);
-        gem.writeRebelVariant(tag);
-        gem.writeFacetCut(tag);
-        gem.writeAbilityUtil(tag);
-        gem.writeUtil(tag);
-        ContainerHelper.saveAllItems(tag, gem.items);
-    }
-
-    public static void saveFusionData(ItemStack stack, EntityFusion gem) {
-        CompoundTag tag = stack.getOrCreateTag();
-        tag.putString("abilities", gem.getAbilities());
-        tag.putString("name", gem.getName().getString());
-        gem.writeCrackShatter(tag);
-        gem.writeOwners(tag);
-        gem.writeIDs(tag);
-        gem.writeCraft(tag);
-        gem.writeScale(tag);
         gem.writeColour(tag);
         gem.writeVariant(tag);
         gem.writeRebelColour(tag);

@@ -1,9 +1,7 @@
 package com.gempire.client.entity.render;
 
 import com.gempire.Gempire;
-import com.gempire.client.entity.model.ModelGildedHuntress;
 import com.gempire.client.entity.model.ModelHunter;
-import com.gempire.entities.bosses.prism.EntityGildedHuntress;
 import com.gempire.entities.other.EntityHunter;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;

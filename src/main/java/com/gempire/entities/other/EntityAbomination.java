@@ -96,8 +96,9 @@ public class EntityAbomination extends Monster implements GeoEntity {
     protected SoundEvent getDeathSound() {
         return ModSounds.ABOMINATION_DEATH.get();
     }
+
     public boolean checkSludged(LivingEntity entity) {
-        return ((EntityGem) entity).getSludgeAmount() >= 5;
+        return ((EntityGem) entity).getSludgeAmount() < 5;
     }
 
     @Override

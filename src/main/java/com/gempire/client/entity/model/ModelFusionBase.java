@@ -1,6 +1,5 @@
 package com.gempire.client.entity.model;
 
-import com.gempire.entities.bases.EntityFusion;
 import com.gempire.entities.bases.EntityGem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -9,7 +8,7 @@ import net.minecraft.client.model.ListModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.world.entity.HumanoidArm;
 
-public class ModelFusionBase<T extends EntityFusion> extends ListModel<T> implements ArmedModel {
+public class ModelFusionBase<T extends EntityGem> extends ListModel<T> implements ArmedModel {
 
     @Override
     public void setupAnim(T entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {

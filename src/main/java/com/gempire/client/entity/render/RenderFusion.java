@@ -4,7 +4,7 @@ import com.gempire.Gempire;
 import com.gempire.client.entity.model.ModelFusion;
 import com.gempire.client.entity.model.ModelFusion;
 import com.gempire.client.entity.render.layers.*;
-import com.gempire.entities.bases.EntityFusion;
+import com.gempire.entities.bases.EntityGem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
@@ -16,9 +16,9 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.ChatFormatting;
 import java.util.UUID;
 
-public class RenderFusion extends MobRenderer<EntityFusion, ModelFusion<EntityFusion>> {
+public class RenderFusion extends MobRenderer<EntityGem, ModelFusion<EntityGem>> {
 
-    public RenderFusion(EntityRendererProvider.Context renderManagerIn, ModelFusion<EntityFusion> baseModel) {
+    public RenderFusion(EntityRendererProvider.Context renderManagerIn, ModelFusion<EntityGem> baseModel) {
         super(renderManagerIn, baseModel, .25f);
         this.addLayer(new SkinLayer(this));
         this.addLayer(new FaceLayer(this));
@@ -31,17 +31,17 @@ public class RenderFusion extends MobRenderer<EntityFusion, ModelFusion<EntityFu
     }
 
     @Override
-    protected void scale(EntityFusion entitylivingbaseIn, PoseStack matrixStackIn, float partialTickTime) {
+    protected void scale(EntityGem entitylivingbaseIn, PoseStack matrixStackIn, float partialTickTime) {
         matrixStackIn.scale(entitylivingbaseIn.getXScale(), entitylivingbaseIn.getYScale(), entitylivingbaseIn.getZScale());
         super.scale(entitylivingbaseIn, matrixStackIn, partialTickTime);
     }
 
     @Override
-    public ResourceLocation getTextureLocation(EntityFusion entity) {
+    public ResourceLocation getTextureLocation(EntityGem entity) {
         return new ResourceLocation(Gempire.MODID+":textures/entity/fusion/blank.png");
     }
     @Override
-    protected void renderNameTag(EntityFusion entityIn, Component displayNameIn, PoseStack matrixStackIn, MultiBufferSource bufferIn, int packedLightIn) {
+    protected void renderNameTag(EntityGem entityIn, Component displayNameIn, PoseStack matrixStackIn, MultiBufferSource bufferIn, int packedLightIn) {
         if (entityIn.ASSIGNED_ID != 0) {
             matrixStackIn.translate(0.0D, (double) 3*(9.0F * 1.15F * 0.025F), 0.0D);
             if (entityIn.hasCustomName()) {

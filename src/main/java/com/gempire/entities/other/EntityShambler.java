@@ -97,7 +97,7 @@ public class EntityShambler extends Monster implements GeoEntity {
     }
 
     public boolean checkSludged(LivingEntity entity) {
-        return ((EntityGem) entity).getSludgeAmount() >= 5;
+        return ((EntityGem) entity).getSludgeAmount() < 5;
     }
 
     @Override

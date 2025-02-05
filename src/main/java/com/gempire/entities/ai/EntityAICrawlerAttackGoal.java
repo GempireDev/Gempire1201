@@ -2,6 +2,8 @@ package com.gempire.entities.ai;
 
 import com.gempire.entities.bases.EntityGem;
 import com.gempire.entities.other.EntityCrawler;
+import com.gempire.init.ModSounds;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
@@ -17,20 +19,12 @@ public class EntityAICrawlerAttackGoal extends MeleeAttackGoal {
 
     @Override
     protected void checkAndPerformAttack(LivingEntity pEnemy, double pDistToEnemySqr) {
-        if (pDistToEnemySqr <= this.getAttackReachSqr(pEnemy) && this.getTicksUntilNextAttack() <= 0) {
-            if(entity != null) {
-                if (pEnemy instanceof EntityGem) {
-                    if (((EntityGem) pEnemy).getSludgeAmount() < 5) {
-
-                    } else {
-                        stop();
-                    }
-                } else {
-
-                }
+        if (pDistToEnemySqr <= this.getAttackReachSqr(pEnemy) && this.getTicksUntilNextAttack() <= 0 && entity != null && pEnemy instanceof EntityGem) {
+            entity.level().playLocalSound(entity.getOnPos().above(), ModSounds.CRAWLER_ATTACK.get(), SoundSource.HOSTILE, 1.0F, 1.0F, false);
+            if (((EntityGem) pEnemy).getSludgeAmount() >= 5) {
+                stop();
             }
         }
-
         super.checkAndPerformAttack(pEnemy, pDistToEnemySqr);
     }
 

@@ -83,7 +83,6 @@ public class EntityAquamarine extends EntityGem implements FlyingAnimal {
         this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
         this.goalSelector.addGoal(7, new EntityAIFollowAssigned(this, 1.0D));
         this.goalSelector.addGoal(7, new EntityAIWander(this, 1.0D));
-        this.goalSelector.addGoal(4, new EntityAIExitHole(this, 1.0D));
         this.goalSelector.addGoal(6, new EntityAIStay(this, 1.0D));
         this.goalSelector.addGoal(7, new EntityAIFollowOwner(this, 1.0D));
         this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, EntityGem.class, 1, false, false, this::checkRebel));

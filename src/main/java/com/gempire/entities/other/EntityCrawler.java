@@ -93,7 +93,7 @@ public class EntityCrawler extends Monster implements GeoEntity {
     }
 
     public boolean checkSludged(LivingEntity entity) {
-        return ((EntityGem) entity).getSludgeAmount() >= 5;
+        return ((EntityGem) entity).getSludgeAmount() < 5;
     }
 
     @Override
@@ -105,4 +105,5 @@ public class EntityCrawler extends Monster implements GeoEntity {
     public int getCurrentSwingDuration() {
         return 8;
     }
+
 }

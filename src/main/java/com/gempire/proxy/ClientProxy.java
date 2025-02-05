@@ -105,7 +105,6 @@ public class ClientProxy {
         event.registerEntityRenderer(ModEntities.COBALT_GUARDIAN.get(), RenderCobaltGuardian::new);
         event.registerEntityRenderer(ModEntities.MANTASHARK.get(), RenderMantaShark::new);
         event.registerEntityRenderer(ModEntities.OPAL_MANTASHARK.get(), RenderOpalMantaShark::new);
-        event.registerEntityRenderer(ModEntities.FUSION.get(), m -> new RenderFusion(m, new ModelFusion<>(m.bakeLayer(ModelFusion.LAYER_LOCATION))));
         event.registerEntityRenderer(ModEntities.PEBBLE.get(), m -> new RenderPebble(m, new ModelPebble<>(m.bakeLayer(ModelPebble.LAYER_LOCATION_P))));
         event.registerEntityRenderer(ModEntities.MICA.get(), m -> new RenderMica(m, new ModelPebble<>(m.bakeLayer(ModelPebble.LAYER_LOCATION_M))));
         event.registerEntityRenderer(ModEntities.SHALE.get(), m -> new RenderShale(m, new ModelPebble<>(m.bakeLayer(ModelPebble.LAYER_LOCATION_S))));
@@ -149,7 +148,6 @@ public class ClientProxy {
 
         MenuScreens.register(ModContainers.INJECTOR_CONTAINER.get(), InjectorScreen::new);
         MenuScreens.register(ModContainers.GEM_UI_CONTAINER.get(), GemUIScreen::new);
-        MenuScreens.register(ModContainers.FUSION_UI_CONTAINER.get(), FusionUIScreen::new);
         MenuScreens.register(ModContainers.SHELL_CONTAINER.get(), ShellScreen::new);
         MenuScreens.register(ModContainers.INCUBATOR_CONTAINER.get(), IncubatorScreen::new);
         MenuScreens.register(ModContainers.BOARD_CONTAINER.get(), BoardScreen::new);
