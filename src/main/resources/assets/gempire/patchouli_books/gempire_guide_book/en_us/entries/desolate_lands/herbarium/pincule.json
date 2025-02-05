@@ -7,12 +7,19 @@
     {
       "type": "patchouli:spotlight",
       "title": "Pincule",
-      "item": "#gempire:pincule",
+      "item": "gempire:purple_pincule",
       "text": "A prickly purple pint-sized peculiar cactus. Found in the Abnormal Desert biome."
     },
     {
-      "type": "patchouli:text",
-      "text": "... however, there are rumors of fruiting variants somewhere in the desert. Perhaps someday I'll run across one."
+      "type": "patchouli:spotlight",
+      "item": "gempire:pink_pincule,gempire:orange_pincule,gempire:yellow_pincule,gempire:green_pincule,gempire:blue_pincule",
+      "text": "... and of course, their alternative funky fabulous flamboyant ferocious cousins can also be found in the Abnormal Desert."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Pincule Fruit",
+      "item": "gempire:pincule_fruit",
+      "text": "Did you know you can harvest a pincule's fruit with a pair of shears? Watch your fingers!"
     }
   ]
 }

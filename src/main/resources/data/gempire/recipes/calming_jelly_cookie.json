@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FSF",
+    "WFW",
+    "FSF"
+  ],
+  "key": {
+    "F": {
+      "item": "gempire:calming_jelly"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "count": 2,
+    "item": "gempire:calming_jelly_cookie"
+  }
+}

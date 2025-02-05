@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "FFF",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:bread"
+    },
+    "F": {
+      "item": "gempire:purple_crystal_apple"
+    }
+  },
+  "result": {
+    "count": 4,
+    "item": "gempire:purple_crystal_apple_toast"
+  }
+}

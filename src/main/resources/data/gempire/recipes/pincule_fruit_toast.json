@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "FFF",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:bread"
+    },
+    "F": {
+      "item": "gempire:pincule_fruit"
+    }
+  },
+  "result": {
+    "count": 4,
+    "item": "gempire:pincule_fruit_toast"
+  }
+}

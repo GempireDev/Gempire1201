@@ -13,18 +13,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Gempire.MODID);
 
-    /*public static final RegistryObject<Item> WARP_SEED = ITEMS.register("warp_seed", () ->
-            new ItemWarpSeed(new Item.Properties()REJUVENATOR.stacksTo(1)));
-
-    public static final RegistryObject<Item> WARP_CORE = ITEMS.register("warp_core", () ->
-            new BlockItem(
-                    ModBlocks.WARP_CORE.get(),
-                    new Item.Properties().tab(ModItemGroup.BLOCKS)
-            )
-    );
-
-     */
-
     public static final RegistryObject<Item> WARP_PAD = ITEMS.register("warp_pad", () ->
             new BlockItem(
                     ModBlocks.WARP_PAD.get(),
@@ -39,14 +27,6 @@ public class ModItems {
                     new Item.Properties()
             )
     );
-
-/*
-    public static final RegistryObject<Item> CRYSTAL_CHEST = ITEMS.register("crystal_chest", () ->
-            new BlockItem(
-                    ModBlocks.CRYSTAL_CHEST.get(),
-                    new Item.Properties().tab(ModItemGroup.BLOCKS)
-            )
-    );*/
 
     public static final RegistryObject<Item> ALIEN_FLOWER = ITEMS.register("alien_flower", () ->
             new BlockItem(ModBlocks.ALIEN_FLOWER.get(), new Item.Properties().food(ModFoods.ALIEN_FLOWER)));
@@ -1376,7 +1356,6 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_MANTAWING = ITEMS.register("raw_mantawing", () ->
             new Item(new Item.Properties().stacksTo(64).food(ModFoods.RAW_MANTAWING))
     );
-
     public static final RegistryObject<Item> COOKED_MANTAWING = ITEMS.register("cooked_mantawing", () ->
             new Item(new Item.Properties().stacksTo(64).food(ModFoods.COOKED_MANTAWING))
     );
@@ -1384,7 +1363,6 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_OPALIZED_MANTAWING = ITEMS.register("raw_opalized_mantawing", () ->
             new Item(new Item.Properties().stacksTo(64).food(ModFoods.RAW_OPALIZED_MANTAWING))
     );
-
     public static final RegistryObject<Item> COOKED_OPALIZED_MANTAWING = ITEMS.register("cooked_opalized_mantawing", () ->
             new Item(new Item.Properties().stacksTo(64).food(ModFoods.COOKED_OPALIZED_MANTAWING))
     );
@@ -1392,9 +1370,47 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_CRYSTAL_SHANK = ITEMS.register("raw_crystal_shank", () ->
             new Item(new Item.Properties().stacksTo(64).food(ModFoods.RAW_CRYSTAL_SHANK))
     );
-
     public static final RegistryObject<Item> COOKED_CRYSTAL_SHANK = ITEMS.register("cooked_crystal_shank", () ->
             new Item(new Item.Properties().stacksTo(64).food(ModFoods.COOKED_CRYSTAL_SHANK))
+    );
+
+    public static final RegistryObject<Item> BLUE_CRYSTAL_APPLE_TOAST = ITEMS.register("blue_crystal_apple_toast", () ->
+            new Item(new Item.Properties().stacksTo(64).food(ModFoods.BLUE_CRYSTAL_APPLE_TOAST))
+    );
+    public static final RegistryObject<Item> PINK_CRYSTAL_APPLE_TOAST = ITEMS.register("pink_crystal_apple_toast", () ->
+            new Item(new Item.Properties().stacksTo(64).food(ModFoods.PINK_CRYSTAL_APPLE_TOAST))
+    );
+    public static final RegistryObject<Item> PURPLE_CRYSTAL_APPLE_TOAST = ITEMS.register("purple_crystal_apple_toast", () ->
+            new Item(new Item.Properties().stacksTo(64).food(ModFoods.PURPLE_CRYSTAL_APPLE_TOAST))
+    );
+    public static final RegistryObject<Item> PINCULE_FRUIT_TOAST = ITEMS.register("pincule_fruit_toast", () ->
+            new Item(new Item.Properties().stacksTo(64).food(ModFoods.PINCULE_FRUIT_TOAST))
+    );
+    public static final RegistryObject<Item> STRAWBERRY_TOAST = ITEMS.register("strawberry_toast", () ->
+            new Item(new Item.Properties().stacksTo(64).food(ModFoods.STRAWBERRY_TOAST))
+    );
+
+    public static final RegistryObject<Item> CRYSTAL_SHANK_BREAD = ITEMS.register("crystal_shank_bread", () ->
+            new Item(new Item.Properties().stacksTo(64).food(ModFoods.CRYSTAL_SHANK_BREAD))
+    );
+    public static final RegistryObject<Item> MANTAWING_BREAD = ITEMS.register("mantawing_bread", () ->
+            new Item(new Item.Properties().stacksTo(64).food(ModFoods.MANTAWING_BREAD))
+    );
+    public static final RegistryObject<Item> OPALIZED_MANTAWING_BREAD = ITEMS.register("opalized_mantawing_bread", () ->
+            new Item(new Item.Properties().stacksTo(64).food(ModFoods.OPALIZED_MANTAWING_BREAD))
+    );
+
+    public static final RegistryObject<Item> SHADED_APPLE_COOKIE = ITEMS.register("shaded_apple_cookie", () ->
+            new Item(new Item.Properties().stacksTo(64).food(ModFoods.SHADED_APPLE_COOKIE))
+    );
+    public static final RegistryObject<Item> SHOCK_BERRY_COOKIE = ITEMS.register("shock_berry_cookie", () ->
+            new Item(new Item.Properties().stacksTo(64).food(ModFoods.SHOCK_BERRY_COOKIE))
+    );
+    public static final RegistryObject<Item> CALMING_JELLY_COOKIE = ITEMS.register("calming_jelly_cookie", () ->
+            new Item(new Item.Properties().stacksTo(64).food(ModFoods.CALMING_JELLY_COOKIE))
+    );
+    public static final RegistryObject<Item> ALIEN_FLOWER_COOKIE = ITEMS.register("alien_flower_cookie", () ->
+            new Item(new Item.Properties().stacksTo(64).food(ModFoods.ALIEN_FLOWER_COOKIE))
     );
 
 
@@ -1980,8 +1996,6 @@ public class ModItems {
     public static final RegistryObject<Item> ASTER_HANGING_SIGN = ITEMS.register("aster_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ASTER_HANGING_SIGN.get(), ModBlocks.ASTER_WALL_HANGING_SIGN.get(),
                     new Item.Properties().stacksTo(16)));
-
-
 
     public static final RegistryObject<Item> PINK_ESSENCE_BUCKET = ITEMS.register("pink_essence_bucket", () ->
             new BucketItem(

@@ -103,6 +103,21 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SPODUMENE_PIECE);
         simpleItem(ModItems.PINCULE_FRUIT);
 
+        simpleItem(ModItems.BLUE_CRYSTAL_APPLE_TOAST);
+        simpleItem(ModItems.PINK_CRYSTAL_APPLE_TOAST);
+        simpleItem(ModItems.PURPLE_CRYSTAL_APPLE_TOAST);
+        simpleItem(ModItems.PINCULE_FRUIT_TOAST);
+        simpleItem(ModItems.STRAWBERRY_TOAST);
+
+        simpleItem(ModItems.CRYSTAL_SHANK_BREAD);
+        simpleItem(ModItems.MANTAWING_BREAD);
+        simpleItem(ModItems.OPALIZED_MANTAWING_BREAD);
+
+        simpleItem(ModItems.SHADED_APPLE_COOKIE);
+        simpleItem(ModItems.SHOCK_BERRY_COOKIE);
+        simpleItem(ModItems.CALMING_JELLY_COOKIE);
+        simpleItem(ModItems.ALIEN_FLOWER_COOKIE);
+
         simpleItem(ModItems.ACID_SPIT);
         simpleItem(ModItems.GUARDIAN_ORB);
         simpleItem(ModItems.WATER_ORB);

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "MBM",
+    "   "
+  ],
+  "key": {
+    "M": {
+      "item": "gempire:cooked_opalized_mantawing"
+    },
+    "B": {
+      "item": "minecraft:bread"
+    }
+  },
+  "result": {
+    "count": 2,
+    "item": "gempire:opalized_mantawing_bread"
+  }
+}

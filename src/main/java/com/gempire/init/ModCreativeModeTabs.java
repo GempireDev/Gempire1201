@@ -326,6 +326,21 @@ public class ModCreativeModeTabs {
                 populator.accept(ModItems.RAW_CRYSTAL_SHANK.get());
                 populator.accept(ModItems.COOKED_CRYSTAL_SHANK.get());
 
+                populator.accept(ModItems.BLUE_CRYSTAL_APPLE_TOAST.get());
+                populator.accept(ModItems.PINK_CRYSTAL_APPLE_TOAST.get());
+                populator.accept(ModItems.PURPLE_CRYSTAL_APPLE_TOAST.get());
+                populator.accept(ModItems.PINCULE_FRUIT_TOAST.get());
+                populator.accept(ModItems.STRAWBERRY_TOAST.get());
+
+                populator.accept(ModItems.CRYSTAL_SHANK_BREAD.get());
+                populator.accept(ModItems.MANTAWING_BREAD.get());
+                populator.accept(ModItems.OPALIZED_MANTAWING_BREAD.get());
+
+                populator.accept(ModItems.SHADED_APPLE_COOKIE.get());
+                populator.accept(ModItems.SHOCK_BERRY_COOKIE.get());
+                populator.accept(ModItems.CALMING_JELLY_COOKIE.get());
+                populator.accept(ModItems.ALIEN_FLOWER_COOKIE.get());
+
                 populator.accept(ModItems.REMNANTS_MUSIC_DISC.get());
                 populator.accept(ModItems.FRAGMENTS_MUSIC_DISC.get());
 
