@@ -1360,52 +1360,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
     public boolean hurt(DamageSource source, float amount){
         if (!this.level().isClientSide) {
             if (source.getEntity() instanceof LivingEntity && !(source.getEntity() instanceof Player)) {
-                if (((LivingEntity) source.getEntity()).getItemBySlot(EquipmentSlot.MAINHAND).getItem() instanceof DestabBase) {
-                    this.hurt(this.damageSources().magic(), 20*getMaxHealth());
-                    if (((LivingEntity) source.getEntity()).getItemBySlot(EquipmentSlot.MAINHAND).getItem() instanceof ItemBlueRejuvenator) {
-                        this.setAbilities(this.generateAbilities());
-                        if (this instanceof EntityZircon)
-                        {
-                            if (this.isPrimary()) {
-                                ((EntityZircon) this).setEnchantPage(RandomSource.create().nextInt(ModEnchants.GEMPIRE_ENCHANTMENTS.size()));
-                            } else {
-                                ((EntityZircon) this).setEnchantPage(RandomSource.create().nextInt(ModEnchants.VANILLA_ENCHANTMENTS.size()));
-                            }
-                        }
-                        else if (this instanceof EntityTourmaline) {
-                            ((EntityTourmaline) this).setCrops(((EntityTourmaline) this).generateCrops());
-                        }
-                        else if (this instanceof EntityPeridot) {
-                            ((EntityPeridot) this).generateMaterials();
-                        }
-                        this.rebelPoints += 2.5f;
-                    } else if (((LivingEntity) source.getEntity()).getItemBySlot(EquipmentSlot.MAINHAND).getItem() instanceof ItemPinkRejuvenator) {
-                        this.resetOwners();
-                        this.setRebelled(false);
-                        this.rebelPoints = 1F;
-                    } else if (((LivingEntity) source.getEntity()).getItemBySlot(EquipmentSlot.MAINHAND).getItem() instanceof ItemYellowRejuvenator) {
-                        if (!this.getRebelled()) {
-                            this.setHairVariant(this.generateHairVariant());
-                            this.setOutfitVariant(this.generateOutfitVariant());
-                            this.setInsigniaVariant(this.generateInsigniaVariant());
-                            this.rebelPoints += 0.5F;
-                        }
-                    } else if (((LivingEntity) source.getEntity()).getItemBySlot(EquipmentSlot.MAINHAND).getItem() instanceof ItemWhiteRejuvenator) {
-                        this.setSkinColor(this.generatePaletteColor(PaletteType.SKIN));
-                        this.setHairColor(this.generatePaletteColor(PaletteType.HAIR));
-                        this.setGemColor(this.generatePaletteColor(PaletteType.GEM));
-                        if (this.hasMarkings())
-                        {
-                            this.setMarking2Color(this.generatePaletteColor(PaletteType.MARKINGS_2));
-                        }
-                        if (this.hasMarkings())
-                        {
-                            this.setMarkingColor(this.generatePaletteColor(PaletteType.MARKINGS));
-                        }
-                        this.rebelPoints += 0.5F;
-                    }
-                    return super.hurt(source, amount);
-                } else if (((LivingEntity) source.getEntity()).getItemBySlot(EquipmentSlot.MAINHAND).getItem() instanceof ItemShatterer) {
+                if (((LivingEntity) source.getEntity()).getItemBySlot(EquipmentSlot.MAINHAND).getItem() instanceof ItemShatterer) {
                     this.setShatter(true);
                     this.hurt(this.damageSources().magic(), 20*getMaxHealth());
                     for (UUID owner : OWNERS) {

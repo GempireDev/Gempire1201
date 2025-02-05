@@ -13,7 +13,6 @@ import net.minecraft.network.chat.Component;
 
 public class ShellScreen extends AbstractContainerScreen<ShellContainer> {
     public static final ResourceLocation GUI = new ResourceLocation("gempire:textures/gui/base_shell.png");
-    public static final ResourceLocation LIGHT = new ResourceLocation("gempire:textures/gui/shell_light.png");
 
     public ShellScreen(ShellContainer screenContainer, Inventory inv, Component titleIn) {
         super(screenContainer, inv, titleIn);

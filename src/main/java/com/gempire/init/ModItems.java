@@ -3523,13 +3523,13 @@ public class ModItems {
             new ItemDestabilizer(new Item.Properties().stacksTo(1).durability(25)));
 
    public static final RegistryObject<Item> PINK_REJUVENATOR = ITEMS.register("pink_rejuvenator", () ->
-            new ItemPinkRejuvenator(new Item.Properties().stacksTo(1).durability(20)));
+            new ItemRejuvenator(new Item.Properties().stacksTo(1).durability(20)));
     public static final RegistryObject<Item> YELLOW_REJUVENATOR = ITEMS.register("yellow_rejuvenator", () ->
-            new ItemYellowRejuvenator(new Item.Properties().stacksTo(1).durability(25)));
+            new ItemRejuvenator(new Item.Properties().stacksTo(1).durability(25)));
     public static final RegistryObject<Item> WHITE_REJUVENATOR = ITEMS.register("white_rejuvenator", () ->
-            new ItemWhiteRejuvenator(new Item.Properties().stacksTo(1).durability(25)));
+            new ItemRejuvenator(new Item.Properties().stacksTo(1).durability(25)));
     public static final RegistryObject<Item> BLUE_REJUVENATOR = ITEMS.register("blue_rejuvenator", () ->
-            new ItemBlueRejuvenator(new Item.Properties().stacksTo(1).durability(15)));
+            new ItemRejuvenator(new Item.Properties().stacksTo(1).durability(15)));
 
     public static final RegistryObject<Item> REBEL_STICK = ITEMS.register("rebel_stick", () ->
             new ItemRebelStick(new Item.Properties().stacksTo(1)));

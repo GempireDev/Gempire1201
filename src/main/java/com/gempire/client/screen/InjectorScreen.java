@@ -24,9 +24,6 @@ public class InjectorScreen extends AbstractContainerScreen<InjectorContainer> {
     public static final ResourceLocation FLUID_LINES = new ResourceLocation("gempire:textures/gui/fluid_lines.png");
     public static final ResourceLocation TANK_OPEN = new ResourceLocation("gempire:textures/gui/tank_open.png");
     public static final ResourceLocation BUTTON_TEXTURE = new ResourceLocation("gempire:textures/gui/injector_gui_fluid_button.png");
-    public static final ResourceLocation HALO_GUI_BLUE = new ResourceLocation("gempire:textures/gui/injector_gui_fluid_overlay_blue.png");
-    public static final ResourceLocation HALO_GUI_YELLOW = new ResourceLocation("gempire:textures/gui/injector_gui_fluid_overlay_yellow.png");
-    public static final ResourceLocation HALO_GUI_WHITE = new ResourceLocation("gempire:textures/gui/injector_gui_fluid_overlay_white.png");
 
     public InjectorScreen(InjectorContainer screenContainer, Inventory inv, Component titleIn) {
         super(screenContainer, inv, titleIn);

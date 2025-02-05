@@ -1,6 +1,5 @@
 package com.gempire.fluids;
 
-import com.gempire.blocks.PinkEssenceBlock;
 import com.gempire.init.ModBlocks;
 import com.gempire.init.ModFluids;
 import com.gempire.init.ModItems;
@@ -10,32 +9,22 @@ import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.tags.FluidTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.material.*;
-import net.minecraftforge.common.ForgeMod;
-import net.minecraftforge.fluids.FluidInteractionRegistry;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 
 import javax.annotation.Nullable;
 import java.util.Optional;
-import java.util.function.Supplier;
-
-import static net.minecraftforge.fluids.FluidInteractionRegistry.addInteraction;
 
 public abstract class PinkEssenceFluid extends ForgeFlowingFluid {
     protected PinkEssenceFluid(Properties properties) {

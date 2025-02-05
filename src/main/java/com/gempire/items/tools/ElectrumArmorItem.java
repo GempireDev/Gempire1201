@@ -18,7 +18,7 @@ public class ElectrumArmorItem extends ArmorItem {
     }
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ModArmorMaterials.ANATASE, new MobEffectInstance(ModEffects.SHOCK_RESISTANCE.get(), 200, 1, false, false, true)).build();
+                    .put(ModArmorMaterials.ELECTRUM, new MobEffectInstance(ModEffects.SHOCK_RESISTANCE.get(), 200, 1, false, false, true)).build();
 
 
     @Override

@@ -18,7 +18,7 @@ public class PlatinumArmorItem extends ArmorItem {
     }
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ModArmorMaterials.ANATASE, new MobEffectInstance(ModEffects.SHADE.get(), 200, 1, false, false, true)).build();
+                    .put(ModArmorMaterials.PLATINUM, new MobEffectInstance(ModEffects.SHADE.get(), 200, 1, false, false, true)).build();
 
 
     @Override

@@ -33,29 +33,16 @@ public class ModBlocks {
             )
     );
     public static final RegistryObject<Block> BLUE_ALTAR = BLOCKS.register("blue_altar", () ->
-            new BlueAltarBlock(BlockBehaviour.Properties.copy(Blocks.END_PORTAL_FRAME).noOcclusion()));
+            new AltarBlock(BlockBehaviour.Properties.copy(Blocks.END_PORTAL_FRAME).noOcclusion()));
 
     public static final RegistryObject<Block> YELLOW_ALTAR = BLOCKS.register("yellow_altar", () ->
-            new YellowAltarBlock(BlockBehaviour.Properties.copy(Blocks.END_PORTAL_FRAME).noOcclusion()));
+            new AltarBlock(BlockBehaviour.Properties.copy(Blocks.END_PORTAL_FRAME).noOcclusion()));
 
     public static final RegistryObject<Block> PINK_ALTAR = BLOCKS.register("pink_altar", () ->
-            new PinkAltarBlock(BlockBehaviour.Properties.copy(Blocks.END_PORTAL_FRAME).noOcclusion()));
+            new AltarBlock(BlockBehaviour.Properties.copy(Blocks.END_PORTAL_FRAME).noOcclusion()));
 
     public static final RegistryObject<Block> WHITE_ALTAR = BLOCKS.register("white_altar", () ->
-            new WhiteAltarBlock(BlockBehaviour.Properties.copy(Blocks.END_PORTAL_FRAME).noOcclusion()));
-/*
-    public static final RegistryObject<Block> PRISMATIC_BLUE_ALTAR = BLOCKS.register("prismatic_blue_altar", () ->
-            new PrismBlueAltarBlock(BlockBehaviour.Properties.of().pushReaction(PushReaction.BLOCK)));
-
-    public static final RegistryObject<Block> PRISMATIC_YELLOW_ALTAR = BLOCKS.register("prismatic_yellow_altar", () ->
-            new PrismYellowAltarBlock(BlockBehaviour.Properties.of().pushReaction(PushReaction.BLOCK)));
-
-    public static final RegistryObject<Block> PRISMATIC_PINK_ALTAR = BLOCKS.register("prismatic_pink_altar", () ->
-            new PrismPinkAltarBlock(BlockBehaviour.Properties.of().pushReaction(PushReaction.BLOCK)));
-
-    public static final RegistryObject<Block> PRISMATIC_WHITE_ALTAR = BLOCKS.register("prismatic_white_altar", () ->
-            new PrismWhiteAltarBlock(BlockBehaviour.Properties.of().pushReaction(PushReaction.BLOCK)));
-*/
+            new AltarBlock(BlockBehaviour.Properties.copy(Blocks.END_PORTAL_FRAME).noOcclusion()));
 
     public static final RegistryObject<Block> COBALT_KELP = BLOCKS.register("cobalt_kelp", () ->
             new DesolateKelpBlock(BlockBehaviour.Properties.copy(Blocks.KELP)));
@@ -220,16 +207,16 @@ public class ModBlocks {
             new Block(BlockBehaviour.Properties.copy(Blocks.END_PORTAL_FRAME)));
 
     public static final RegistryObject<LiquidBlock> PINK_ESSENCE_BLOCK = BLOCKS.register("pink_essence_block", () ->
-            new PinkEssenceBlock(ModFluids.PINK_ESSENCE, BlockBehaviour.Properties.copy(Blocks.WATER)));
+            new EssenceBlock(ModFluids.PINK_ESSENCE, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
     public static final RegistryObject<LiquidBlock> BLUE_ESSENCE_BLOCK = BLOCKS.register("blue_essence_block", () ->
-            new BlueEssenceBlock(ModFluids.BLUE_ESSENCE, BlockBehaviour.Properties.copy(Blocks.WATER)));
+            new EssenceBlock(ModFluids.BLUE_ESSENCE, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
     public static final RegistryObject<LiquidBlock> YELLOW_ESSENCE_BLOCK = BLOCKS.register("yellow_essence_block", () ->
-            new YellowEssenceBlock(ModFluids.YELLOW_ESSENCE, BlockBehaviour.Properties.copy(Blocks.WATER)));
+            new EssenceBlock(ModFluids.YELLOW_ESSENCE, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
     public static final RegistryObject<LiquidBlock> WHITE_ESSENCE_BLOCK = BLOCKS.register("white_essence_block", () ->
-            new WhiteEssenceBlock(ModFluids.WHITE_ESSENCE, BlockBehaviour.Properties.copy(Blocks.WATER)));
+            new EssenceBlock(ModFluids.WHITE_ESSENCE, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
     public static final RegistryObject<Block> CONGEALED_WHITE_ESSENCE_BLOCK = BLOCKS.register("congealed_white_essence_block", () ->
             new SlimeBlock(BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK)));
