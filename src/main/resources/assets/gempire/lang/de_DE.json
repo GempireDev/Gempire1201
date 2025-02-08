@@ -1,6 +1,6 @@
 {
   "block.gempire.drained_purple_soil": "Drained Purple Soil",
-  "block.gempire.drained_purple_sand": "Drained Purple Sand",
+  "block.gempire.drained_purple_sand": "Entwässerter lila Sand",
   "block.gempire.drained_purple_stone": "Drained Purple Stone",
   "block.gempire.drained_purple_stone_2": "Drained Purple Stone",
   "block.gempire.drained_purple_stone_bands": "Drained Banded Purple Stone",
@@ -48,7 +48,7 @@
   "block.gempire.drained_yellow_stone": "Drained Yellow Stone",
   "block.gempire.drained_yellow_stone_2": "Drained Yellow Stone",
   "block.gempire.drained_yellow_stone_bands": "Drained Banded Yellow Stone",
-  "block.gempire.drained_yellow_stone_dark_stairs": "Drained Yellow Stone Stairs",
+  "block.gempire.drained_yellow_stone_dark_stairs": "Gestreifte Entwässerte gelbe Steintreppe",
   "block.gempire.drained_yellow_stone_dark_slab": "Drained Yellow Stone Slab",
   "block.gempire.drained_yellow_stone_light_stairs": "Drained Yellow Stone Stairs",
   "block.gempire.drained_yellow_stone_light_slab": "Drained Yellow Stone Slab",
