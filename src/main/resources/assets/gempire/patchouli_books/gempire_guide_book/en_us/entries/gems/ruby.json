@@ -21,11 +21,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)Netherite Ingot"
+      "text": "$(l)Injection Trigger Item$() $(br)$(li)Magma Block"
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Netherrack$(li)Iron Ore"
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Netherrack$(li)Raw Iron"
     }
   ]
 }

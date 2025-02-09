@@ -13,7 +13,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "A bulky smithing gem, give her a piece of Gem Alloy and she'll smelt it into a Prismatic Ingot.$(br2)Can also upgrade items?..."
+      "text": "A bulky smithing gem, give her a piece of Gem Alloy and she'll smelt it into a Prismatic Ingot.$(br2)Can also upgrade tools for you."
     },
     {
       "type": "patchouli:text",
@@ -25,7 +25,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)Netherite Sword"
+      "text": "$(l)Injection Trigger Item$() $(br)$(li)Block of Prismatic Metal"
     },
     {
       "type": "patchouli:text",

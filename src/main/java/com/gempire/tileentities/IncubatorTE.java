@@ -511,7 +511,7 @@ public class IncubatorTE extends BaseContainerBlockEntity implements MenuProvide
         quartz.put(Items.QUARTZ_BLOCK, 4);
 
         ruby.put(Items.NETHERRACK, 1);
-        ruby.put(Items.IRON_ORE, 4);
+        ruby.put(Items.RAW_IRON, 4);
 
         rutile.put(Items.RAW_COPPER, 1);
         rutile.put(Items.REDSTONE, 2);
