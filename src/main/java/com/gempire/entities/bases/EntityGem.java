@@ -6,10 +6,6 @@ import com.gempire.entities.abilities.*;
 import com.gempire.entities.abilities.base.Ability;
 import com.gempire.entities.abilities.interfaces.*;
 import com.gempire.entities.gems.*;
-import com.gempire.entities.gems.starter.EntityMica;
-import com.gempire.entities.gems.starter.EntityNacre;
-import com.gempire.entities.gems.starter.EntityPebble;
-import com.gempire.entities.gems.starter.EntityShale;
 import com.gempire.entities.other.EntityAbomination;
 import com.gempire.entities.other.EntityCrawler;
 import com.gempire.entities.other.EntityShambler;
@@ -41,7 +37,6 @@ import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.StructureTags;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.*;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
@@ -79,7 +74,6 @@ import net.minecraftforge.registries.RegistryObject;
 
 import javax.annotation.Nullable;
 import javax.imageio.ImageIO;
-import javax.print.DocFlavor;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.*;
@@ -140,7 +134,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
     public static final EntityDataAccessor<Integer> GEM_ID = SynchedEntityData.defineId(EntityGem.class, EntityDataSerializers.INT);
 
     public static final EntityDataAccessor<Boolean> DISPLAY = SynchedEntityData.<Boolean>defineId(EntityGem.class, EntityDataSerializers.BOOLEAN);
-
+    public boolean poofed = false;
 
     public ArrayList<Ability> ABILITY_POWERS = new ArrayList<>();
     public ArrayList<UUID> OWNERS = new ArrayList<>();
@@ -149,6 +143,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
     public int ASSIGNED_ID;
     public BlockPos GUARD_POS;
     public ArrayList<IIdleAbility> idlePowers = new ArrayList<>();
+    public ArrayList<IPhysicalAbility> physicalPowers = new ArrayList<>();
     private final ItemBasedSteering booster = new ItemBasedSteering(this.entityData, BOOST_TIME, SADDLED);
     public byte movementType = 1;
     public byte emotionMeter = 0;
@@ -199,7 +194,6 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
     public BlockPos stopGoalsPos;
     public boolean enemyDying;
     public LivingEntity enemy;
-    public boolean poofed = false;
 
 
     private static final DynamicCommandExceptionType ERROR_STRUCTURE_INVALID = new DynamicCommandExceptionType((p_207534_) -> {
@@ -326,6 +320,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         this.rebelTicks = 1;
         //this.generateScoutList();
         this.idlePowers = this.generateIdlePowers();
+        this.physicalPowers = this.generatePhysicalPowers();
         if (this.spawnGem != null) this.spawnGem.remove(RemovalReason.DISCARDED);
         ItemStack stack = new ItemStack(this.getGemItem());
         ItemGem.saveData(stack, this);
@@ -559,6 +554,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         setEmotional(Boolean.parseBoolean(strings[4]));
         focusLevel = Integer.parseInt(strings[5]);
         this.idlePowers = this.generateIdlePowers();
+        this.physicalPowers = this.generatePhysicalPowers();
         this.addAbilityGoals();
     }
 
@@ -797,6 +793,9 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         }
         if (this.canWalkOnFluids()) this.adjustForFluids();
         for (IIdleAbility power : this.getIdlePowers()) {
+            if (this.focusCheck()) power.execute();
+        }
+        for (IPhysicalAbility power : this.getPhysicalPowers()) {
             if (this.focusCheck()) power.execute();
         }
         if (this.isSunBurnTick()) {
@@ -1329,9 +1328,14 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
             this.navigation.stop();
             setFollow(player.getUUID());
             System.out.println("Assigned ID " + ASSIGNED_ID);
+            System.out.println("has physical "+!getPhysicalPowers().isEmpty());
+            int maxMovement = 2;
+            if  (ASSIGNED_ID != 0) maxMovement = 3;
+            if (!getPhysicalPowers().isEmpty()) maxMovement = 4;
             this.GUARD_POS = this.getOnPos().above();
-            if (ASSIGNED_ID != 0 ? this.getMovementType() < 3 : this.getMovementType() < 2) {
-                this.addMovementType(1);
+            if (this.getMovementType() < maxMovement) {
+                if (getMovementType() == 2 && !getPhysicalPowers().isEmpty() && ASSIGNED_ID == 0) addMovementType(2);
+                else this.addMovementType(1);
                 switch (this.getMovementType()) {
                     case 1 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will wander around"));
                     case 2 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now follow you"));
@@ -1339,7 +1343,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
                     case 4 -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now perform tasks"));
                     default -> player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now stay put"));
                 }
-            } else if (ASSIGNED_ID != 0 ? this.getMovementType() == 3 : this.getMovementType() == 2) {
+            } else if (this.getMovementType() == maxMovement) {
                 this.setMovementType((byte) 0);
                 player.sendSystemMessage(Component.translatable(this.getName().getString() + " will now stay put"));
             } else if (ASSIGNED_ID == 0 && this.getMovementType() == 3) {
@@ -1383,15 +1387,14 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
                 }
             }
             int roundAmount = (int) amount;
-            if (roundAmount > 30) roundAmount = 30;
-            System.out.println("rounded "+roundAmount);
-            if (!source.is(DamageTypes.MAGIC)) {
+            if (roundAmount > 30) roundAmount = 30;if (!source.is(DamageTypes.MAGIC)) {
                 if (source.is(DamageTypeTags.IS_EXPLOSION)) {
-                    if ((double)roundAmount - getHealth() > ((hardness / 2) + 0.5) && (this.random.nextInt(shatterChance / 2) == 1)) {
+                    if ((double)roundAmount - getHealth() > ((hardness / 2) + 0.5) && (this.random.nextInt(shatterChance / 2) == 1) && !poofed) {
                         setShatter(true);
                     }
-                } else if (!(source.getEntity() instanceof Player)) {
-                    if (roundAmount > hardness*2 && !poofed) {
+                } else if (!(source.getEntity() instanceof Player) && !poofed) {
+                    System.out.println("rounded "+roundAmount);
+                    if (roundAmount > hardness*2) {
                         float excess = ((float)roundAmount-hardness) / 2;
                         float shatterChancef = shatterChance;
                         float crackChancef = crackChance;
@@ -1476,7 +1479,6 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
                     setSludgeAmount(getSludgeAmount() + 1);
                 }
         }
-        poofed = false;
         return super.hurt(source, amount);
     }
 
@@ -2408,11 +2410,25 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         return this.idlePowers;
     }
 
+    public ArrayList<IPhysicalAbility> getPhysicalPowers(){
+        return this.physicalPowers;
+    }
+
     public ArrayList<IIdleAbility> generateIdlePowers(){
         ArrayList<IIdleAbility> powers = new ArrayList<>();
         for(Ability ability : this.getAbilityPowers()){
             if(ability instanceof IIdleAbility){
                 powers.add((IIdleAbility) ability);
+            }
+        }
+        return powers;
+    }
+
+    public ArrayList<IPhysicalAbility> generatePhysicalPowers(){
+        ArrayList<IPhysicalAbility> powers = new ArrayList<>();
+        for(Ability ability : this.getAbilityPowers()){
+            if(ability instanceof IPhysicalAbility){
+                powers.add((IPhysicalAbility) ability);
             }
         }
         return powers;

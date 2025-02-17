@@ -13,7 +13,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "A farmer gem that tends to crops in a certain radius around her.$(br2)Can also build a farm by putting a hoe in her hand and supplying her with 3 stacks of dirt, 4 oak logs, 56 oak planks, and 2 water buckets in her inventory. Set her to 'stay' and use /buildfarm."
+      "text": "A farmer gem that tends to crops in a certain radius around her.$(br2)Can also build a farm by putting a hoe in her hand and supplying her with 3 stacks of dirt, 4 oak logs, 56 oak planks, and 4 water buckets in her inventory. Set her to 'stay' and use /buildfarm."
     },
     {
       "type": "patchouli:text",

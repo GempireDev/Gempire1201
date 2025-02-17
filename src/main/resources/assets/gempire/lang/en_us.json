@@ -57,12 +57,10 @@
   "block.gempire.drained_ice": "Black Ice",
   "block.gempire.drained_log": "Rough Carbonite",
   "block.gempire.drained_log_cracked": "Rough Cracked Carbonite",
-
   "block.gempire.primed_ice": "Primed Ice",
   "block.gempire.primed_packed_ice": "Primed Packed Ice",
   "block.gempire.primed_blue_ice": "Primed Blue Ice",
   "block.gempire.primed_drained_ice": "Primed Black Ice",
-
   "block.gempire.drained_blue_polished_stone_dark": "Drained Blue Polished Stone",
   "block.gempire.drained_blue_polished_stone_dark_stairs": "Drained Blue Polished Stone Stairs",
   "block.gempire.drained_blue_polished_stone_dark_slab": "Drained Blue Polished Stone Slab",
@@ -91,7 +89,6 @@
   "block.gempire.drained_blue_glass": "Drained Blue Glass",
   "block.gempire.drained_blue_glass_pane": "Drained Blue Glass Pane",
   "block.gempire.drained_blue_glazed_tile": "Drained Blue Glazed Tiles",
-
   "block.gempire.drained_grey_polished_stone_dark": "Drained Gray Polished Stone",
   "block.gempire.drained_grey_polished_stone_dark_stairs": "Drained Gray Polished Stone Stairs",
   "block.gempire.drained_grey_polished_stone_dark_slab": "Drained Gray Polished Stone Slab",
@@ -120,7 +117,6 @@
   "block.gempire.drained_grey_glass": "Drained Gray Glass",
   "block.gempire.drained_grey_glass_pane": "Drained Gray Glass Pane",
   "block.gempire.drained_grey_glazed_tile": "Drained Gray Glazed Tiles",
-
   "block.gempire.drained_purple_polished_stone_dark": "Drained Purple Polished Stone",
   "block.gempire.drained_purple_polished_stone_dark_stairs": "Drained Purple Polished Stone Stairs",
   "block.gempire.drained_purple_polished_stone_dark_slab": "Drained Purple Polished Stone Slab",
@@ -149,7 +145,6 @@
   "block.gempire.drained_purple_glass": "Drained Purple Glass",
   "block.gempire.drained_purple_glass_pane": "Drained Purple Glass Pane",
   "block.gempire.drained_purple_glazed_tile": "Drained Purple Glazed Tiles",
-
   "block.gempire.drained_red_polished_stone_dark": "Drained Red Polished Stone",
   "block.gempire.drained_red_polished_stone_dark_stairs": "Drained Red Polished Stone Stairs",
   "block.gempire.drained_red_polished_stone_dark_slab": "Drained Red Polished Stone Slab",
@@ -178,7 +173,6 @@
   "block.gempire.drained_red_glass": "Drained Red Glass",
   "block.gempire.drained_red_glass_pane": "Drained Red Glass Pane",
   "block.gempire.drained_red_glazed_tile": "Drained Red Glazed Tiles",
-
   "block.gempire.drained_yellow_polished_stone_dark": "Drained Yellow Polished Stone",
   "block.gempire.drained_yellow_polished_stone_dark_stairs": "Drained Yellow Polished Stone Stairs",
   "block.gempire.drained_yellow_polished_stone_dark_slab": "Drained Yellow Polished Stone Slab",
@@ -207,7 +201,6 @@
   "block.gempire.drained_yellow_glass": "Drained Yellow Glass",
   "block.gempire.drained_yellow_glass_pane": "Drained Yellow Glass Pane",
   "block.gempire.drained_yellow_glazed_tile": "Drained Yellow Glazed Tiles",
-
   "block.gempire.ruined_marble_block": "Ancient Marble Block",
   "block.gempire.ruined_marble_brick": "Ancient Marble Bricks",
   "block.gempire.ruined_marble_pillar": "Ancient Marble Pillar",
@@ -217,7 +210,6 @@
   "block.gempire.ruined_marble_slab": "Ancient Marble Slab",
   "block.gempire.smooth_ruined_marble_stairs": "Ancient Smooth Marble Stairs",
   "block.gempire.ruined_marble_stairs": "Ancient Marble Stairs",
-
   "block.gempire.tungsten_ore": "Tungsten Ore",
   "block.gempire.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
   "block.gempire.pegmatite_tungsten_ore": "Pegmatite Tungsten Ore",
@@ -226,7 +218,6 @@
   "item.gempire.tungsten_ingot": "Tungsten Ingot",
   "item.gempire.raw_tungsten": "Raw Tungsten",
   "item.gempire.tungsten_nugget": "Tungsten Nugget",
-
   "block.gempire.thulite_ore": "Thulite Ore",
   "block.gempire.thulite_block": "Thulite Block",
   "block.gempire.raw_thulite_block": "Raw Thulite Block",
@@ -235,34 +226,29 @@
   "item.gempire.thulite_ingot": "Thulite Ingot",
   "item.gempire.raw_thulite": "Raw Thulite",
   "item.gempire.thulite_nugget": "Thulite Nugget",
-
   "block.gempire.anatase_ore": "Anatase Ore",
   "block.gempire.anatase_block": "Anatase Block",
   "block.gempire.raw_anatase_block": "Raw Anatase Block",
   "item.gempire.anatase_ingot": "Anatase Ingot",
   "item.gempire.raw_anatase": "Raw Anatase",
   "item.gempire.anatase_nugget": "Anatase Nugget",
-
   "block.gempire.electrum_ore": "Electrum Ore",
   "block.gempire.electrum_block": "Electrum Block",
   "block.gempire.raw_electrum_block": "Raw Electrum Block",
   "item.gempire.electrum_ingot": "Electrum Ingot",
   "item.gempire.raw_electrum": "Raw Electrum",
   "item.gempire.electrum_nugget": "Electrum Nugget",
-
   "block.gempire.platinum_ore": "Platinum Ore",
   "block.gempire.platinum_block": "Platinum Block",
   "block.gempire.raw_platinum_block": "Raw Platinum Block",
   "item.gempire.platinum_ingot": "Platinum Ingot",
   "item.gempire.raw_platinum": "Raw Platinum",
   "item.gempire.platinum_nugget": "Platinum Nugget",
-
   "block.gempire.pyrite_ore": "Pyrite Ore",
   "block.gempire.raw_pyrite_block": "Raw Pyrite Block",
   "item.gempire.pyrite_ingot": "Pyrite Ingot",
   "item.gempire.raw_pyrite": "Raw Pyrite",
   "item.gempire.pyrite_nugget": "Pyrite Nugget",
-
   "block.gempire.pink_sand": "Pink Sand",
   "block.gempire.pink_sandstone": "Pink Sandstone",
   "block.gempire.pink_sandstone_stairs": "Pink Sandstone Stairs",
@@ -274,9 +260,7 @@
   "block.gempire.cut_pink_sandstone": "Cut Pink Sandstone",
   "block.gempire.cut_pink_sandstone_slab": "Cut Pink Sandstone Slab",
   "block.gempire.chiseled_pink_sandstone": "Chiseled Pink Sandstone",
-
   "item.gempire.opalized_tooth": "Opalized Tooth",
-
   "block.gempire.macadam": "Macadam",
   "block.gempire.ryolite_block": "Ryolite Block",
   "block.gempire.ryolite_stairs": "Ryolite Stairs",
@@ -340,36 +324,28 @@
   "block.gempire.smooth_peculiar_sandstone": "Smooth Peculiar Sandstone",
   "block.gempire.smooth_peculiar_sandstone_stairs": "Smooth Peculiar Sandstone Stairs",
   "block.gempire.smooth_peculiar_sandstone_slab": "Smooth Pink Sandstone Slab",
-
   "block.gempire.cobalt_kelp": "Cobalt Kelp",
   "block.gempire.cobalt_kelp_block": "Cobalt Kelp",
   "item.gempire.cobalt_kelp": "Cobalt Kelp",
   "item.gempire.dried_cobalt_kelp": "Dried Cobalt Kelp",
-
   "item.gempire.blue_crystal_apple_toast": "Blue Crystal Apple Toast",
   "item.gempire.pink_crystal_apple_toast": "Pink Crystal Apple Toast",
   "item.gempire.purple_crystal_apple_toast": "Purple Crystal Apple Toast",
   "item.gempire.pincule_fruit_toast": "Pincule Fruit Toast",
   "item.gempire.strawberry_toast": "Strawberry Toast",
-
   "item.gempire.crystal_shank_bread": "Crystal Shank Stuffed Bread",
   "item.gempire.mantawing_bread": "Mantawing Stuffed Bread",
   "item.gempire.opalized_mantawing_bread": "Opalized Mantawing Stuffed Bread",
-
   "item.gempire.shaded_apple_cookie": "Shaded Apple Cookie",
   "item.gempire.shock_berry_cookie": "Shock Berry Cookie",
   "item.gempire.calming_jelly_cookie": "Calming Jelly Cookie",
   "item.gempire.alien_flower_cookie": "Alien Flower Cookie",
-
   "block.gempire.aquatic_fibre": "Aquatic Fibre",
   "block.gempire.tall_aquatic_fibre": "Tall Aquatic Fibre",
-
   "block.gempire.galaxy_warp": "Galaxy Warp Pad",
   "block.gempire.warp_pad": "Warp Pad",
-
   "item.gempire.primed_slate": "Primed Slate",
   "item.gempire.slate": "Slate",
-
   "block.gempire.gem_seed_block": "Gem Seed",
   "block.gempire.injector_block": "Injector",
   "block.gempire.drill_block": "Drill",
@@ -382,12 +358,9 @@
   "block.gempire.pedistal.setprivate": "This Pedestal is now private.",
   "block.gempire.pedistal.setpublic": "This Pedestal is now public.",
   "block.gempire.pedistal.notowner": "This Pedestal is private and you cannot use it.",
-
   "block.gempire.ice_spike": "Ice Spike",
-
   "block.gempire.prismatic_block": "Block of Prismatic Metal",
   "block.gempire.chroma_cluster_crop": "Chroma Cluster",
-
   "block.gempire.crystal_log": "Crystal Log",
   "block.gempire.crystal_wood": "Crystal Wood",
   "block.gempire.stripped_crystal_log": "Stripped Crystal Log",
@@ -403,7 +376,6 @@
   "block.gempire.crystal_hanging_sign": "Crystal Hanging Sign",
   "block.gempire.crystal_door": "Crystal Door",
   "block.gempire.crystal_trapdoor": "Crystal Trapdoor",
-
   "block.gempire.distant_log": "Distant Log",
   "block.gempire.distant_wood": "Distant Wood",
   "block.gempire.stripped_distant_log": "Stripped Distant Log",
@@ -419,7 +391,6 @@
   "block.gempire.distant_hanging_sign": "Distant Hanging Sign",
   "block.gempire.distant_door": "Distant Door",
   "block.gempire.distant_trapdoor": "Distant Trapdoor",
-
   "block.gempire.verdant_pine_log": "Verdant Pine Log",
   "block.gempire.verdant_pine_wood": "Verdant Pine Wood",
   "block.gempire.stripped_verdant_pine_log": "Stripped Verdant Pine Log",
@@ -435,7 +406,6 @@
   "block.gempire.verdant_pine_hanging_sign": "Verdant Pine Hanging Sign",
   "block.gempire.verdant_pine_door": "Verdant Pine Door",
   "block.gempire.verdant_pine_trapdoor": "Verdant Pine Trapdoor",
-
   "block.gempire.aster_log": "Aster Log",
   "block.gempire.aster_wood": "Aster Wood",
   "block.gempire.stripped_aster_log": "Stripped Aster Log",
@@ -449,7 +419,6 @@
   "block.gempire.aster_hanging_sign": "Aster Hanging Sign",
   "block.gempire.aster_door": "Aster Door",
   "block.gempire.aster_trapdoor": "Aster Trapdoor",
-
   "block.gempire.kaleidoscope_log": "Kaleidoscope Log",
   "block.gempire.kaleidoscope_wood": "Kaleidoscope Wood",
   "block.gempire.stripped_kaleidoscope_log": "Stripped Kaleidoscope Log",
@@ -465,7 +434,6 @@
   "block.gempire.kaleidoscope_hanging_sign": "Kaleidoscope Hanging Sign",
   "block.gempire.kaleidoscope_door": "Kaleidoscope Door",
   "block.gempire.kaleidoscope_trapdoor": "Kaleidoscope Trapdoor",
-
   "block.gempire.shaded_log": "Shaded Log",
   "block.gempire.shaded_wood": "Shaded Wood",
   "block.gempire.stripped_shaded_log": "Stripped Shaded Log",
@@ -481,7 +449,6 @@
   "block.gempire.shaded_hanging_sign": "Shaded Hanging Sign",
   "block.gempire.shaded_door": "Shaded Door",
   "block.gempire.shaded_trapdoor": "Shaded Trapdoor",
-
   "block.gempire.white_diamond_glass": "White Diamond Glass",
   "block.gempire.black_diamond_glass": "Black Diamond Glass",
   "block.gempire.orange_diamond_glass": "Orange Diamond Glass",
@@ -499,7 +466,6 @@
   "block.gempire.green_diamond_glass": "Green Diamond Glass",
   "block.gempire.red_diamond_glass": "Red Diamond Glass",
   "block.gempire.prismatic_diamond_glass": "Prismatic Diamond Glass",
-
   "block.gempire.white_lattice": "White Lattice",
   "block.gempire.black_lattice": "Black Lattice",
   "block.gempire.orange_lattice": "Orange Lattice",
@@ -516,7 +482,6 @@
   "block.gempire.brown_lattice": "Brown Lattice",
   "block.gempire.green_lattice": "Green Lattice",
   "block.gempire.red_lattice": "Red Lattice",
-
   "block.gempire.white_barbatine": "White Barbatine",
   "block.gempire.black_barbatine": "Black Barbatine",
   "block.gempire.orange_barbatine": "Orange Barbatine",
@@ -534,7 +499,6 @@
   "block.gempire.green_barbatine": "Green Barbatine",
   "block.gempire.red_barbatine": "Red Barbatine",
   "block.gempire.barbatine": "Barbatine",
-
   "block.gempire.white_chroma_crystal": "White Chroma Crystal",
   "block.gempire.orange_chroma_crystal": "Orange Chroma Crystal",
   "block.gempire.magenta_chroma_crystal": "Magenta Chroma Crystal",
@@ -551,7 +515,6 @@
   "block.gempire.green_chroma_crystal": "Green Chroma Crystal",
   "block.gempire.red_chroma_crystal": "Red Chroma Crystal",
   "block.gempire.black_chroma_crystal": "Black Chroma Crystal",
-
   "block.gempire.orange_phosphorus_lamp": "Orange Phosphorus Lamp",
   "block.gempire.magenta_phosphorus_lamp": "Magenta Phosphorus Lamp",
   "block.gempire.light_blue_phosphorus_lamp": "Light Blue Phosphorus Lamp",
@@ -568,20 +531,16 @@
   "block.gempire.red_phosphorus_lamp": "Red Phosphorus Lamp",
   "block.gempire.black_phosphorus_lamp": "Black Phosphorus Lamp",
   "block.gempire.phosphorus_lamp": "Phosphorus Lamp",
-
   "block.gempire.pyrite_block": "Pyrite Block",
   "block.gempire.geode_crystal_block": "Geode Crystal Block",
-
   "block.gempire.congealed_white_essence_block": "Congealed White Gem Essence Block",
   "block.gempire.congealed_yellow_essence_block": "Congealed Yellow Gem Essence Block",
   "block.gempire.congealed_blue_essence_block": "Congealed Blue Gem Essence Block",
   "block.gempire.congealed_pink_essence_block": "Congealed Pink Gem Essence Block",
-
   "block.gempire.strawberry_block": "Strawberry Block",
   "block.gempire.strawberry_stem": "Strawberry Stem",
   "block.gempire.attached_strawberry_stem": "Strawberry Stem",
   "item.gempire.strawberry": "Strawberry",
-
   "block.gempire.alien_flower": "Alien Flower",
   "block.gempire.white_iris": "White Iris",
   "block.gempire.pink_thistle": "Pink Thistle",
@@ -598,35 +557,27 @@
   "block.gempire.blue_puffball": "Blue Puffball",
   "block.gempire.blue_bells": "Bluebells",
   "block.gempire.clovers": "Clovers",
-
   "block.gempire.dagger_stone": "Huntress's Stone",
   "block.gempire.flower_case": "Paladin's Case",
   "block.gempire.guardian_vase": "Vase of Tears",
   "block.gempire.empress_crown": "Crown of Stars",
-
   "block.gempire.shock_berry_bush": "Shock Berry Bush",
   "item.gempire.shock_berry": "Shock Berry",
   "item.gempire.shaded_apple": "Shaded Apple",
   "item.gempire.calming_jelly": "Calming Jelly",
-
   "item.gempire.prismatic_glass_shards": "Reinforced Prismatic Glass Shards",
   "block.gempire.purified_prismatic_glass": "Purified Prismatic Diamond Glass",
-
   "item.gempire.gem_slush_bucket": "Bucket of Gem Slush",
   "item.gempire.chroma_catalyst": "Chroma Catalyst",
-
   "item.gempire.pink_essence_bucket": "Pink Gem Essence",
   "item.gempire.blue_essence_bucket": "Blue Gem Essence",
   "item.gempire.yellow_essence_bucket": "Yellow Gem Essence",
   "item.gempire.white_essence_bucket": "White Gem Essence",
-
   "item.gempire.prismatic_upgrade_smithing_template": "Prismatic Upgrade Smithing Template",
-
   "item.gempire.remnants_music_disc": "Music Disc",
   "item.gempire.remnants_music_disc.desc": "Solace - Remnants",
   "item.gempire.fragments_music_disc": "Music Disc",
   "item.gempire.fragments_music_disc.desc": "Solace - Fragments",
-
   "item.gempire.paladin_helmet": "Paladin Helmet",
   "item.gempire.paladin_chestplate": "Paladin Chestplate",
   "item.gempire.paladin_leggings": "Paladin Leggings",
@@ -643,7 +594,6 @@
   "item.gempire.empress_chestplate": "Empress Chestplate",
   "item.gempire.empress_leggings": "Empress Leggings",
   "item.gempire.empress_boots": "Empress Boots",
-
   "item.gempire.thulite_helmet": "Thulite Helmet",
   "item.gempire.thulite_chestplate": "Thulite Chestplate",
   "item.gempire.thulite_leggings": "Thulite Leggings",
@@ -660,45 +610,36 @@
   "item.gempire.platinum_chestplate": "Platinum Chestplate",
   "item.gempire.platinum_leggings": "Platinum Leggings",
   "item.gempire.platinum_boots": "Platinum Boots",
-
   "item.gempire.inactive_paladin_gem": "Inactive Paladin Gem",
   "item.gempire.inactive_guardian_gem": "Inactive Guardian Gem",
   "item.gempire.inactive_huntress_gem": "Inactive Huntress Gem",
   "item.gempire.inactive_empress_gem": "Inactive Empress Gem",
-
   "item.gempire.paladin_flower": "Paladin's Flower",
   "item.gempire.guardian_tear": "Guardian's Tears",
   "item.gempire.huntress_dagger": "Huntress's Dagger",
   "item.gempire.empress_star": "Empress's Star",
-
   "item.gempire.iridescent_flower": "Iridescent Flower",
   "item.gempire.mirrored_tear": "Mirrored Tear",
   "item.gempire.gilded_dagger": "Gilded Dagger",
   "item.gempire.prismatic_star": "Prismatic Star",
-
   "item.gempire.warp_core": "Warp Core",
   "item.gempire.warp_seed": "Warp Seed",
-
   "block.gempire.pink_altar": "Fuchsia Altar",
   "block.gempire.blue_altar": "Cobalt Altar",
   "block.gempire.yellow_altar": "Amber Altar",
   "block.gempire.white_altar": "Alabaster Altar",
-
   "block.gempire.prismatic_pink_altar": "Iridescent Altar",
   "block.gempire.prismatic_blue_altar": "Mirrored Altar",
   "block.gempire.prismatic_yellow_altar": "Gilded Altar",
   "block.gempire.prismatic_white_altar": "Prismatic Altar",
-
   "item.gempire.empress_bow": "Bow of The Empress",
   "item.gempire.huntress_sword": "Huntress's Blade",
   "item.gempire.guardian_shield": "Shield of The Guardian",
   "item.gempire.paladin_axe": "Paladin's Axe",
-
   "item.gempire.congealed_pink_essence": "Congealed Pink Gem Essence",
   "item.gempire.congealed_blue_essence": "Congealed Blue Gem Essence",
   "item.gempire.congealed_yellow_essence": "Congealed Yellow Gem Essence",
   "item.gempire.congealed_white_essence": "Congealed White Gem Essence",
-
   "item.gempire.white_chroma": "White Chroma",
   "item.gempire.orange_chroma": "Orange Chroma",
   "item.gempire.magenta_chroma": "Magenta Chroma",
@@ -716,18 +657,15 @@
   "item.gempire.red_chroma": "Red Chroma",
   "item.gempire.black_chroma": "Black Chroma",
   "item.gempire.special_chroma": "Prismatic Chroma",
-
   "item.gempire.pink_crystal_apple": "Pink Crystal Apple",
   "item.gempire.blue_crystal_apple": "Blue Crystal Apple",
   "item.gempire.purple_crystal_apple": "Purple Crystal Apple",
-
   "item.gempire.raw_mantawing": "Raw Mantawing",
   "item.gempire.cooked_mantawing": "Cooked Mantawing",
   "item.gempire.raw_opalized_mantawing": "Raw Opalized Mantawing",
   "item.gempire.cooked_opalized_mantawing": "Cooked Opalized Mantawing",
   "item.gempire.raw_crystal_shank": "Raw Crystal Shank",
   "item.gempire.cooked_crystal_shank": "Cooked Crystal Shank",
-
   "item.gempire.white_shards": "White Shards",
   "item.gempire.orange_shards": "Orange Shards",
   "item.gempire.magenta_shards": "Magenta Shards",
@@ -745,14 +683,11 @@
   "item.gempire.red_shards": "Red Shards",
   "item.gempire.black_shards": "Black Shards",
   "item.gempire.special_shards": "Prismatic Shards",
-
   "item.gempire.fuchsia_shards": "Fuchsia Shards",
   "item.gempire.amber_shards": "Amber Shards",
   "item.gempire.cobalt_shards": "Cobalt Shards",
   "item.gempire.alabaster_shards": "Alabaster Shards",
-
   "item.gempire.fusion_stick": "Fusion Staff",
-
   "item.gempire.inactive_agate_base": "Inactive Agate Base",
   "item.gempire.inactive_aquamarine_base": "Inactive Aquamarine Base",
   "item.gempire.inactive_bismuth_base": "Inactive Bismuth Base",
@@ -775,35 +710,27 @@
   "item.gempire.inactive_topaz_base": "Inactive Topaz Base",
   "item.gempire.inactive_tourmaline_base": "Inactive Tourmaline Base",
   "item.gempire.inactive_zircon_base": "Inactive Zircon Base",
-
   "item.gempire.sludge_glob": "Glob of Sludge",
-
   "item.gempire.ice_shard": "Ice Shard",
   "item.gempire.acid_spit": "Acid Spit",
-
   "item.gempire.white_destabilizer": "White Destabilizer",
   "item.gempire.yellow_destabilizer": "Yellow Destabilizer",
   "item.gempire.blue_destabilizer": "Blue Destabilizer",
   "item.gempire.pink_destabilizer": "Pink Destabilizer",
-
   "item.gempire.pink_rejuvenator": "Pink Rejuvenator",
   "item.gempire.blue_rejuvenator": "Blue Rejuvenator",
   "item.gempire.yellow_rejuvenator": "Yellow Rejuvenator",
   "item.gempire.white_rejuvenator": "White Rejuvenator",
-
   "item.gempire.confractor": "Confractor",
   "item.gempire.confractor_body": "Confractor Shaft",
   "item.gempire.confractor_tip": "Confractor Tip",
-
   "item.gempire.prismatic_sword": "Prismatic Sword",
   "item.gempire.prismatic_shovel": "Prismatic Shovel",
   "item.gempire.prismatic_pickaxe": "Prismatic Pickaxe",
   "item.gempire.prismatic_axe": "Prismatic Axe",
   "item.gempire.prismatic_hoe": "Prismatic Hoe",
-
   "item.gempire.prismatic_flask": "Prismatic Flask",
   "item.gempire.prismatic_shears": "Prismatic Shears",
-
   "item.gempire.injector_panel": "Injector Remote",
   "item.gempire.prismatic_ingot": "Prismatic Ingot",
   "item.gempire.gem_scrap": "Gem Scrap",
@@ -817,15 +744,12 @@
   "item.gempire.gem_whistle": "Gem Whistle",
   "item.gempire.prime_boost": "Prime Booster",
   "item.gempire.speed_booster": "Speed Booster",
-
   "item.gempire.essence_bottle": "Essence Bottle",
   "item.gempire.pink_essence": "Pink Gem Essence",
   "item.gempire.yellow_essence": "Yellow Gem Essence",
   "item.gempire.blue_essence": "Blue Gem Essence",
   "item.gempire.white_essence": "White Gem Essence",
-
   "item.gempire.ruby_gem": "Ruby Gem",
-
   "item.gempire.sapphire_gem_0": "White Sapphire Gem",
   "item.gempire.sapphire_gem_1": "Padparadscha Gem",
   "item.gempire.sapphire_gem_2": "Magenta Sapphire Gem",
@@ -841,7 +765,6 @@
   "item.gempire.sapphire_gem_12": "Mekong Sapphire Gem",
   "item.gempire.sapphire_gem_13": "Green Sapphire Gem",
   "item.gempire.sapphire_gem_15": "Black Sapphire Gem",
-
   "item.gempire.quartz_gem_0": "Milky Quartz Gem",
   "item.gempire.quartz_gem_1": "Chert Gem",
   "item.gempire.quartz_gem_2": "Cherry Quartz Gem",
@@ -860,7 +783,6 @@
   "item.gempire.quartz_gem_15": "Onyx Gem",
   "item.gempire.quartz_gem_16": "Angel Aura Quartz Gem",
   "item.gempire.quartz_gem_17": "Lace Amethyst Gem",
-
   "item.gempire.jasper_gem_0": "Zebra Jasper Gem",
   "item.gempire.jasper_gem_1": "Red Striped Jasper Gem",
   "item.gempire.jasper_gem_2": "Ripple Jasper Gem",
@@ -878,7 +800,6 @@
   "item.gempire.jasper_gem_14": "Flame Jasper Gem",
   "item.gempire.jasper_gem_15": "Black Jasper Gem",
   "item.gempire.jasper_gem_16": "Butterfly Jasper Gem",
-
   "item.gempire.agate_gem_0": "Dendritic Agate Gem",
   "item.gempire.agate_gem_1": "Wingate Pass Plume Agate Gem",
   "item.gempire.agate_gem_2": "Rose Agate Gem",
@@ -896,7 +817,6 @@
   "item.gempire.agate_gem_14": "Lake Superior Agate Gem",
   "item.gempire.agate_gem_15": "Orca Agate Gem",
   "item.gempire.agate_gem_16": "Iris Agate Gem",
-
   "item.gempire.pearl_gem_0": "Pearl Gem",
   "item.gempire.pearl_gem_1": "Melo Pearl Gem",
   "item.gempire.pearl_gem_2": "Conch Pearl Gem",
@@ -913,7 +833,6 @@
   "item.gempire.pearl_gem_13": "Olive Pearl Gem",
   "item.gempire.pearl_gem_14": "Wine Pearl Gem",
   "item.gempire.pearl_gem_15": "Tahitian Pearl Gem",
-
   "item.gempire.spinel_gem_0": "White Spinel Gem",
   "item.gempire.spinel_gem_1": "Peach Spinel Gem",
   "item.gempire.spinel_gem_2": "Magenta Spinel Gem",
@@ -930,7 +849,6 @@
   "item.gempire.spinel_gem_13": "Green Spinel Gem",
   "item.gempire.spinel_gem_14": "Red Spinel Gem",
   "item.gempire.spinel_gem_15": "Black Spinel Gem",
-
   "item.gempire.tourmaline_gem_0": "Achroite Tourmaline Gem",
   "item.gempire.tourmaline_gem_1": "Pumpkin Tourmaline Gem",
   "item.gempire.tourmaline_gem_2": "Magenta Tourmaline Gem",
@@ -948,7 +866,6 @@
   "item.gempire.tourmaline_gem_14": "Rubellite Tourmaline Gem",
   "item.gempire.tourmaline_gem_15": "Schorl Tourmaline Gem",
   "item.gempire.tourmaline_gem_16": "Watermelon Tourmaline Gem",
-
   "item.gempire.zircon_gem_0": "White Zircon Gem",
   "item.gempire.zircon_gem_1": "Orange Zircon Gem",
   "item.gempire.zircon_gem_2": "Magenta Zircon Gem",
@@ -965,7 +882,6 @@
   "item.gempire.zircon_gem_13": "Green Zircon Gem",
   "item.gempire.zircon_gem_14": "Jacinth Gem",
   "item.gempire.zircon_gem_15": "Black Zircon Gem",
-
   "item.gempire.aquamarine_gem": "Aquamarine Gem",
   "item.gempire.bismuth_gem": "Bismuth Gem",
   "item.gempire.bixbite_gem": "Bixbite Gem",
@@ -981,7 +897,6 @@
   "item.gempire.rutile_gem": "Rutile Gem",
   "item.gempire.shale_gem": "Shale Gem",
   "item.gempire.nacre_gem": "Nacre Gem",
-
   "item.gempire.garnet_gem_0": "Leuco Garnet Gem",
   "item.gempire.garnet_gem_1": "Hessonite Gem",
   "item.gempire.garnet_gem_2": "Rhodolite Gem",
@@ -999,18 +914,15 @@
   "item.gempire.garnet_gem_14": "Pyrope Gem",
   "item.gempire.garnet_gem_15": "Melanite Gem",
   "item.gempire.garnet_gem_16": "Iridescent Andradite Gem",
-
   "item.gempire.spodumene_gem_1": "Spodumene Gem",
   "item.gempire.spodumene_gem_4": "Triphane Gem",
   "item.gempire.spodumene_gem_10": "Kunzite Gem",
   "item.gempire.spodumene_gem_11": "Blue Spodumene Gem",
   "item.gempire.spodumene_gem_13": "Hiddenite Gem",
-
   "item.gempire.topaz_gem_0": "White Topaz Gem",
   "item.gempire.topaz_gem_4": "Yellow Topaz Gem",
   "item.gempire.topaz_gem_6": "Pink Topaz Gem",
   "item.gempire.topaz_gem_11": "Blue Topaz Gem",
-
   "item.gempire.fuchsia_paladin_spawn_egg": "Fuchsia Paladin Spawn Egg",
   "item.gempire.cobalt_guardian_spawn_egg": "Cobalt Guardian Spawn Egg",
   "item.gempire.amber_huntress_spawn_egg": "Amber Huntress Spawn Egg",
@@ -1023,11 +935,9 @@
   "item.gempire.overseer_spawn_egg": "Overseer Spawn Egg",
   "item.gempire.mantashark_spawn_egg": "Mantashark Spawn Egg",
   "item.gempire.opal_mantashark_spawn_egg": "Opalized Mantashark Spawn Egg",
-
   "entity.gempire.hunter": "Resplendent Hunter",
   "entity.gempire.specter": "Specter",
   "entity.gempire.overseer": "Overseer",
-
   "entity.gempire.pebble": "Pebble",
   "entity.gempire.mica": "Mica",
   "entity.gempire.shale": "Shale",
@@ -1055,29 +965,23 @@
   "entity.gempire.peridot": "Peridot",
   "entity.gempire.rutile": "Rutile",
   "entity.gempire.garnet": "Garnet",
-
   "entity.gempire.crawler": "Crawler",
   "entity.gempire.shambler": "Shambler",
   "entity.gempire.abomination": "Abomination",
-
   "entity.gempire.alabaster_empress": "Alabaster Empress",
   "entity.gempire.amber_huntress": "Amber Huntress",
   "entity.gempire.cobalt_guardian": "Cobalt Guardian",
   "entity.gempire.fuchsia_paladin": "Fuchsia Paladin",
-
   "entity.gempire.prismatic_empress": "Prismatic Empress",
   "entity.gempire.gilded_huntress": "Gilded Huntress",
   "entity.gempire.mirrored_guardian": "Mirrored Guardian",
   "entity.gempire.iridescent_paladin": "Iridescent Paladin",
-
   "entity.gempire.electrokinesis_lightning": "Lightning Bolt",
-
   "entity.gempire.crystal_deer": "Crystal Deer",
   "entity.gempire.fleurie": "Fleurie",
   "entity.gempire.sorrow_jelly": "Sorrow Jelly",
   "entity.gempire.mantashark": "Mantashark",
   "entity.gempire.opal_mantashark": "Opalized Mantashark",
-
   "effect.gempire.paralysis": "Paralysis",
   "effect.gempire.entanglement": "Entangled",
   "effect.gempire.dread": "Dread",
@@ -1095,7 +999,6 @@
   "effect.gempire.blue_aura": "Blue Aura",
   "effect.gempire.yellow_aura": "Yellow Aura",
   "effect.gempire.white_aura": "White Aura",
-
   "item.minecraft.potion.effect.shock_resistance_potion": "Potion of Shock Resistance",
   "item.minecraft.potion.effect.electrocution_potion": "Potion of Electrocution",
   "item.minecraft.splash_potion.effect.shock_resistance_potion": "Splash Potion of Shock Resistance",
@@ -1116,7 +1019,6 @@
   "item.minecraft.tipped_arrow.effect.shade_potion": "Arrow of Shade",
   "item.minecraft.tipped_arrow.effect.calm_potion": "Arrow of Calm",
   "item.minecraft.tipped_arrow.effect.floral_protection_potion": "Arrow of Floral Protection",
-
   "nickname.gempire.sapphire_0": "White Sapphire",
   "nickname.gempire.sapphire_1": "Padparadscha",
   "nickname.gempire.sapphire_2": "Magenta Sapphire",
@@ -1132,7 +1034,6 @@
   "nickname.gempire.sapphire_12": "Mekong Sapphire",
   "nickname.gempire.sapphire_13": "Green Sapphire",
   "nickname.gempire.sapphire_15": "Black Sapphire Gem",
-
   "nickname.gempire.garnet_0": "Leuco Garnet",
   "nickname.gempire.garnet_1": "Hessonite",
   "nickname.gempire.garnet_2": "Rhodolite",
@@ -1150,13 +1051,11 @@
   "nickname.gempire.garnet_14": "Pyrope",
   "nickname.gempire.garnet_15": "Melanite",
   "nickname.gempire.garnet_16": "Iridescent Andradite",
-
   "nickname.gempire.spodumene_1": "Spodumene",
   "nickname.gempire.spodumene_4": "Triphane",
   "nickname.gempire.spodumene_10": "Kunzite",
   "nickname.gempire.spodumene_11": "Blue Spodumene",
   "nickname.gempire.spodumene_13": "Hiddenite",
-
   "nickname.gempire.tourmaline_0": "Achroite Tourmaline",
   "nickname.gempire.tourmaline_1": "Pumpkin Tourmaline",
   "nickname.gempire.tourmaline_2": "Magenta Tourmaline",
@@ -1174,7 +1073,6 @@
   "nickname.gempire.tourmaline_14": "Rubellite Tourmaline",
   "nickname.gempire.tourmaline_15": "Schorl Tourmaline",
   "nickname.gempire.tourmaline_16": "Watermelon Tourmaline",
-
   "nickname.gempire.quartz_0": "Milky Quartz",
   "nickname.gempire.quartz_1": "Chert",
   "nickname.gempire.quartz_2": "Cherry Quartz",
@@ -1193,7 +1091,6 @@
   "nickname.gempire.quartz_15": "Onyx",
   "nickname.gempire.quartz_16": "Angel Aura Quartz",
   "nickname.gempire.quartz_17": "Lace Amethyst",
-
   "nickname.gempire.jasper_0": "Zebra Jasper",
   "nickname.gempire.jasper_1": "Red Striped Jasper",
   "nickname.gempire.jasper_2": "Ripple Jasper",
@@ -1211,7 +1108,6 @@
   "nickname.gempire.jasper_14": "Flame Jasper",
   "nickname.gempire.jasper_15": "Black Jasper",
   "nickname.gempire.jasper_16": "Butterfly Jasper",
-
   "nickname.gempire.agate_0": "Dentritic Agate",
   "nickname.gempire.agate_1": "Wingate Pass Plume Agate",
   "nickname.gempire.agate_2": "Rose Agate",
@@ -1229,7 +1125,6 @@
   "nickname.gempire.agate_14": "Lake Superior Agate",
   "nickname.gempire.agate_15": "Orca Agate",
   "nickname.gempire.agate_16": "Iris Agate",
-
   "messages.gempire.entity.cracked": "This gem is cracked!",
   "messages.gempire.entity.birthday": "Happy birthday, Taaf!",
   "messages.gempire.entity.spodumene_sore": "She's too weak right now...",
@@ -1239,22 +1134,18 @@
   "messages.gempire.entity.cant_enchant_air": "Her tool slot is empty...",
   "messages.gempire.entity.enchant_not_apply": "This tool can't accept this enchantment...",
   "messages.gempire.entity.need_lapis": "She needs more chunks of Lapis Lazuli...",
-
-  "itemGroup.gempire_gemstones" : "Gemstones",
-  "itemGroup.gempire_items" : "Items",
-  "itemGroup.gempire_tools" : "Tools",
-  "itemGroup.gempire_blocks" : "Blocks",
-
+  "itemGroup.gempire_gemstones": "Gemstones",
+  "itemGroup.gempire_items": "Items",
+  "itemGroup.gempire_tools": "Tools",
+  "itemGroup.gempire_blocks": "Blocks",
   "fluid.gempire.pink_essence": "Pink Gem Essence",
   "fluid.gempire.blue_essence": "Blue Gem Essence",
   "fluid.gempire.yellow_essence": "Yellow Gem Essence",
   "fluid.gempire.white_essence": "White Gem Essence",
-
   "container.gempire.tank": "Tank",
   "container.gempire.injector": "Injector",
   "container.gempire.warp_config": "Edit Name",
   "container.gempire.warp_selection": "Warp Selection",
-
   "ability.gempire.zilch": "Zilch",
   "ability.gempire.knockback": "Knockback",
   "ability.gempire.pyrokinesis": "Pyrokinesis",
@@ -1301,11 +1192,9 @@
   "ability.gempire.salvaging": "Salvaging",
   "ability.gempire.hydration": "Hydration",
   "ability.gempire.plantokinesis": "Plantokinesis (WIP)",
-
   "screens.gempire.health": "Health",
   "screens.gempire.damage": "Attack Damage",
   "screens.gempire.poof": "Poof",
-
   "commands.gempire.noeye": "She needs an Eye of Ender!",
   "commands.gempire.recall": "Recalled successfully!",
   "commands.gempire.nofarmresources": "She doesn't have the required resources!",
@@ -1315,193 +1204,150 @@
   "commands.gempire.faillocate": "I don't think she could find anything...",
   "commands.gempire.foundit": "Here's your map! Please check her inventory.",
   "commands.gempire.nomap": "She needs a map! Please place an empty one into her inventory.",
-
   "gempire.subtitle.inject": "Injector injects gem seed",
   "gempire.subtitle.poof": "Gem is poofed",
   "gempire.subtitle.whistle": "Gem Whistle plays",
-
   "gempire.subtitle.crawler_attack": "Crawler attacks",
   "gempire.subtitle.crawler_hurt": "Crawler hurts",
   "gempire.subtitle.crawler_death": "Crawler perishes",
   "gempire.subtitle.crawler_living": "Crawler gargles",
-
   "gempire.subtitle.shambler_attack": "Shambler attacks",
   "gempire.subtitle.shambler_hurt": "Shambler hurts",
   "gempire.subtitle.shambler_death": "Shambler perishes",
   "gempire.subtitle.shambler_living": "Shambler gurgles",
-
   "gempire.subtitle.abomination_attack": "Abomination attacks",
   "gempire.subtitle.abomination_hurt": "Abomination hurts",
   "gempire.subtitle.abomination_death": "Abomination perishes",
   "gempire.subtitle.abomination_living": "Abomination rasps",
-
   "gempire.subtitle.specter_running": "Specter giggles",
   "gempire.subtitle.specter_hurt": "Specter hurts",
   "gempire.subtitle.specter_death": "Specter perishes",
   "gempire.subtitle.specter_ambient": "Specter breathes",
   "gempire.subtitle.specter_close": "Specter whispers",
-
   "advancements.gempire.root.title": "Welcome to your new Gempire!",
   "advancements.gempire.root.description": "The beginning of your colony",
-
   "advancements.gempire.essence.title": "The Key to Life",
   "advancements.gempire.essence.description": "Obtain some Gem Essence from trading, discovery or brewing it with a Shale",
-
   "advancements.gempire.power_crystal.title": "Battery Power",
   "advancements.gempire.power_crystal.description": "Obtain a tier one Injector crystal with a Mica's help",
-
   "advancements.gempire.power_crystal_tier_2.title": "Upgrades, people",
   "advancements.gempire.power_crystal_tier_2.description": "Obtain a tier two Injector crystal with a Peridot's help",
-
   "advancements.gempire.tank.title": "Storage Unit",
   "advancements.gempire.tank.description": "Craft an Injector tank",
-
   "advancements.gempire.drill.title": "Leave Nothing Behind",
   "advancements.gempire.drill.description": "Craft an Injector drill",
-
   "advancements.gempire.shell.title": "Greetings, I am Shell",
   "advancements.gempire.shell.description": "Have a Nacre create a Shell for you",
-
   "advancements.gempire.incubator.title": "Incubation Station",
   "advancements.gempire.incubator.description": "Obtain a Gem Incubator",
-
   "advancements.gempire.nacre.title": "That was expensive",
   "advancements.gempire.nacre.description": "Create a Nacre via Gem Essence",
-
   "advancements.gempire.pebble.title": "Get Pebbled on",
   "advancements.gempire.pebble.description": "Create one of the Pebble variants with a stone button and Gem Essence",
-
   "advancements.gempire.shale.title": "We have essence at home",
   "advancements.gempire.shale.description": "Create a Shale with Blue Gem Essence",
-
   "advancements.gempire.mica.title": "Charging Station",
   "advancements.gempire.mica.description": "Create a Mica with Yellow Gem Essence",
-
   "advancements.gempire.agate_injection.title": "Shoulders Squared!",
   "advancements.gempire.agate_injection.description": "Create (or obtain) an Agate gemstone",
   "advancements.gempire.agate_incubation.title": "Inactive Agate Gem",
   "advancements.gempire.agate_incubation.description": "Create (or obtain) an inactive Agate template",
-
   "advancements.gempire.aquamarine_injection.title": "Look, I'm crying",
   "advancements.gempire.aquamarine_injection.description": "Create (or obtain) an Aquamarine gemstone",
   "advancements.gempire.aquamarine_incubation.title": "Inactive Aquamarine Gem",
   "advancements.gempire.aquamarine_incubation.description": "Create (or obtain) an inactive Aquamarine template",
-
   "advancements.gempire.bismuth_injection.title": "Bismuth as Usual",
   "advancements.gempire.bismuth_injection.description": "Create (or obtain) a Bismuth gemstone",
   "advancements.gempire.bismuth_incubation.title": "Inactive Bismuth Gem",
   "advancements.gempire.bismuth_incubation.description": "Create (or obtain) an inactive Bismuth template",
-
   "advancements.gempire.bixbite_injection.title": "Don't run with scissors!",
   "advancements.gempire.bixbite_injection.description": "Create (or obtain) a Bixbite gemstone",
   "advancements.gempire.bixbite_incubation.title": "Inactive Bixbite Gem",
   "advancements.gempire.bixbite_incubation.description": "Create (or obtain) an inactive Bixbite template",
-
   "advancements.gempire.emerald_injection.title": "I've got you now!",
   "advancements.gempire.emerald_injection.description": "Create (or obtain) an Emerald gemstone",
   "advancements.gempire.emerald_incubation.title": "Inactive Emerald Gem",
   "advancements.gempire.emerald_incubation.description": "Create (or obtain) an inactive Emerald template",
-
   "advancements.gempire.garnet_injection.title": "Did you miss me?",
   "advancements.gempire.garnet_injection.description": "Create (or obtain) an Garnet gemstone",
   "advancements.gempire.garnet_incubation.title": "Inactive Garnet Gem",
   "advancements.gempire.garnet_incubation.description": "Create (or obtain) an inactive Garnet template",
-
   "advancements.gempire.jasper_injection.title": "We always get what we want",
   "advancements.gempire.jasper_injection.description": "Create (or obtain) a Jasper gemstone",
   "advancements.gempire.jasper_incubation.title": "Inactive Jasper Gem",
   "advancements.gempire.jasper_incubation.description": "Create (or obtain) an inactive Jasper template",
-
   "advancements.gempire.lapis_injection.title": "Water? Seriously?",
   "advancements.gempire.lapis_injection.description": "Create (or obtain) a Lapis Lazuli gemstone",
   "advancements.gempire.lapis_incubation.title": "Inactive Lapis Lazuli Gem",
   "advancements.gempire.lapis_incubation.description": "Create (or obtain) an inactive Lapis Lazuli template",
-
   "advancements.gempire.larimar_injection.title": "I'd love to hear your screams!",
   "advancements.gempire.larimar_injection.description": "Create (or obtain) a Larimar gemstone",
   "advancements.gempire.larimar_incubation.title": "Inactive Larimar Gem",
   "advancements.gempire.larimar_incubation.description": "Create (or obtain) an inactive Larimar template",
-
   "advancements.gempire.morganite_injection.title": "A whole new world of possibilities",
   "advancements.gempire.morganite_injection.description": "Create (or obtain) a Morganite gemstone",
   "advancements.gempire.morganite_incubation.title": "Inactive Morganite Gem",
   "advancements.gempire.morganite_incubation.description": "Create (or obtain) an inactive Morganite template",
-
   "advancements.gempire.nephrite_injection.title": "Chaaaps!",
   "advancements.gempire.nephrite_injection.description": "Create (or obtain) a Nephrite gemstone",
   "advancements.gempire.nephrite_incubation.title": "Inactive Nephrite Gem",
   "advancements.gempire.nephrite_incubation.description": "Create (or obtain) an inactive Nephrite template",
-
   "advancements.gempire.obsidian_injection.title": "Glass Cannon",
   "advancements.gempire.obsidian_injection.description": "Create (or obtain) an Obsidian gemstone",
   "advancements.gempire.obsidian_incubation.title": "Inactive Obsidian Gem",
   "advancements.gempire.obsidian_incubation.description": "Create (or obtain) an inactive Obsidian template",
-
   "advancements.gempire.pearl.title": "Welcome to your new Pearl~",
   "advancements.gempire.pearl.description": "Create a Pearl via the Shell",
-
   "advancements.gempire.peridot_injection.title": "Log Date: 7-44-2",
   "advancements.gempire.peridot_injection.description": "Create (or obtain) a Peridot gemstone",
   "advancements.gempire.peridot_incubation.title": "Inactive Peridot Gem",
   "advancements.gempire.peridot_incubation.description": "Create (or obtain) an inactive Peridot template",
-
   "advancements.gempire.quartz_injection.title": "Bigger, Badder, Better",
   "advancements.gempire.quartz_injection.description": "Create (or obtain) a Quartz gemstone",
   "advancements.gempire.quartz_incubation.title": "Inactive Quartz Gem",
   "advancements.gempire.quartz_incubation.description": "Create (or obtain) an inactive Quartz template",
-
   "advancements.gempire.ruby_injection.title": "Eternal Flame",
   "advancements.gempire.ruby_injection.description": "Create (or obtain) a Ruby gemstone",
   "advancements.gempire.ruby_incubation.title": "Inactive Ruby Gem",
   "advancements.gempire.ruby_incubation.description": "Create (or obtain) an inactive Ruby template",
-
   "advancements.gempire.rutile_injection.title": "Cavedweller",
   "advancements.gempire.rutile_injection.description": "Create (or obtain) a Rutile gemstone",
   "advancements.gempire.rutile_incubation.title": "Inactive Rutile Gem",
   "advancements.gempire.rutile_incubation.description": "Create (or obtain) an inactive Rutile template",
-
   "advancements.gempire.sapphire_injection.title": "The Path of Fate",
   "advancements.gempire.sapphire_injection.description": "Create (or obtain) a Sapphire gemstone",
   "advancements.gempire.sapphire_incubation.title": "Inactive Sapphire Gem",
   "advancements.gempire.sapphire_incubation.description": "Create (or obtain) an inactive Sapphire template",
-
   "advancements.gempire.spinel_injection.title": "I'm SO excited to meet you!",
   "advancements.gempire.spinel_injection.description": "Create (or obtain) a Spinel gemstone",
   "advancements.gempire.spinel_incubation.title": "Inactive Spinel Gem",
   "advancements.gempire.spinel_incubation.description": "Create (or obtain) an inactive Spinel template",
-
   "advancements.gempire.spodumene_injection.title": "Underwater Basket Weaving",
   "advancements.gempire.spodumene_injection.description": "Create (or obtain) a Spodumene gemstone",
   "advancements.gempire.spodumene_incubation.title": "Inactive Spodumene Gem",
   "advancements.gempire.spodumene_incubation.description": "Create (or obtain) an inactive Spodumene template",
-
   "advancements.gempire.topaz_injection.title": "Watchdog",
   "advancements.gempire.topaz_injection.description": "Create (or obtain) a Topaz gemstone",
   "advancements.gempire.topaz_incubation.title": "Inactive Topaz Gem",
   "advancements.gempire.topaz_incubation.description": "Create (or obtain) an inactive Topaz template",
-
   "advancements.gempire.tourmaline_injection.title": "Gardening Made Easy",
   "advancements.gempire.tourmaline_injection.description": "Create (or obtain) a Tourmaline gemstone",
   "advancements.gempire.tourmaline_incubation.title": "Inactive Tourmaline Gem",
   "advancements.gempire.tourmaline_incubation.description": "Create (or obtain) an inactive Tourmaline template",
-
   "advancements.gempire.zircon_injection.title": "Enchanting for Beginners",
   "advancements.gempire.zircon_injection.description": "Create (or obtain) a Zircon gemstone",
   "advancements.gempire.zircon_incubation.title": "Inactive Zircon Gem",
   "advancements.gempire.zircon_incubation.description": "Create (or obtain) an inactive Zircon template",
-
   "advancements.gempire.strawberry_battlefield.title": "Strawberry Battlefields Forever...",
   "advancements.gempire.strawberry_battlefield.description": "Discover an ancient, abandoned battlefield",
   "advancements.gempire.kindergarten.title": "Poisoned Remnants",
   "advancements.gempire.kindergarten.description": "Discover an ancient, abandoned kindergarten",
-
   "advancements.gempire.dropship.title": "Forgotten Colony",
   "advancements.gempire.dropship.description": "Break into an abandoned gem dropship",
   "advancements.gempire.ruins.title": "An Unfinished Job",
   "advancements.gempire.ruins.description": "Find yourself in an old gem ruin",
   "advancements.gempire.sky_ruins.title": "Abandoned Paradise",
   "advancements.gempire.sky_ruins.description": "Climb into a skyward gem ruin",
-
   "advancements.gempire.colony_ship.title": "Crash Landing",
   "advancements.gempire.colony_ship.description": "Discover an abandoned gem colony ship",
   "advancements.gempire.comm_hub.title": "Coming to You Live",
@@ -1518,44 +1364,34 @@
   "advancements.gempire.small_sky_arena.description": "Discover an abandoned gem arena. This one is a little small.",
   "advancements.gempire.the_geode.title": "The Geeeode...",
   "advancements.gempire.the_geode.description": "Discover an abandoned gem geode",
-
   "advancements.gempire.mask_island.title": "You are A Pirate",
   "advancements.gempire.mask_island.description": "Swim onto Mask Island's shores",
-
   "advancements.gempire.empress_arena.title": "There you are, starlight...",
   "advancements.gempire.empress_arena.description": "Disturb the resting place of the last grand white wyvern",
   "advancements.gempire.empress_crypt.title": "Cryptkeeper",
   "advancements.gempire.empress_crypt.description": "Discover the crypt containing the lost crown",
-
   "advancements.gempire.huntress_arena.title": "Ashes to Ashes",
   "advancements.gempire.huntress_arena.description": "Disturb the resting place of the last mighty golden lion",
   "advancements.gempire.huntress_dungeon.title": "Dungeons and... ?",
   "advancements.gempire.huntress_dungeon.description": "Discover the dungeon containing the golden dagger",
-
   "advancements.gempire.guardian_arena.title": "Living Dead Moth",
   "advancements.gempire.guardian_arena.description": "Disturb the resting place of the last graceful cobalt moth",
   "advancements.gempire.guardian_museum.title": "History Repeats Itself",
   "advancements.gempire.guardian_museum.description": "Discover the museum containing the stone hands",
-
   "advancements.gempire.paladin_arena.title": "Welcome home, Pink",
   "advancements.gempire.paladin_arena.description": "Disturb the resting place of the last awe-inspiring rosaline beast",
   "advancements.gempire.paladin_tower.title": "Let Down Your Hair",
   "advancements.gempire.paladin_tower.description": "Discover the tower containing the crystal vase",
-
   "advancements.gempire.prismatic_hoe.title": "Immense Dedication",
   "advancements.gempire.prismatic_hoe.description": "Obtain a Prismatic Hoe. Why would you do that?",
-
   "advancements.gempire.prismatic_ingot.title": "All that Glitters...",
   "advancements.gempire.prismatic_ingot.description": "Obtain a Prismatic Ingot",
-
   "advancements.gempire.slate.title": "Slated for Success",
   "advancements.gempire.slate.description": "Obtain Slate",
   "advancements.gempire.primed_slate.title": "Primed and Ready",
   "advancements.gempire.primed_slate.description": "Obtain Primed Slate",
-
   "advancements.gempire.desolate_lands.root.title": "Glimpse of the Past",
   "advancements.gempire.desolate_lands.root.description": "Reached the Desolate Lands. Are you sure about this?",
-
   "advancements.gempire.desolate_lands.kill_fleurie.title": "You Monster",
   "advancements.gempire.desolate_lands.kill_fleurie.description": "Slay a fleurie",
   "advancements.gempire.desolate_lands.kill_crystal_deer.title": "Those Were Her Favorites",
@@ -1572,7 +1408,6 @@
   "advancements.gempire.desolate_lands.kill_overseer.description": "Slay an overseer",
   "advancements.gempire.desolate_lands.kill_specter.title": "It sees you.",
   "advancements.gempire.desolate_lands.kill_specter.description": "Slay a specter",
-
   "advancements.gempire.desolate_lands.kill_empress.title": "This Has Gone On Long Enough",
   "advancements.gempire.desolate_lands.kill_empress.description": "Defeat the Alabaster Empress",
   "advancements.gempire.desolate_lands.kill_guardian.title": "I'm So Sorry, I Should Have Done More",
@@ -1581,7 +1416,6 @@
   "advancements.gempire.desolate_lands.kill_huntress.description": "Defeat the Amber Huntress",
   "advancements.gempire.desolate_lands.kill_paladin.title": "She's GONE!",
   "advancements.gempire.desolate_lands.kill_paladin.description": "Defeat the Fuchsia Paladin",
-
   "advancements.gempire.desolate_lands.kill_prismatic_empress.title": "Prismatic Empress",
   "advancements.gempire.desolate_lands.kill_prismatic_empress.description": "Defeat the Prismatic Empress",
   "advancements.gempire.desolate_lands.kill_mirrored_guardian.title": "Mirrored Guardian",
@@ -1590,7 +1424,6 @@
   "advancements.gempire.desolate_lands.kill_gilded_huntress.description": "Defeat the Gilded Huntress",
   "advancements.gempire.desolate_lands.kill_iridescent_paladin.title": "Gone for Good",
   "advancements.gempire.desolate_lands.kill_iridescent_paladin.description": "Defeat the Iridescent Paladin",
-
   "advancements.gempire.desolate_lands.abnormal_beach.title": "Strange Sandy Beaches",
   "advancements.gempire.desolate_lands.abnormal_beach.description": "Discover the Abnormal Beach biome",
   "advancements.gempire.desolate_lands.abnormal_desert.title": "Why so blue?",
@@ -1619,27 +1452,22 @@
   "advancements.gempire.desolate_lands.wayward_ocean.description": "Discover the Wayward Ocean biome",
   "advancements.gempire.desolate_lands.all_biomes.title": "Sightseeing Supreme",
   "advancements.gempire.desolate_lands.all_biomes.description": "Venture to all known biomes in the Desolate Lands",
-
   "advancements.gempire.desolate_lands.thulite.title": "Pretty",
   "advancements.gempire.desolate_lands.thulite.description": "Obtain Thulite",
   "advancements.gempire.desolate_lands.thulite_armor.title": "On Wednesdays, we wear pink",
   "advancements.gempire.desolate_lands.thulite_armor.description": "Obtain Thulite armor",
-
   "advancements.gempire.desolate_lands.anatase.title": "Gloomy",
   "advancements.gempire.desolate_lands.anatase.description": "Obtain Anatase",
   "advancements.gempire.desolate_lands.anatase_armor.title": "A gentle embrace",
   "advancements.gempire.desolate_lands.anatase_armor.description": "Obtain Anatase armor",
-
   "advancements.gempire.desolate_lands.electrum.title": "Electrified",
   "advancements.gempire.desolate_lands.electrum.description": "Obtain Electrum",
   "advancements.gempire.desolate_lands.electrum_armor.title": "Grounded and protected",
   "advancements.gempire.desolate_lands.electrum_armor.description": "Obtain Electrum armor",
-
   "advancements.gempire.desolate_lands.platinum.title": "Shiny",
   "advancements.gempire.desolate_lands.platinum.description": "Obtain Platinum",
   "advancements.gempire.desolate_lands.platinum_armor.title": "A knight in shining armor",
   "advancements.gempire.desolate_lands.platinum_armor.description": "Obtain Platinum armor",
-
   "advancements.gempire.desolate_lands.flower.title": "Tale as Old as Time",
   "advancements.gempire.desolate_lands.flower.description": "Obtain the Paladin's Flower. You should take this to a place of importance.",
   "advancements.gempire.desolate_lands.tear.title": "Mourning Tears",
@@ -1648,27 +1476,21 @@
   "advancements.gempire.desolate_lands.dagger.description": "Obtain the Huntress's Dagger. You should take this to a place of importance.",
   "advancements.gempire.desolate_lands.star.title": "Starlight, star bright, first star I see tonight",
   "advancements.gempire.desolate_lands.star.description": "Obtain the Empress's Star. You should take this to a place of importance.",
-
   "enchantment.gempire.shatter": "Breaking Point",
   "enchantment.gempire.gem_protection": "Gem Protection",
-
   "fluid_type.gempire.pink_essence_fluid": "Pink Gem Essence",
   "fluid_type.gempire.blue_essence_fluid": "Blue Gem Essence",
   "fluid_type.gempire.yellow_essence_fluid": "Yellow Gem Essence",
   "fluid_type.gempire.white_essence_fluid": "White Gem Essence",
-
   "block.gempire.pink_essence_block": "Pink Gem Essence",
   "block.gempire.blue_essence_block": "Blue Gem Essence",
   "block.gempire.yellow_essence_block": "Yellow Gem Essence",
   "block.gempire.white_essence_block": "White Gem Essence",
-
   "trim_material.gempire.prismatic": "Prismatic Material",
-
   "key.categories.gempire": "Gempire",
   "key.gempire.descend": "Lapis Descend",
   "key.gempire.glide": "Lapis Glide",
   "key.gempire.warp": "Warp",
-
   "block.minecraft.banner.gempire.diamond.white": "White Diamond Insignia",
   "block.minecraft.banner.gempire.diamond.red": "Red Diamond Insignia",
   "block.minecraft.banner.gempire.diamond.orange": "Orange Diamond Insignia",
@@ -1685,7 +1507,6 @@
   "block.minecraft.banner.gempire.diamond.light_gray": "Light Gray Diamond Insignia",
   "block.minecraft.banner.gempire.diamond.gray": "Gray Diamond Insignia",
   "block.minecraft.banner.gempire.diamond.black": "Black Diamond Insignia",
-
   "block.minecraft.banner.gempire.pink_diamond.white": "White Pink Diamond Insignia",
   "block.minecraft.banner.gempire.pink_diamond.red": "Red Pink Diamond Insignia",
   "block.minecraft.banner.gempire.pink_diamond.orange": "Orange Pink Diamond Insignia",
@@ -1702,7 +1523,6 @@
   "block.minecraft.banner.gempire.pink_diamond.light_gray": "Light Gray Pink Diamond Insignia",
   "block.minecraft.banner.gempire.pink_diamond.gray": "Gray Pink Diamond Insignia",
   "block.minecraft.banner.gempire.pink_diamond.black": "Black Pink Diamond Insignia",
-
   "block.minecraft.banner.gempire.blue_diamond.white": "White Blue Diamond Insignia",
   "block.minecraft.banner.gempire.blue_diamond.red": "Red Blue Diamond Insignia",
   "block.minecraft.banner.gempire.blue_diamond.orange": "Orange Blue Diamond Insignia",
@@ -1719,7 +1539,6 @@
   "block.minecraft.banner.gempire.blue_diamond.light_gray": "Light Gray Blue Diamond Insignia",
   "block.minecraft.banner.gempire.blue_diamond.gray": "Gray Blue Diamond Insignia",
   "block.minecraft.banner.gempire.blue_diamond.black": "Black Blue Diamond Insignia",
-
   "block.minecraft.banner.gempire.yellow_diamond.white": "White Yellow Diamond Insignia",
   "block.minecraft.banner.gempire.yellow_diamond.red": "Red Yellow Diamond Insignia",
   "block.minecraft.banner.gempire.yellow_diamond.orange": "Orange Yellow Diamond Insignia",
@@ -1736,7 +1555,6 @@
   "block.minecraft.banner.gempire.yellow_diamond.light_gray": "Light Gray Yellow Diamond Insignia",
   "block.minecraft.banner.gempire.yellow_diamond.gray": "Gray Yellow Diamond Insignia",
   "block.minecraft.banner.gempire.yellow_diamond.black": "Black Yellow Diamond Insignia",
-
   "block.minecraft.banner.gempire.white_diamond.white": "White White Diamond Insignia",
   "block.minecraft.banner.gempire.white_diamond.red": "Red White Diamond Insignia",
   "block.minecraft.banner.gempire.white_diamond.orange": "Orange White Diamond Insignia",

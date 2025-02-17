@@ -40,10 +40,10 @@ public class RequestPoof {
                 if (sender != null ) {
                     EntityGem gem = (EntityGem) sender.level().getEntity(msg.entityID);
                     if (gem != null) {
+                        gem.poofed = true;
                         gem.hurt(gem.damageSources().magic(), gem.getMaxHealth() * 20);
                         gem.setCracked(false);
                         gem.setShatter(false);
-                        gem.poofed = true;
                     }
                 }
             });

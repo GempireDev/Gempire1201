@@ -73,13 +73,13 @@ public class EntityAIFarm extends Goal {
             maxDistance = newDistance;
             this.target = crop;
         }
-        return this.target != null && this.target != BlockPos.ZERO && this.follower.getMovementType() == 0;
+        return this.target != null && this.target != BlockPos.ZERO && this.follower.getMovementType() == 4;
     }
 
     @Override
     public boolean canContinueToUse() {
         return this.target != null && !this.follower.getNavigation().isDone() &&
-                this.follower.distanceToSqr(target.getX(), target.getY(), target.getZ()) > Math.pow(4, 2) && this.follower.getMovementType() == 0;
+                this.follower.distanceToSqr(target.getX(), target.getY(), target.getZ()) > Math.pow(4, 2) && this.follower.getMovementType() == 4;
     }
 
     @Override

@@ -414,10 +414,10 @@ public class ModBlocks {
             new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK)));
 
     public static final RegistryObject<Block> SELENITE_SLAB = BLOCKS.register("selenite_slab", () ->
-            new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB)));
+            new SlabBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_SLAB)));
 
     public static final RegistryObject<Block> SELENITE_STAIRS = BLOCKS.register("selenite_stairs", () ->
-            new StairBlock(() -> ModBlocks.SELENITE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS)));
+            new StairBlock(() -> ModBlocks.SELENITE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.QUARTZ_STAIRS)));
 
     public static final RegistryObject<Block> SELENITE_WALL = BLOCKS.register("selenite_wall", () ->
             new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL))
@@ -427,10 +427,10 @@ public class ModBlocks {
             new Block(BlockBehaviour.Properties.copy(Blocks.SMOOTH_QUARTZ)));
 
     public static final RegistryObject<Block> POLISHED_SELENITE_SLAB = BLOCKS.register("polished_selenite_slab", () ->
-            new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB)));
+            new SlabBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_SLAB)));
 
     public static final RegistryObject<Block> POLISHED_SELENITE_STAIRS = BLOCKS.register("polished_selenite_stairs", () ->
-            new StairBlock(() -> ModBlocks.POLISHED_SELENITE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS)));
+            new StairBlock(() -> ModBlocks.POLISHED_SELENITE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.QUARTZ_STAIRS)));
 
     public static final RegistryObject<Block> POLISHED_SELENITE_WALL = BLOCKS.register("polished_selenite_wall", () ->
             new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL))

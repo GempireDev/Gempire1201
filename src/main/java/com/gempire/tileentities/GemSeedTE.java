@@ -433,6 +433,7 @@ public class GemSeedTE extends BlockEntity {
             }
             //gem.generateScoutList();
             gem.idlePowers = gem.generateIdlePowers();
+            gem.physicalPowers = gem.generatePhysicalPowers();
             if (gem.spawnGem != null) {
                 gem.spawnGem.remove(Entity.RemovalReason.DISCARDED);
             }

@@ -68,12 +68,8 @@ public class EntityAIBuildFarm extends Goal {
                    list2.add(pos);
                 }
             } else if (state == Blocks.DIRT.defaultBlockState() || state == Blocks.GRASS_BLOCK.defaultBlockState()) {
-                if (pos.getY() < yFarm) list2.add(pos);
-                else if (pos.getY() != yFarm) {
+                if (pos.getY() >= yFarm) {
                     level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
-                    ArrayList<ItemStack> listInv = new ArrayList<>();
-                    listInv.add(Items.DIRT.getDefaultInstance());
-                    follower.addToInventoryList(listInv);
                 }
             } else if (state == Blocks.GRASS.defaultBlockState()) {
                 level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
@@ -83,8 +79,8 @@ public class EntityAIBuildFarm extends Goal {
                 if (posInChunk.getY() == yFarm) {
                     if (posInChunk.equals(new BlockPos(4, pos.getY(), 4)) || posInChunk.equals(new BlockPos(11, pos.getY(), 4)) || posInChunk.equals(new BlockPos(4, pos.getY(), 11)) || posInChunk.equals(new BlockPos(11, pos.getY(), 11))) {
                         level.setBlockAndUpdate(pos, Blocks.WATER.defaultBlockState());
-                        follower.consumeItemCheck(Items.WATER_BUCKET, 2);
-                    } else if ((posInChunk.getX() == 0 || posInChunk.getZ() == 0) && (posInChunk.getX() == 15 || posInChunk.getZ() == 15)) {
+                        follower.consumeItemCheck(Items.WATER_BUCKET, 1);
+                    } else if ((posInChunk.getX() == 0 || posInChunk.getZ() == 0) && (posInChunk.getX() == 15 || posInChunk.getZ() == 15) && (posInChunk.getX() == 15 || posInChunk.getZ() == 0) && (posInChunk.getX() == 0 || posInChunk.getZ() == 15)) {
                         level.setBlockAndUpdate(pos, Blocks.OAK_LOG.defaultBlockState());
                         follower.consumeItemCheck(Items.OAK_LOG, 1);
                     } else if (posInChunk.getX() == 0 || posInChunk.getZ() == 0 || posInChunk.getX() == 15 || posInChunk.getZ() == 15 &&
@@ -95,8 +91,14 @@ public class EntityAIBuildFarm extends Goal {
                         level.setBlockAndUpdate(pos, Blocks.FARMLAND.defaultBlockState());
                     }
                 }
+            } else {
+                if (level.getBlockState(pos) != Blocks.AIR.defaultBlockState()) {
+                    System.out.println("AIR BLOCK");
+                    level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
+                }
             }
         }
+        for (int i = 0; i < 192; i++) follower.consumeItemCheck(Items.DIRT, 1);
         target = null;
         this.follower.setPathfindingMalus(BlockPathTypes.WATER, 0);
         ArrayList<ItemStack> list3 = new ArrayList<>();
