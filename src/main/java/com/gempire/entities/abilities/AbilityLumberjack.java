@@ -18,12 +18,4 @@ public class AbilityLumberjack extends Ability implements IPhysicalAbility {
         return Component.translatable("ability.gempire.lumberjack");
     }
 
-    @Override
-    public void execute() {
-        if (!holder.getRebelled()) {
-            if (holder.abilityTicks >= 30) {
-                holder.abilityTicks = 0;
-            }
-        }
-    }
 }

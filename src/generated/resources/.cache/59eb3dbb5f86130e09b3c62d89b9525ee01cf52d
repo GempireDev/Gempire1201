@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-04T14:42:28.582713	Loot Tables
+// 1.20.1	2025-02-18T19:18:35.387157	Loot Tables
 3563fbcf8563263afd9f878ab9ce993c99892f66 data/gempire/loot_tables/blocks/abnormal_sand.json
 e92c16f5ce8ec1e58947f3367b0ba30450bc85b7 data/gempire/loot_tables/blocks/abnormal_sandstone.json
 d1ffac05fb9bcfebb135538415c355c7f46fef10 data/gempire/loot_tables/blocks/abnormal_sandstone_slab.json
@@ -357,7 +357,6 @@ ee50a75f8f41b3b6460714ebdb24d507ed20a3bc data/gempire/loot_tables/blocks/peculia
 35359b2101979255cb89d28423c6bbeae3ec04c1 data/gempire/loot_tables/blocks/peculiar_sandstone_stairs.json
 2b1e0edefd10b87a9599233eecaba05d651a81e4 data/gempire/loot_tables/blocks/peculiar_sandstone_wall.json
 4b75a8ee700d4bd9ac8480628642b36ec1bb78d4 data/gempire/loot_tables/blocks/pedistal.json
-c2de2af117b7f890578428072d8cd5680c6d6ca2 data/gempire/loot_tables/blocks/pegmatite.json
 8ec0ea2d56309ca47cdc407252615b4c22f37c35 data/gempire/loot_tables/blocks/pegmatite_slab.json
 96cdb5a5026fa4d06652cf582ce8e9e44d50a7ba data/gempire/loot_tables/blocks/pegmatite_stairs.json
 d39107dbc521dc0d73132028668438f6f394107e data/gempire/loot_tables/blocks/pegmatite_tungsten_ore.json

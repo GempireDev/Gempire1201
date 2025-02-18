@@ -402,10 +402,10 @@ public class ModBlocks {
             new PhosphorusBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)));
 
     public static final RegistryObject<Block> SELENITE_CLUSTER = BLOCKS.register("selenite_cluster", () ->
-            new SeleniteClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER)));
+            new SeleniteClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER).sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> BUDDING_SELENITE = BLOCKS.register("budding_selenite", () ->
-            new BuddingSeleniteBlock(BlockBehaviour.Properties.copy(Blocks.BUDDING_AMETHYST)));
+            new BuddingSeleniteBlock(BlockBehaviour.Properties.copy(Blocks.BUDDING_AMETHYST).sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> ROUGH_SELENITE = BLOCKS.register("rough_selenite", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK)));

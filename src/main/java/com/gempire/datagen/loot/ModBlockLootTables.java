@@ -303,7 +303,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_SELENITE_WALL.get());
         this.add(ModBlocks.POLISHED_SELENITE_SLAB.get(), (block -> createSlabItemTable(ModBlocks.POLISHED_SELENITE_SLAB.get())));
         this.dropSelf(ModBlocks.POLISHED_SELENITE_STAIRS.get());
-        this.dropSelf(ModBlocks.PEGMATITE.get());
         this.dropSelf(ModBlocks.PEGMATITE_WALL.get());
         this.add(ModBlocks.PEGMATITE_SLAB.get(), (block -> createSlabItemTable(ModBlocks.PEGMATITE_SLAB.get())));
         this.dropSelf(ModBlocks.PEGMATITE_STAIRS.get());
@@ -628,6 +627,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         list.remove(ModBlocks.CONGEALED_YELLOW_ESSENCE_BLOCK.get());
         list.remove(ModBlocks.CONGEALED_WHITE_ESSENCE_BLOCK.get());
         list.remove(ModBlocks.DESOLATE_GRASS.get());
+        list.remove(ModBlocks.PEGMATITE.get());
         return list;
     }
 

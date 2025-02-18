@@ -795,9 +795,6 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         for (IIdleAbility power : this.getIdlePowers()) {
             if (this.focusCheck()) power.execute();
         }
-        for (IPhysicalAbility power : this.getPhysicalPowers()) {
-            if (this.focusCheck()) power.execute();
-        }
         if (this.isSunBurnTick()) {
             if (this.getHealth() < this.getMaxHealth() && this.tickCount % 20 == 0) {
                 this.heal(1.0F);

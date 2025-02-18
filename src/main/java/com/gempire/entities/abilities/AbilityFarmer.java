@@ -17,8 +17,4 @@ public class AbilityFarmer extends Ability implements IPhysicalAbility {
         return Component.translatable("ability.gempire.farmer");
     }
 
-    @Override
-    public void execute() {
-
-    }
 }

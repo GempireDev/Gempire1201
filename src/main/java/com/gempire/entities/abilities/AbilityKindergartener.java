@@ -2,13 +2,14 @@ package com.gempire.entities.abilities;
 
 import com.gempire.entities.abilities.base.Ability;
 import com.gempire.entities.abilities.interfaces.IIdleAbility;
+import com.gempire.entities.abilities.interfaces.IPhysicalAbility;
 import com.gempire.entities.bases.EntityGem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
 
 import java.util.List;
 
-public class AbilityKindergartener extends Ability implements IIdleAbility {
+public class AbilityKindergartener extends Ability implements IPhysicalAbility {
 
     public AbilityKindergartener(){
         super("kindergartener", 3);
@@ -18,8 +19,4 @@ public class AbilityKindergartener extends Ability implements IIdleAbility {
         return Component.translatable("ability.gempire.kindergardener");
     }
 
-    @Override
-    public void execute() {
-
-    }
 }
