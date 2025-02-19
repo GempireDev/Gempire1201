@@ -29,7 +29,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Red Sandstone$(li)Bone Block$(li)Fire Coral$(li)Raw Gold"
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Red Sandstone$(li)Bone Block$(li)Fire Coral Block$(li)Raw Gold$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

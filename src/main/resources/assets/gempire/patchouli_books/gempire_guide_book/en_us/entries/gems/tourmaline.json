@@ -29,7 +29,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Mycelium$(li)Honeycomb Block$(li)Moss Block"
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Moss Block$(li)Honeycomb Block$(li)Mycelium Block$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

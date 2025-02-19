@@ -28,7 +28,7 @@ public class InjectionRegistry {
         listBasic.add(new GemInfo(new int[]{0, 0, 35, 0, 0, 15}, 0.65f, "lapis_lazuli", Items.NAUTILUS_SHELL));
         listBasic.add(new GemInfo(new int[]{0, 0, 20, 20, 5, 0}, 1.4f, "peridot", Items.EXPERIENCE_BOTTLE));
         listBasic.add(new GemInfo(new int[]{10, 10, 25, 0, 0, 0}, 1.35f, "quartz", Items.AMETHYST_BLOCK));
-        listBasic.add(new GemInfo(new int[]{10, 0, 15, 5, 0, 0}, 1.6f, "ruby", Items.MAGMA_BLOCK));
+        listBasic.add(new GemInfo(new int[]{10, 0, 15, 0, 20, 0}, 1.6f, "ruby", Items.MAGMA_BLOCK));
         listBasic.add(new GemInfo(new int[]{10, 0, 15, 15, 0, 0}, 1.6f, "rutile", Items.FIRE_CHARGE));
         listBasic.add(new GemInfo(new int[]{30, 0, 30, 0, 0, 0}, 1.25f, "spinel", Items.NETHER_WART));
         listBasic.add(new GemInfo(new int[]{0, 0, 40, 10, 0, 0}, 1.25f, "topaz", Items.GILDED_BLACKSTONE));
@@ -49,7 +49,7 @@ public class InjectionRegistry {
         list.add(new GemInfo(new int[]{0, 10, 10, 0, 15, 0}, 1.75f, "obsidian", Items.END_CRYSTAL));
         list.add(new GemInfo(new int[]{0, 0, 20, 20, 5, 0}, 1.4f, "peridot", Items.EXPERIENCE_BOTTLE));
         list.add(new GemInfo(new int[]{10, 10, 25, 0, 0, 0}, 1.35f, "quartz", Items.AMETHYST_BLOCK));
-        list.add(new GemInfo(new int[]{10, 0, 15, 5, 0, 0}, 1.6f, "ruby", Items.MAGMA_BLOCK));
+        list.add(new GemInfo(new int[]{10, 0, 15, 0, 20, 0}, 1.6f, "ruby", Items.MAGMA_BLOCK));
         list.add(new GemInfo(new int[]{10, 0, 15, 15, 0, 0}, 1.6f, "rutile", Items.FIRE_CHARGE));
         list.add(new GemInfo(new int[]{0, 10, 40, 10, 0, 0}, 0.35f, "sapphire", Items.ENDER_EYE));
         list.add(new GemInfo(new int[]{30, 0, 30, 0, 0, 0}, 1.25f, "spinel", Items.NETHER_WART));
@@ -110,10 +110,10 @@ public class InjectionRegistry {
         blockList.put(Blocks.DIAMOND_ORE, new CruxInfo(new int[]{0, 0, 10, 0, 0, 0}, Blocks.DIAMOND_ORE, "diamond_ore"));
         blockList.put(Blocks.DEEPSLATE_DIAMOND_ORE, new CruxInfo(new int[]{0, 0, 10, 0, 0, 0}, Blocks.DEEPSLATE_DIAMOND_ORE, "deepslate_diamond_ore"));
         blockList.put(Blocks.DIAMOND_BLOCK, new CruxInfo(new int[]{0, 0, 15, 0, 0, 0}, Blocks.DIAMOND_BLOCK, "diamond_block"));
-        blockList.put(Blocks.NETHER_QUARTZ_ORE, new CruxInfo(new int[]{0, 0, 5, 0, 0, 0}, Blocks.NETHER_QUARTZ_ORE, "nether_quartz_ore"));
+        blockList.put(Blocks.NETHER_QUARTZ_ORE, new CruxInfo(new int[]{0, 0, 5, 0, 5, 0}, Blocks.NETHER_QUARTZ_ORE, "nether_quartz_ore"));
         blockList.put(Blocks.QUARTZ_BLOCK, new CruxInfo(new int[]{0, 0, 15, 0, 0, 0}, Blocks.QUARTZ_BLOCK, "quartz_block"));
         blockList.put(Blocks.ANCIENT_DEBRIS, new CruxInfo(new int[]{0, 10, 10, 0, 0, 0}, Blocks.ANCIENT_DEBRIS, "ancient_debris"));
-        blockList.put(Blocks.NETHERITE_BLOCK, new CruxInfo(new int[]{0, 15, 20, 0, 0, 0}, Blocks.NETHERITE_BLOCK, "netherite_block"));
+        blockList.put(Blocks.NETHERITE_BLOCK, new CruxInfo(new int[]{0, 15, 20, 10, 0, 0}, Blocks.NETHERITE_BLOCK, "netherite_block"));
         blockList.put(Blocks.GLOWSTONE, new CruxInfo(new int[]{0, 0, 5, 0, 0, 0}, Blocks.GLOWSTONE, "glowstone"));
         blockList.put(Blocks.AMETHYST_BLOCK, new CruxInfo(new int[]{0, 0, 5, 0, 0, 0}, Blocks.AMETHYST_BLOCK, "amethyst_block"));
         blockList.put(Blocks.BUDDING_AMETHYST, new CruxInfo(new int[]{0, 0, 10, 0, 0, 0}, Blocks.BUDDING_AMETHYST, "budding_amethyst"));
@@ -244,8 +244,9 @@ public class InjectionRegistry {
         blockList.put(Blocks.PACKED_MUD, new CruxInfo(new int[]{0, 0, 0, 0, 0, 15}, Blocks.PACKED_MUD, "packed_mud"));
         blockList.put(Blocks.SEA_LANTERN, new CruxInfo(new int[]{0, 10, 0, 0, 0, 15}, Blocks.SEA_LANTERN, "sea_lantern"));
         blockList.put(Blocks.GILDED_BLACKSTONE, new CruxInfo(new int[]{0, 10, 5, 10, 0, 0}, Blocks.GILDED_BLACKSTONE, "gilded_blackstone"));
-        blockList.put(Blocks.NETHER_GOLD_ORE, new CruxInfo(new int[]{0, 0, 0, 5, 0, 0}, Blocks.NETHER_GOLD_ORE, "nether_gold_ore"));
+        blockList.put(Blocks.NETHER_GOLD_ORE, new CruxInfo(new int[]{0, 0, 0, 5, 5, 0}, Blocks.NETHER_GOLD_ORE, "nether_gold_ore"));
         blockList.put(Blocks.PURPUR_BLOCK, new CruxInfo(new int[]{0, 10, 5, 0, 0, 0}, Blocks.PURPUR_BLOCK, "purpur_block"));
         blockList.put(Blocks.PURPUR_PILLAR, new CruxInfo(new int[]{0, 10, 5, 0, 0, 0}, Blocks.PURPUR_PILLAR, "purpur_pillar"));
+        blockList.put(Blocks.NETHERRACK, new CruxInfo(new int[]{0, 5, 0, 0, 15, 0}, Blocks.NETHERRACK, "netherrack"));
     }
 }

@@ -30,7 +30,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Soul Soil$(li)Prismarine$(li)Ghast Tear"
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Soul Soil$(li)Prismarine$(li)Ghast Tear$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

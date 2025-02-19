@@ -29,7 +29,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Clay$(li)Raw Iron Block$(li)Smooth Basalt$(li)Experience Bottle"
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Clay$(li)Smooth Basalt Block$(li)Raw Iron Block$(li)Experience Bottle$(br2)This list is ordered from least to most favorable."
     }
   ]
 }
