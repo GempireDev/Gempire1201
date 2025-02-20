@@ -36,6 +36,12 @@ public class ModEntities {
                     .sized(.6f, 1.2f) // Hitbox Size
                     .build(new ResourceLocation(Gempire.MODID, "pepo").toString()));
 
+    public static final RegistryObject<EntityType<EntityRobonoid>> ROBONOID = ENTITIES.register("robonoid",
+            () -> EntityType.Builder.of(EntityRobonoid::new, MobCategory.MISC)
+                    .sized(.6f, 1.2f) // Hitbox Size
+                    .build(new ResourceLocation(Gempire.MODID, "robonoid").toString()));
+
+
     public static final RegistryObject<EntityType<EntityFleurie>> FLEURIE = ENTITIES.register("fleurie",
             () -> EntityType.Builder.of(EntityFleurie::new, MobCategory.CREATURE)
                     .sized(.6f, .7f) // Hitbox Size

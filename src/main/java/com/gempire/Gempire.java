@@ -100,6 +100,8 @@ public class Gempire
     public void EntityAttributes(final EntityAttributeCreationEvent event){
         event.put(ModEntities.PEPO.get(), EntityPepo.registerAttributes().build());
 
+        event.put(ModEntities.ROBONOID.get(), EntityRobonoid.registerAttributes().build());
+
         event.put(ModEntities.FLEURIE.get(), EntityFleurie.registerAttributes().build());
 
         event.put(ModEntities.OVERSEER.get(), EntityOverseer.registerAttributes().build());
