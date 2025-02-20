@@ -25,7 +25,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Ender Eye$(li)Blue Ice$(li)Diamond Block"
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Blue Ice Block$(li)Eye of Ender$(li)Diamond Block$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

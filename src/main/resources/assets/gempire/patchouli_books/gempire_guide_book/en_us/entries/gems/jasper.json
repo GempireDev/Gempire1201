@@ -30,7 +30,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Quartz Block$(li)Gilded Blackstone$(li)Raw Iron$(li)Blaze Rod"
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Raw Iron$(li)Quartz Block$(li)Gilded Blackstone$(li)Blaze Rod$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

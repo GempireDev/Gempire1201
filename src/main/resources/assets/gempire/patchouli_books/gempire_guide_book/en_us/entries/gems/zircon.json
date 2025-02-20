@@ -29,7 +29,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Sculk$(li)Deepslate$(li)Diamond Block$(li)Ancient Debris"
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Deepslate Block(li)Ancient Debris Block$(li)Diamond Block$(li)Sculk Block$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

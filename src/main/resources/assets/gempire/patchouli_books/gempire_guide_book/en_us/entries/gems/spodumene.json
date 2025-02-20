@@ -29,7 +29,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Bone Block$(li)Brain Coral$(li)Glowstone"
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Glowstone$(li)Bone Block$(li)Brain Coral Block$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

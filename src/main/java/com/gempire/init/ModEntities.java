@@ -353,16 +353,16 @@ public class ModEntities {
     });
     public static void registerCruxes() {
         InjectorContainer.primer.add(Items.GOLDEN_APPLE);
-        InjectorContainer.primer.add(Items.GOLD_BLOCK);
+        InjectorContainer.primer.add(Items.GILDED_BLACKSTONE);
         InjectorContainer.primer.add(Items.BLAZE_ROD);
         InjectorContainer.primer.add(Items.BLUE_ICE);
         InjectorContainer.primer.add(Items.EXPERIENCE_BOTTLE);
-        InjectorContainer.primer.add(Items.NETHER_STAR);
-        InjectorContainer.primer.add(Items.NETHERITE_INGOT);
+        InjectorContainer.primer.add(Items.AMETHYST_BLOCK);
+        InjectorContainer.primer.add(Items.MAGMA_BLOCK);
         InjectorContainer.primer.add(Items.FIRE_CHARGE);
         InjectorContainer.primer.add(Items.DRAGON_BREATH);
         InjectorContainer.primer.add(Items.GHAST_TEAR);
-        InjectorContainer.primer.add(Items.NETHERITE_SWORD);
+        InjectorContainer.primer.add(ModItems.PRISMATIC_BLOCK.get());
         InjectorContainer.primer.add(Items.BONE_BLOCK);
         InjectorContainer.primer.add(Items.NAUTILUS_SHELL);
         InjectorContainer.primer.add(Items.WITHER_ROSE);

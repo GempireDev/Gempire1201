@@ -29,7 +29,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Netherrack$(li)Raw Copper$(li)Sculk$(li)Bone Block"
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Netherrack$(li)Raw Copper$(li)Bone Block$(li)Sculk Block$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

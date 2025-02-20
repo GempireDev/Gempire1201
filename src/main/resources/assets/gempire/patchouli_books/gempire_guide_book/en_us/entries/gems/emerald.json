@@ -29,7 +29,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Emerald Block$(li)Ancient Debris$(li)End Stone"
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)End Stone$(li)Emerald Block$(li)Ancient Debris$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

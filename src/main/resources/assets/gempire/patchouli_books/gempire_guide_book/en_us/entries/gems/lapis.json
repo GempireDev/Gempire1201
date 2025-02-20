@@ -29,7 +29,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Lapis Block$(li)Dark Prismarine$(li)Calcite"
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Calcite$(li)Dark Prismarine$(li)Lapis Block$(br2)This list is ordered from least to most favorable."
     }
   ]
 }
