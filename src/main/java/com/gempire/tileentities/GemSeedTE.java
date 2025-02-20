@@ -230,6 +230,7 @@ public class GemSeedTE extends BlockEntity {
         ArrayList<Float> possibleQualities = new ArrayList<>();
         int threshhold = 50;
         System.out.println("gem Info Size " + gemInfoList.size());
+        System.out.println("seed resources "+Arrays.toString(info.resources));
         for (GemInfo gemInfo : gemInfoList) {
             int distance = 0;
             int[] res = gemInfo.getResources();
@@ -257,35 +258,29 @@ public class GemSeedTE extends BlockEntity {
             toForm = possibleResults.get(random);
             float qualityFloat = possibleQualities.get(random);
             if (!primeBoosted) {
-                if (qualityFloat <= 0.25) {
-                    if (qualityFloat <= 0.09) {
-                        quality = 5;
-                    } else if (qualityFloat <= 0.175) {
-                        quality = 4;
-                    } else {
-                        quality = 3;
-                    }
+                if (qualityFloat <= 0.09) {
+                    quality = 4;
                     clod = true;
-                } else if (qualityFloat >= 0.95) {
+                } else if (qualityFloat <= 0.175) {
+                    quality = 3;
+                    clod = true;
+                }else if (qualityFloat >= 0.95) {
                     quality = 0;
-                } else if (qualityFloat <= 0.4) {
+                } else if (qualityFloat <= 0.25) {
                     quality = 2;
                 } else {
                     quality = 1;
                 }
             } else {
-                if (qualityFloat <= 0.15) {
-                    if (qualityFloat <= 0.03) {
-                        quality = 5;
-                    } else if (qualityFloat <= 0.09) {
-                        quality = 4;
-                    } else {
-                        quality = 3;
-                    }
+                if (qualityFloat <= 0.03) {
+                    quality = 5;
+                    clod = true;
+                } else if (qualityFloat <= 0.09) {
+                    quality = 4;
                     clod = true;
                 } else if (qualityFloat >= 0.85) {
                     quality = 0;
-                } else if (qualityFloat <= 0.3) {
+                } else if (qualityFloat <= 0.2) {
                     quality = 2;
                 } else {
                     quality = 1;
