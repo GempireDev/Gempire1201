@@ -4,6 +4,14 @@
     "gempire:electrum_ore",
     "gempire:thulite_ore",
     "gempire:platinum_ore",
+    "gempire:anatase_block",
+    "gempire:electrum_block",
+    "gempire:thulite_block",
+    "gempire:platinum_block",
+    "gempire:raw_anatase_block",
+    "gempire:raw_electrum_block",
+    "gempire:raw_thulite_block",
+    "gempire:raw_platinum_block",
     "gempire:warp_pad"
   ]
 }

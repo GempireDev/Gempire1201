@@ -228,7 +228,7 @@ public class GemSeedTE extends BlockEntity {
         spawned = true;
         ArrayList<GemInfo> possibleResults = new ArrayList<>();
         ArrayList<Float> possibleQualities = new ArrayList<>();
-        int threshhold = 50;
+        int threshhold = 200;
         System.out.println("gem Info Size " + gemInfoList.size());
         System.out.println("seed resources "+Arrays.toString(info.resources));
         for (GemInfo gemInfo : gemInfoList) {

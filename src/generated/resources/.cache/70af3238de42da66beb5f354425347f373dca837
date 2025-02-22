@@ -1,13 +1,13 @@
-// 1.20.1	2025-02-18T19:18:35.384935	Block Tags
+// 1.20.1	2025-02-19T21:14:55.0266324	Block Tags
 3d642b3b90a1e6b43daab61cf1557711f2e0cadd data/forge/tags/blocks/gravel.json
 2574da384122fba78e2b405c5d23945f16e85f1d data/forge/tags/blocks/stone.json
 2574da384122fba78e2b405c5d23945f16e85f1d data/gempire/tags/blocks/desolate_ore_replaceables.json
 e8def1689590b3c9de3110b63caa950e75625ca8 data/gempire/tags/blocks/empress_lands_on.json
-6424bf8143b1d9085bff4c9d45d34951b6584e96 data/gempire/tags/blocks/needs_prismatic_tool.json
+e050bd2b87c6505ec12ff3ef419781e86a603258 data/gempire/tags/blocks/needs_prismatic_tool.json
 4aa2ece73285d5dca0fe1445296692bb60c43e8a data/minecraft/tags/blocks/beacon_base_blocks.json
 b0ae8ed97d2503efa87adfaa4360898f5de0896a data/minecraft/tags/blocks/dirt.json
-dd4c8f9f9be7ce8373a4aa1e44264dc0befde2ac data/minecraft/tags/blocks/fence_gates.json
 c552b313972aef40fb3029a12d7b511917bc0b28 data/minecraft/tags/blocks/fences.json
+dd4c8f9f9be7ce8373a4aa1e44264dc0befde2ac data/minecraft/tags/blocks/fence_gates.json
 c37309cb78ab154bf59b27644fce72ee5ed0c4d8 data/minecraft/tags/blocks/flowers.json
 61155df806e13661a94abb0eef4e82d6abe5e5ed data/minecraft/tags/blocks/ice.json
 b8582981991d84d49df666b1e020c9788865b1d9 data/minecraft/tags/blocks/leaves.json

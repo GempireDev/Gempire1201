@@ -201,19 +201,19 @@ public class InjectorTE extends RandomizableContainerBlockEntity implements IFlu
         if (!fluidValid()) return;
 
         if (!pinkTank.isEmpty() && pinkOpen) {
-            info.resources[0] += 5;
+            info.resources[0] += 50;
             pinkTank.getFluid().setAmount(Math.max(pinkTank.getFluidAmount() - 200, 0));
         }
         if (!blueTank.isEmpty() && blueOpen) {
-            info.resources[2] += 5;
+            info.resources[2] += 50;
             blueTank.getFluid().setAmount(Math.max(blueTank.getFluidAmount() - 200, 0));
         }
         if (!yellowTank.isEmpty() && yellowOpen) {
-            info.resources[3] += 5;
+            info.resources[3] += 50;
             yellowTank.getFluid().setAmount(Math.max(yellowTank.getFluidAmount() - 200, 0));
         }
         if (!whiteTank.isEmpty() && whiteOpen) {
-            info.resources[1] += 5;
+            info.resources[1] += 50;
             whiteTank.getFluid().setAmount(Math.max(whiteTank.getFluidAmount() - 200, 0));
         }
 
