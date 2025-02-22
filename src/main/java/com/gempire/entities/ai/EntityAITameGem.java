@@ -42,10 +42,12 @@ public class EntityAITameGem extends Goal {
                 }
             }
         }
-        double maxDistance = Double.MAX_VALUE;
-        double newDistance = this.follower.distanceToSqr(gemToTame.getX(), gemToTame.getY(), gemToTame.getZ());
-        if (newDistance <= maxDistance) {
-            maxDistance = newDistance;
+        if  (gemToTame != null) {
+            double maxDistance = Double.MAX_VALUE;
+            double newDistance = this.follower.distanceToSqr(gemToTame.getX(), gemToTame.getY(), gemToTame.getZ());
+            if (newDistance <= maxDistance) {
+                maxDistance = newDistance;
+            }
         }
         return this.gemToTame != null && this.follower.getMovementType() == 4 && !gemToTame.getOwned();
     }

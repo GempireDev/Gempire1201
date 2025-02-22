@@ -131,6 +131,8 @@ public class GemSeedTE extends BlockEntity {
                     info.resources[3] += resMap.get(block).resources[3];
                     info.resources[4] += resMap.get(block).resources[4];
                     info.resources[5] += resMap.get(block).resources[5];
+                } else if (block instanceof DrainedBlock) {
+                    info.resources[0] -= 1;
                 }
             }
             drainBlock(toDrain);
