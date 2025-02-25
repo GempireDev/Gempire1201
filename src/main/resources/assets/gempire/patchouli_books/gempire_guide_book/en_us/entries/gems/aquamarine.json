@@ -30,6 +30,7 @@
     },
     {
       "type": "patchouli:text",
+      "advancement": "gempire:incubation/create_aquamarine",
       "text": "$(l)Incubation Cruxes$() $(br)$(li)Soul Soil$(li)Prismarine$(li)Ghast Tear$(br2)This list is ordered from least to most favorable."
     }
   ]

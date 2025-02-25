@@ -50,6 +50,7 @@
     },
     {
       "type": "patchouli:text",
+      "advancement": "gempire:incubation/create_morganite",
       "text": "$(l)Incubation Cruxes$() $(br)$(li)Soul Sand$(li)End Stone$(li)Phantom Membrane$(br2)This list is ordered from least to most favorable."
     }
   ]

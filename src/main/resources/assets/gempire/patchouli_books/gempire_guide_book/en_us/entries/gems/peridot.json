@@ -29,6 +29,7 @@
     },
     {
       "type": "patchouli:text",
+      "advancement": "gempire:incubation/create_peridot",
       "text": "$(l)Incubation Cruxes$() $(br)$(li)Clay$(li)Smooth Basalt Block$(li)Raw Iron Block$(li)Experience Bottle$(br2)This list is ordered from least to most favorable."
     }
   ]

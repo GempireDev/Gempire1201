@@ -11,7 +11,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "gempire:shale_gem",
-      "text": "The secondary, and more advanced way of obtaining essence, is by using a Shale."
+      "text": "The secondary, and more advanced way of obtaining essence, is by using a $(l:gempire:gems/shale)Shale$(/l)."
     }
   ]
 }

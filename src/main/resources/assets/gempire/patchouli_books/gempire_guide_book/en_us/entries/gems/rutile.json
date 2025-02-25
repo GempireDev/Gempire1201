@@ -29,6 +29,7 @@
     },
     {
       "type": "patchouli:text",
+      "advancement": "gempire:incubation/create_rutile",
       "text": "$(l)Incubation Cruxes$() $(br)$(li)Raw Copper$(li)Redstone$(li)Glowstone Dust$(li)Fire Charge$(br2)This list is ordered from least to most favorable."
     }
   ]

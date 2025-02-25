@@ -29,6 +29,7 @@
     },
     {
       "type": "patchouli:text",
+      "advancement": "gempire:incubation/create_lapis",
       "text": "$(l)Incubation Cruxes$() $(br)$(li)Calcite$(li)Dark Prismarine$(li)Lapis Block$(br2)This list is ordered from least to most favorable."
     }
   ]

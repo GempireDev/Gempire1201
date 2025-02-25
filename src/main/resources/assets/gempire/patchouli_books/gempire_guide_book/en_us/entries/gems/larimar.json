@@ -26,6 +26,7 @@
     },
     {
       "type": "patchouli:text",
+      "advancement": "gempire:incubation/create_larimar",
       "text": "$(l)Incubation Cruxes$() $(br)$(li)Snow Block$(li)Ice Block$(li)Packed Ice Block$(br2)This list is ordered from least to most favorable."
     }
   ]

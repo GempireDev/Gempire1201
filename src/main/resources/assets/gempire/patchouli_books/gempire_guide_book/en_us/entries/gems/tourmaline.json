@@ -29,6 +29,7 @@
     },
     {
       "type": "patchouli:text",
+      "advancement": "gempire:incubation/create_tourmaline",
       "text": "$(l)Incubation Cruxes$() $(br)$(li)Moss Block$(li)Honeycomb Block$(li)Mycelium Block$(br2)This list is ordered from least to most favorable."
     }
   ]

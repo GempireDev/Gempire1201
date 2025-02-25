@@ -29,6 +29,7 @@
     },
     {
       "type": "patchouli:text",
+      "advancement": "gempire:incubation/create_bismuth",
       "text": "$(l)Incubation Cruxes$() $(br)$(li)Magma Block$(li)Iron Block$(li)Tungsten Block$(br2)This list is ordered from least to most favorable."
     }
   ]

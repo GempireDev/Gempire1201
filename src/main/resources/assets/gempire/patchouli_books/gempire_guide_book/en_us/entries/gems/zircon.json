@@ -29,6 +29,7 @@
     },
     {
       "type": "patchouli:text",
+      "advancement": "gempire:incubation/create_zircon",
       "text": "$(l)Incubation Cruxes$() $(br)$(li)Deepslate Block(li)Ancient Debris Block$(li)Diamond Block$(li)Sculk Block$(br2)This list is ordered from least to most favorable."
     }
   ]

@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "In order to incubate gems, first you must craft an Incubator. See the next page to find the recipe for the Incubator."
+      "text": "In order to incubate gems, first you must craft an Incubator."
     },
     {
       "type": "patchouli:crafting",
@@ -18,7 +18,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Each gem has a page in the guidebook that describes what its requirements are, including cruxes and Gem Essence colors."
+      "text": "Each gem has a page in the guidebook that describes what its requirements are, including favored blocks and gem essence colors."
     },
     {
       "type": "patchouli:text",

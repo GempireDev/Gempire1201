@@ -30,6 +30,7 @@
     },
     {
       "type": "patchouli:text",
+      "advancement": "gempire:incubation/create_spinel",
       "text": "$(l)Incubation Cruxes$() $(br)$(li)Slime Block$(li)Nether Wart$(li)Chorus Flower Block$(br2)This list is ordered from least to most favorable."
     }
   ]

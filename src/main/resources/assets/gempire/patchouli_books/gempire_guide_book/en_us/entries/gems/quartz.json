@@ -30,6 +30,7 @@
     },
     {
       "type": "patchouli:text",
+      "advancement": "gempire:incubation/create_quartz",
       "text": "$(l)Incubation Cruxes$() $(br)$(li)Raw Iron$(li)Quartz Block$(br2)This list is ordered from least to most favorable."
     }
   ]

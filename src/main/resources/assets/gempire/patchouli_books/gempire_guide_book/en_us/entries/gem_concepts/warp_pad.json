@@ -1,0 +1,24 @@
+{
+  "name": "Warp Pad",
+  "icon": "gempire:warp_pad",
+  "advancement": "gempire:root",
+  "category": "gempire:gem_concepts",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe ": true,
+      "item": "gempire:warp_pad",
+      "text": "A small teleporter used to travel great distances."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gempire:warp_seed",
+      "text": "One of the ingredients for the warp pad, known as the warp seed, can be found in various structure loot chests such as an archaeology building."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "gempire:warp_core",
+      "recipe2": "gempire:warp_pad"
+    }
+  ]
+}

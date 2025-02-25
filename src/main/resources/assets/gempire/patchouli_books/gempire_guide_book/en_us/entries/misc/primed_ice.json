@@ -18,7 +18,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "gempire:primed_blue_ice",
-      "recipe2": "gempire:primed_drained_ice"
+      "recipe2": "gempire:primed_black_ice"
     }
   ]
 }

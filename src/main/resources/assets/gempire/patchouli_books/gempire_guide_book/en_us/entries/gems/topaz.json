@@ -27,6 +27,7 @@
     },
     {
       "type": "patchouli:text",
+      "advancement": "gempire:incubation/create_topaz",
       "text": "$(l)Incubation Cruxes$() $(br)$(li)Raw Gold Block$(li)Gilded Blackstone$(br2)This list is ordered from least to most favorable."
     }
   ]

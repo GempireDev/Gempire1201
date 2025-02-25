@@ -28,6 +28,7 @@
     },
     {
       "type": "patchouli:text",
+      "advancement": "gempire:incubation/create_nephrite",
       "text": "$(l)Incubation Cruxes$() $(br)$(li)Honey Block$(li)Slime Block$(li)Wither Rose$(br2)This list is ordered from least to most favorable."
     }
   ]

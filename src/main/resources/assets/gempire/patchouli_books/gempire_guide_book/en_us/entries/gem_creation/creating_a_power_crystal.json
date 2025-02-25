@@ -7,7 +7,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "gempire:mica_gem",
-      "text": "In order to make a Power Crystal, you will need a Mica.$(br2)To have your Mica construct a Power Crystal, you will need to build this multiblock, then set her movement mode to stay and right click on her with a pickaxe."
+      "text": "In order to make a Power Crystal, you will need a $(l:gempire:gems/mica)Mica$(/l).$(br2)To have your Mica construct a Power Crystal, you will need to build this multiblock, then set her movement mode to stay and right click on her with a pickaxe."
     },
     {
       "type": "patchouli:multiblock",

@@ -14,7 +14,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "In order to Inject, first you must obtain a drill, a power crystal and an injector tank. A mica and a pebble may be useful to you."
+      "text": "In order to Inject, first you must obtain a drill, a power crystal and an injector tank. A $(l:gempire:gems/mica)Mica$(/l) and a $(l:gempire:gems/pebble)Pebble$(/l) may be useful to you."
     },
     {
       "type": "patchouli:multiblock",
@@ -50,16 +50,16 @@
       "title": "Gem Essence",
       "link_recipe ": false,
       "item": "gempire:white_essence_bucket,gempire:yellow_essence_bucket,gempire:blue_essence_bucket,gempire:pink_essence_bucket",
-      "text": "Don't forget to fill your bars! There's a slot at the top of the bars for gem essence bottles and congealed gem essences.$(br2)Each gem requires a specific color combination, but using all four essences at once will give any gem with great risk of lower quality gems.$(br2)Click the bars to select the color you want to use."
+      "text": "Don't forget to fill your bars! There's a slot at the top of the bars for gem essence bottles and congealed gem essences.$(br2)Each gem requires a specific color combination, but note that using them will not guarantee a gem thanks to some sharing certain combinations with one another.$(br2)Click the bars to select the color you want to use."
     },
     {
       "type": "patchouli:text",
-      "text": "Something to note is that tier two injectors have more slots available. These are used for prime boost items and speed boost items, influencing quality and emergence time."
+      "text": "Something to note is that tier two injectors have more slots available. These are used for prime boost items and speed boost items, influencing quality and emergence time.$(br2)Tier two injectors also have more gems available for injection, such as Bixbite and Nephrite."
     },
     {
       "type": "patchouli:text",
       "title": "Injecting",
-      "text": "Last but not least: in order to inject you can place a button, hand pedestal or some form of a redstone contraption leading to the back of the injector tank block.$(br2)After triggering it this will make the injector place a gem seed into the earth, which slowly drains nearby blocks to form a gem."
+      "text": "Last but not least: in order to inject you can place a button, hand pedestal, lever or some form of a redstone contraption leading to the back of the injector tank block.$(br2)After triggering it this will make the injector place a gem seed into the earth with a loud thud to signal the successful injection.$(br2)As the gem seed incubates, drained blocks will slowly appear over time around it."
     }
   ]
 }

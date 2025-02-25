@@ -7,7 +7,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "gempire:pebble_gem",
-      "text": "To make a Drill, you will need a pebble. Build the following multiblock, then tell her to stay and right-click her with a pickaxe in your hand so she can construct the drill."
+      "text": "To make a Drill, you will need a $(l:gempire:gems/pebble)Pebble$(/l). Build the following multiblock, then tell your Pebble to stay and right-click her with a pickaxe in your hand so she can construct the drill."
     },
     {
       "type": "patchouli:multiblock",

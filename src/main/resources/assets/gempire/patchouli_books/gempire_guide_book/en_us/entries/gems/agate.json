@@ -34,6 +34,7 @@
     },
     {
       "type": "patchouli:text",
+      "advancement": "gempire:incubation/create_agate",
       "text": "$(l)Incubation Cruxes$() $(br)$(li)Calcite$(li)Raw Copper Block$(li)Quartz Block$(br2)This list is ordered from least to most favorable."
     }
   ]
