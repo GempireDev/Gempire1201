@@ -76,32 +76,32 @@ public class ChromaBlock extends DirectionalBlock implements SimpleWaterloggedBl
         Direction direction = state.getValue(FACING);
         if (state.getBlock() == this) { //Forge: This function is called during world gen and placement, before this block is set, so if we are not 'here' then assume it's the pre-check.
             if (direction == Direction.UP) {
-                if (worldIn.getBlockState(pos.below()) != Blocks.AIR.defaultBlockState()) {
+                if (worldIn.getBlockState(pos.below()).isFaceSturdy(worldIn, pos.below(), Direction.UP)) {
                     return super.canSurvive(state, worldIn, pos);
                 }
             }
             if(direction == Direction.DOWN){
-                if(worldIn.getBlockState(pos.above()) != Blocks.AIR.defaultBlockState()){
+                if(worldIn.getBlockState(pos.above()).isFaceSturdy(worldIn, pos.below(), Direction.DOWN)){
                     return super.canSurvive(state, worldIn, pos);
                 }
             }
             if(direction == Direction.NORTH){
-                if(worldIn.getBlockState(pos.south()) != Blocks.AIR.defaultBlockState()){
+                if(worldIn.getBlockState(pos.south()).isFaceSturdy(worldIn, pos.below(), Direction.NORTH)){
                     return super.canSurvive(state, worldIn, pos);
                 }
             }
             if(direction == Direction.EAST){
-                if(worldIn.getBlockState(pos.west()) != Blocks.AIR.defaultBlockState()){
+                if(worldIn.getBlockState(pos.west()).isFaceSturdy(worldIn, pos.below(), Direction.EAST)){
                     return super.canSurvive(state, worldIn, pos);
                 }
             }
             if(direction == Direction.SOUTH){
-                if(worldIn.getBlockState(pos.north()) != Blocks.AIR.defaultBlockState()){
+                if(worldIn.getBlockState(pos.north()).isFaceSturdy(worldIn, pos.below(), Direction.SOUTH)){
                     return super.canSurvive(state, worldIn, pos);
                 }
             }
             if(direction == Direction.WEST){
-                if(worldIn.getBlockState(pos.east()) != Blocks.AIR.defaultBlockState()){
+                if(worldIn.getBlockState(pos.east()).isFaceSturdy(worldIn, pos.below(), Direction.WEST)){
                     return super.canSurvive(state, worldIn, pos);
                 }
             }

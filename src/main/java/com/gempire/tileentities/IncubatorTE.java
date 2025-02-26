@@ -958,7 +958,9 @@ public class IncubatorTE extends BaseContainerBlockEntity implements MenuProvide
         tag.putInt("quality", quality);
         egem.addAdditionalSaveData(tag);
         egem.finalizeSpawn((ServerLevelAccessor) this.level, this.level.getCurrentDifficultyAt(this.worldPosition), MobSpawnType.MOB_SUMMONED, null, null);
-        ItemStack stack = new ItemStack(gem);
+        ItemStack stack = null;
+        if (gem != null)
+            stack = new ItemStack(gem);
         ItemGem.saveData(stack, egem);
         egem.remove(Entity.RemovalReason.DISCARDED);
         stack.getOrCreateTag().putInt("quality", quality);
