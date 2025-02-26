@@ -1648,7 +1648,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         RegistryObject<Item> gemm;
         ItemGem gem = null;
         String name;
-        if(this instanceof EntityVaryingGem && !(this instanceof EntitySapphire)){
+        if(this instanceof EntityVaryingGem && !(this instanceof EntitySapphire) && !(this instanceof EntityZircon)){
             if(((EntityVaryingGem)this).UsesUniqueNames()) {
                 name = ((EntityVaryingGem) this).NameFromColor((byte) this.getSkinColorVariant()) + "_" + this.getWholeGemName() + "_gem";
             }

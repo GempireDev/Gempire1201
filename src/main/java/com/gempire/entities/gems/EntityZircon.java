@@ -150,15 +150,11 @@ public class EntityZircon extends EntityVaryingGem {
 
     @Override
     public boolean UsesUniqueNames() {
-        return false;
+        return true;
     }
 
     @Override
     public String NameFromColor(byte i) {
-        return "zircon";
-    }
-
-    public String NameFromColor() {
         return "zircon";
     }
 

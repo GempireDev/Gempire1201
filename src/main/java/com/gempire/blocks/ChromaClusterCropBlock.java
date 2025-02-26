@@ -64,8 +64,9 @@ public class ChromaClusterCropBlock extends CropBlock {
                     Direction direction = Direction.Plane.HORIZONTAL.getRandomDirection(random);
                     BlockPos blockpos = pos.relative(direction);
                     BlockState blockstate = level.getBlockState(blockpos.below());
-                    Block block = blockstate.getBlock();
-                    if (level.isEmptyBlock(blockpos) && (block == Blocks.STONE || block == Blocks.ANDESITE || block == Blocks.GRANITE || block == Blocks.DIORITE )) {
+                    System.out.println("pre base check");
+                    if (level.isEmptyBlock(blockpos) && blockstate.is(Tags.Blocks.STONE)) {
+                        System.out.println("grow");
                         switch (random.nextInt(16)) {
                             case 0 -> level.setBlockAndUpdate(blockpos, ModBlocks.RED_CHROMA_CRYSTAL.get().defaultBlockState());
                             case 1 -> level.setBlockAndUpdate(blockpos, ModBlocks.ORANGE_CHROMA_CRYSTAL.get().defaultBlockState());

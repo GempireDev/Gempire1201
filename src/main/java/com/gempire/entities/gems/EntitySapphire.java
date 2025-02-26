@@ -143,10 +143,6 @@ public class EntitySapphire extends EntityVaryingGem {
         return null;
     }
 
-    public String NameFromColor() {
-        return "";
-    }
-
     public int generateOutfitVariant() {
         return this.random.nextInt(31);
     }

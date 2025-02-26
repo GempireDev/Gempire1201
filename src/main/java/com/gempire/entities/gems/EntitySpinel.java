@@ -108,10 +108,6 @@ this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, EntityGem.class, 6.0F, 
         return "spinel";
     }
 
-    public String NameFromColor() {
-        return "spinel";
-    }
-
     @Override
     public boolean hasOutfitPlacementVariant() {
         return false;
