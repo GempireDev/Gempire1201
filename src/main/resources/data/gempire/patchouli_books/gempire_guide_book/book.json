@@ -1,13 +1,14 @@
 {
   "name": "GEM Field Guide",
-  "landing_text": "Welcome to the Gempire mod! The best way to start is creating Pebble gems using different colors of gem essence.$(br)Check their pages for more info!$(br)Pages for other gems will be added when you obtain them.",
-  "version": 1,
+  "landing_text": "Welcome to the Gempire mod! The best way to start is creating Pebble gems using different colors of gem essence.$(br)Check their pages for more info!$(br)Pages for other gems will be added as you obtain them.",
+  "version": 2,
   "book_texture": "gempire:textures/gui/patchouli/book_gem.png",
   "nameplate_color": "FFFFFF",
   "creative_tab": "gempire:gempire_items",
   "show_progress": false,
   "use_blocky_font": true,
+  "text_overflow_mode": "resize",
   "filler_texture": "gempire:textures/gui/patchouli/page_filler.png",
-  "model": "gempire:book",
+  "model": "gempire:book_0",
   "use_resource_pack": true
 }

@@ -1,0 +1,32 @@
+{
+  "name": "Rutile",
+  "advancement": "gempire:injection/rutile",
+  "icon": "gempire:rutile_gem",
+  "category": "gempire:gem_injection",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Pink"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Preferred Biome Temperature$() $(br)$(li)1.6F"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Injection Trigger Item$() $(br)$(li)Fire Charge"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Influential Blocks$() $(br)$(li)Granite$(li)Redstone Block$(li)Red Sandstone$(li)Copper Ore$(li)Glowstone$(li)Tuff$(li)Deepslate"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The following array of numbers lists the amount of potential block values required for this gem to emerge. Please note that this is a rough estimate and your results will vary.$(br)[290, 0, 35, 20, 20, 0]"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "This gem can be injected with tier 1 and tier 2 injector setups."
+    }
+  ]
+}

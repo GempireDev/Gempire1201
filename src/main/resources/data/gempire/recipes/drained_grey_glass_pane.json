@@ -7,11 +7,11 @@
   ],
   "key": {
     "X": {
-      "item": "gempire:drained_gray_glass"
+      "item": "gempire:drained_grey_glass"
     }
   },
   "result": {
     "count": 16,
-    "item": "gempire:drained_gray_glass_pane"
+    "item": "gempire:drained_grey_glass_pane"
   }
 }

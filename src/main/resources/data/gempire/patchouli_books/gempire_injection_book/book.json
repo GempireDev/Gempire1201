@@ -1,0 +1,14 @@
+{
+  "name": "GEM Injection Guide",
+  "landing_text": "This book contains everything you need to know about injection and how it works.",
+  "version": 1,
+  "book_texture": "gempire:textures/gui/patchouli/book_gem.png",
+  "nameplate_color": "FFFFFF",
+  "creative_tab": "gempire:gempire_items",
+  "show_progress": false,
+  "use_blocky_font": true,
+  "text_overflow_mode": "resize",
+  "filler_texture": "gempire:textures/gui/patchouli/page_filler.png",
+  "model": "gempire:book_1",
+  "use_resource_pack": true
+}

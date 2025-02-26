@@ -1,0 +1,32 @@
+{
+  "name": "Lapis Lazuli",
+  "advancement": "gempire:injection/lapis",
+  "icon": "gempire:lapis_gem",
+  "category": "gempire:gem_injection",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Blue"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Preferred Biome Temperature$() $(br)$(li)0.65F"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Injection Trigger Item$() $(br)$(li)Nautilus Shell"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Influential Blocks$() $(br)$(li)Prismarine$(li)Lapis Block$(li)Lapis Ore$(li)Calcite$(li)Dripstone Block$(li)Gold Ore$(li)Sand$(li)Sponge Block"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The following array of numbers lists the amount of potential block values required for this gem to emerge. Please note that this is a rough estimate and your results will vary.$(br)[315, 25, 95, 10, 0, 70]"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "This gem can be injected with tier 1 and tier 2 injector setups."
+    }
+  ]
+}

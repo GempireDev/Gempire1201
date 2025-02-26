@@ -19,6 +19,18 @@
       "type": "patchouli:crafting",
       "recipe": "gempire:warp_core",
       "recipe2": "gempire:warp_pad"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "To register and name a warp pad block, right click it and use the menu."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "To use a warp pad block, stand directly on it and hit the following key: $(k:gempire.warp)$(/l)$(br2)A menu should then appear with other warp pads available for warping to."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Warp pads are currently only used for same-dimension travel, meaning you can't go from the Nether to the overworld and back. Use warp pads to mark important locations within specific dimensions."
     }
   ]
 }

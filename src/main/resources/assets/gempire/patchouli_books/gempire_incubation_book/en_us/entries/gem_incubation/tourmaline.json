@@ -1,0 +1,21 @@
+{
+  "name": "Tourmaline",
+  "advancement": "gempire:incubation/create_tourmaline",
+  "icon": "gempire:tourmaline_gem_16",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Tourmaline Gem",
+      "item": "gempire:tourmaline_gem_16"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)White"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Moss Block$(li)Honeycomb Block$(li)Mycelium Block$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

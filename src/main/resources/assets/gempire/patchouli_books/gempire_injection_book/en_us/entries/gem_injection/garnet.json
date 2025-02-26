@@ -1,0 +1,32 @@
+{
+  "name": "Garnet",
+  "advancement": "gempire:injection/garnet",
+  "icon": "gempire:garnet_gem_1",
+  "category": "gempire:gem_injection",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Yellow$(li)White"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Preferred Biome Temperature$() $(br)$(li)1F"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Injection Trigger Item$() $(br)$(li)Wither Skeleton Skull"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Influential Blocks$() $(br)$(li)Ancient Debris$(li)Copper Ore$(li)Sculk Block$(li)Bone Block$(li)End Stone$(li)Blackstone$(li)Purpur Block"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The following array of numbers lists the amount of potential block values required for this gem to emerge. Please note that this is a rough estimate and your results will vary.$(br)[375, 64, 40, 75, 0, 10]"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "This gem can be injected with a tier 2 injector setup."
+    }
+  ]
+}

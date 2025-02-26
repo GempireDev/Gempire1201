@@ -18,19 +18,6 @@
     {
       "type": "patchouli:text",
       "text": "$(l)Possible Abilities$() $(li)Tank$(li)Beefcake$(li)Powerhouse$(li)Unhinged$(li)Berserker$(li)Lootmaster$(li)Abundance$(br2) $(l)Definite Abilities$() $(br)$(li)Disarming"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Essence Requirements$() $(br)$(li)Yellow$(li)White"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)Wither Skeleton Skull"
-    },
-    {
-      "type": "patchouli:text",
-      "advancement": "gempire:incubation/create_garnet",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Netherrack$(li)Raw Copper$(li)Bone Block$(li)Sculk Block$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "name": "Spodumene",
+  "advancement": "gempire:incubation/create_spodumene",
+  "icon": "gempire:spodumene_gem_1",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Spodumenme Gem",
+      "item": "gempire:spodumene_gem_1"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Pink"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Glowstone$(li)Bone Block$(li)Brain Coral Block$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

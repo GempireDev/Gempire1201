@@ -18,19 +18,6 @@
     {
       "type": "patchouli:text",
       "text": "$(l)Possible Abilities$() $(br)$(li)Tank$(li)Beefcake$(li)Powerhouse$(li)Unhinged$(li)Berserker$(li)Hydration$(br2) $(l)Definite Abilities$()$(br)$(li)Vehicle$(li)Hydrokinesis"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Essence Requirements$() $(br)$(li)Blue"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)Nautilus Shell"
-    },
-    {
-      "type": "patchouli:text",
-      "advancement": "gempire:incubation/create_lapis",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Calcite$(li)Dark Prismarine$(li)Lapis Block$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

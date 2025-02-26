@@ -14,19 +14,6 @@
     {
       "type": "patchouli:text",
       "text": "$(l)Possible Abilities$() $(br)$(li)Knockback$(li)Paralysis$(li)Tank$(li)Beefcake$(li)Powerhouse$(li)Unhinged$(br2) $(l)Definite Abilities$()$(li)Pyrokinesis"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Essence Requirements$() $(br)$(li)Pink"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)Magma Block"
-    },
-    {
-      "type": "patchouli:text",
-      "advancement": "gempire:incubation/create_ruby",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Netherrack$(li)Raw Iron$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

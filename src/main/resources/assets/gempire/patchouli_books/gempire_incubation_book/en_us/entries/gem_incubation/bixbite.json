@@ -1,0 +1,21 @@
+{
+  "name": "Bixbite",
+  "advancement": "gempire:incubation/create_bixbite",
+  "icon": "gempire:bixbite_gem",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Bixbite Gem",
+      "item": "gempire:bixbite_gem"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Pink"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Red Sandstone$(li)Bone Block$(li)Fire Coral Block$(li)Raw Gold$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

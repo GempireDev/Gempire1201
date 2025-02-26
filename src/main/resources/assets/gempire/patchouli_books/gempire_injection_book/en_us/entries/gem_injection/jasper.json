@@ -1,0 +1,32 @@
+{
+  "name": "Jasper",
+  "advancement": "gempire:injection/jasper",
+  "icon": "gempire:jasper_gem_1",
+  "category": "gempire:gem_injection",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Yellow$(li)White"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Preferred Biome Temperature$() $(br)$(li)1.35F"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Injection Trigger Item$() $(br)$(li)Blaze Rod"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Influential Blocks$() $(br)$(li)Terracotta$(li)Copper Ore$(li)Magma Block$(li)Raw Iron Block$(li)Nether Quartz Ore$(li)Amethyst Block$(li)Quartz Block$(li)Gilded Blackstone"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The following array of numbers lists the amount of potential block values required for this gem to emerge. Please note that this is a rough estimate and your results will vary.$(br)[355, 70, 80, 105, 30, 0]"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "This gem can be injected with tier 1 and tier 2 injector setups."
+    }
+  ]
+}

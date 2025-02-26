@@ -1,0 +1,21 @@
+{
+  "name": "Agate",
+  "advancement": "gempire:incubation/create_agate",
+  "icon": "gempire:agate_gem_3",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Agate Gem",
+      "item": "gempire:agate_gem_3"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Blue$(li)White"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Calcite$(li)Raw Copper Block$(li)Quartz Block$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

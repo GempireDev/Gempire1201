@@ -2,7 +2,7 @@
   "name": "Inactive Gem Bases",
   "icon": "gempire:inactive_bismuth_base",
   "advancement": "gempire:root",
-  "category": "gempire:gem_creation_category",
+  "category": "gempire:introduction",
   "pages": [
     {
       "type": "patchouli:text",
@@ -35,11 +35,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)List of places  with special loot$() $(li)Ancient City$(li)Buried Treasure$(li)Desert Temple$(li)End City$(li)Igloo$(li)Jungle Temple$(li)Mineshaft$(li)Pillager Outpost$(li)Ruined Portal$(li)Shipwreck$(li)Stronghold$(li)Underwater Ruin$(li)Villages$(li)Woodland Mansion"
+      "text": "$(l)List of places with special loot:$() $(li)Ancient City$(li)Buried Treasure$(li)Desert Temple$(li)End City$(li)Igloo$(li)Jungle Temple$(li)Mineshaft$(li)Pillager Outpost$(li)Ruined Portal$(li)Shipwreck$(li)Stronghold$(li)Underwater Ruin$(li)Villages$(li)Woodland Mansion"
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Gem bases from Villager trades$() $(li)Aquamarine$(li)Emerald$(li)Peridot$(li)Sapphire$(li)Tourmaline$(li)Zircon"
+      "text": "$(l)Gem bases from mason villager trades:$() $(li)Aquamarine$(li)Emerald$(li)Peridot$(li)Sapphire$(li)Tourmaline$(li)Zircon"
     }
   ]
 }

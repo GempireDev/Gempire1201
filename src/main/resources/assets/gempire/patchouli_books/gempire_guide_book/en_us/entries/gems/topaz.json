@@ -16,19 +16,6 @@
     {
       "type": "patchouli:text",
       "text": "$(l)Possible Abilities$() $(br)$(li)Paralysis$(li)Tank$(li)Beefcake$(li)Powerhouse$(li)Unhinged$(li)Stern$(li)Berserker$(br2) $(l)Definite Abilities$()$(li)Knockback$(li)Intimidation"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Essence Requirements$() $(br)$(li)Yellow"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)Gilded Blackstone"
-    },
-    {
-      "type": "patchouli:text",
-      "advancement": "gempire:incubation/create_topaz",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Raw Gold Block$(li)Gilded Blackstone$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

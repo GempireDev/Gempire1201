@@ -1,0 +1,21 @@
+{
+  "name": "Garnet",
+  "advancement": "gempire:incubation/create_garnet",
+  "icon": "gempire:garnet_gem_1",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Garnet Gem",
+      "item": "gempire:garnet_gem_1"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Yellow$(li)White"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Netherrack$(li)Raw Copper$(li)Bone Block$(li)Sculk Block$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

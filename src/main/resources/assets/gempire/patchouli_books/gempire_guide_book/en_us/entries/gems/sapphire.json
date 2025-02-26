@@ -14,19 +14,6 @@
     {
       "type": "patchouli:text",
       "text": "$(l)Possible Abilities$()$(br)$(li)Tank$(li)Beefcake$(li)Unhinged$(br2) $(l)Definite Abilities$()$(li)Luck$(li)Cryokinesis"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Essence Requirements$() $(br)$(li)Blue$(li)White"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)Ender Eye"
-    },
-    {
-      "type": "patchouli:text",
-      "advancement": "gempire:incubation/create_sapphire",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Blue Ice Block$(li)Eye of Ender$(li)Diamond Block$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

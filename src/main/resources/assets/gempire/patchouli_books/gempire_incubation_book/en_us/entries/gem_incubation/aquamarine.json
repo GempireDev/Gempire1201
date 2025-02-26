@@ -1,0 +1,21 @@
+{
+  "name": "Agate",
+  "advancement": "gempire:incubation/create_aquamarine",
+  "icon": "gempire:aquamarine_gem",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Aquamarine Gem",
+      "item": "gempire:aquamarine_gem"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Blue$(li)White"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Soul Soil$(li)Prismarine$(li)Ghast Tear$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

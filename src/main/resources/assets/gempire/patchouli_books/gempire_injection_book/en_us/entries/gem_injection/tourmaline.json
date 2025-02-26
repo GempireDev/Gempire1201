@@ -1,0 +1,32 @@
+{
+  "name": "Tourmaline",
+  "advancement": "gempire:injection/tourmaline",
+  "icon": "gempire:tourmaline_gem_16",
+  "category": "gempire:gem_injection",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)White"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Preferred Biome Temperature$() $(br)$(li)0.95F"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Injection Trigger Item$() $(br)$(li)Enchanted Golden Apple"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Influential Blocks$() $(br)$(li)Pumpkin$(li)Slime Block$(li)Mycelium Block$(li)Moss Block$(li)Melon$(li)Deepslate$(li)Gold Ore"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The following array of numbers lists the amount of potential block values required for this gem to emerge. Please note that this is a rough estimate and your results will vary.$(br)[280, 60, 0, 20, 0, 55]"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "This gem can be injected with tier 1 and tier 2 injector setups."
+    }
+  ]
+}

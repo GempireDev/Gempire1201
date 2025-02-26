@@ -1,0 +1,21 @@
+{
+  "name": "Larimar",
+  "advancement": "gempire:incubation/create_larimar",
+  "icon": "gempire:larimar_gem",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Larimar Gem",
+      "item": "gempire:larimar_gem"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Blue"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Snow Block$(li)Ice Block$(li)Packed Ice Block$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

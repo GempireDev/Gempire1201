@@ -1,0 +1,21 @@
+{
+  "name": "Bismuth",
+  "advancement": "gempire:incubation/create_bismuth",
+  "icon": "gempire:bismuth_gem",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Bismuth Gem",
+      "item": "gempire:bismuth_gem"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Pink$(li)Blue"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Magma Block$(li)Iron Block$(li)Tungsten Block$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

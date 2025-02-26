@@ -1,0 +1,32 @@
+{
+  "name": "Bismuth",
+  "advancement": "gempire:injection/bismuth",
+  "icon": "gempire:bismuth_gem",
+  "category": "gempire:gem_injection",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Pink$(li)Blue"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Preferred Biome Temperature$() $(br)$(li)1.25F"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Injection Trigger Item$() $(br)$(li)Block of Prismatic Metal"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Influential Blocks$() $(br)$(li)Gold Ore$(li)Deepslate$(li)Copper Ore$(li)Diorite$(li)Magma Block$(li)Tungsten Ore$(li)Gilded Blackstone"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The following array of numbers lists the amount of potential block values required for this gem to emerge. Please note that this is a rough estimate and your results will vary.$(br)[330, 15, 65, 70, 15, 0]"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "This gem can be injected with tier 1 and tier 2 injector setups."
+    }
+  ]
+}

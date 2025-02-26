@@ -1,0 +1,32 @@
+{
+  "name": "Aquamarine",
+  "advancement": "gempire:injection/aquamarine",
+  "icon": "gempire:aquamarine_gem",
+  "category": "gempire:gem_injection",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Blue$(li)White"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Preferred Biome Temperature$() $(br)$(li)0.75F"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Injection Trigger Item$() $(br)$(li)Ghast Tear"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Influential Blocks$() $(br)$(li)Iron Ore$(li)Clay Block$(li)Prismarine$(li)Dark Prismarine$(li)Soul Sand$(li)Mud Block$(li)Dripstone Block"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The following array of numbers lists the amount of potential block values required for this gem to emerge. Please note that this is a rough estimate and your results will vary.$(br)[210, 55, 60, 20, 0, 30]"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "This gem can be injected with a tier 2 injector setup."
+    }
+  ]
+}

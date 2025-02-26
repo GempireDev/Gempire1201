@@ -19,19 +19,6 @@
     {
       "type": "patchouli:text",
       "text": "$(l)Possible Abilities$() $(br)$(li)Tank$(li)Beefcake$(li)Powerhouse$(li)Unhinged$(li)Kindergartener$(br2) $(l)Definite Abilities$()$(br)$(li)Paralysis$(li)Hydrokinesis"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Essence Requirements$() $(br)$(li)Blue$(li)White"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)Ghast Tear"
-    },
-    {
-      "type": "patchouli:text",
-      "advancement": "gempire:incubation/create_aquamarine",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Soul Soil$(li)Prismarine$(li)Ghast Tear$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

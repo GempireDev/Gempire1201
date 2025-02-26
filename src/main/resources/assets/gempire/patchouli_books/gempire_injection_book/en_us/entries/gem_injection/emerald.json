@@ -1,0 +1,32 @@
+{
+  "name": "Emerald",
+  "advancement": "gempire:injection/emerald",
+  "icon": "gempire:emerald_gem",
+  "category": "gempire:gem_injection",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Blue$(li)Yellow"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Preferred Biome Temperature$() $(br)$(li)0.95F"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Injection Trigger Item$() $(br)$(li)Emerald Block"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Influential Blocks$() $(br)$(li)Clay Block$(li)Ancient Debris$(li)Emerald Ore$(li)Emerald Block$(li)End Stone$(li)Deepslate$(li)Granite"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The following array of numbers lists the amount of potential block values required for this gem to emerge. Please note that this is a rough estimate and your results will vary.$(br)[360, 10, 110, 50, 0, 5]"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "This gem can be injected with a tier 2 injector setup."
+    }
+  ]
+}

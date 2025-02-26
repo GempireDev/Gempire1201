@@ -1,0 +1,21 @@
+{
+  "name": "Snowflake Obsidian",
+  "advancement": "gempire:incubation/create_obsidian",
+  "icon": "gempire:obsidian_gem",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Snowflake Obsidian Gem",
+      "item": "gempire:obsidian_gem"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)White"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Crying Obsidian Block$(li)Obsidian Block$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}
