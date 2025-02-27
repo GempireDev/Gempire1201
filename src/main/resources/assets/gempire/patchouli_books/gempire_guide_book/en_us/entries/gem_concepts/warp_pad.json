@@ -26,7 +26,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "To use a warp pad block, stand directly on it and hit the following key: $(k:gempire.warp)$(/l)$(br2)A menu should then appear with other warp pads available for warping to."
+      "text": "To use a warp pad block, stand directly on it and hit the following key: $(k:gempire.warp)$(br2)A menu should then appear with other warp pads available for warping to."
     },
     {
       "type": "patchouli:text",
