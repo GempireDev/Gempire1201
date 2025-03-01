@@ -409,7 +409,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.SMOOTH_ABNORMAL_SANDSTONE);
 
         blockWithItem(ModBlocks.PECULIAR_SAND);
-        blockWithItem(ModBlocks.PECULIAR_SANDSTONE);
+        blockItem(ModBlocks.PECULIAR_SANDSTONE);
         blockItem(ModBlocks.PECULIAR_SANDSTONE_STAIRS);
         blockItem(ModBlocks.PECULIAR_SANDSTONE_SLAB);
         blockItem(ModBlocks.SMOOTH_PECULIAR_SANDSTONE_STAIRS);
