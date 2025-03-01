@@ -14,19 +14,6 @@
     {
       "type": "patchouli:text",
       "text": "$(l)Possible Abilities$() $(br)$(li)Tank$(li)Beefcake$(li)Powerhouse$(li)Unhinged$(li)Knockback$(br2) $(l)Definite Abilities$()$(br)$(li)Vehicle$(li)Cryokinesis"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Essence Requirements$() $(br)$(li)White"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)End Crystal"
-    },
-    {
-      "type": "patchouli:text",
-      "advancement": "gempire:incubation/create_obsidian",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Crying Obsidian Block$(li)Obsidian Block$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

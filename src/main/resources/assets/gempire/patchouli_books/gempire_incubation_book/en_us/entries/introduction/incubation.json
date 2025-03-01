@@ -1,0 +1,37 @@
+{
+  "name": "Incubation",
+  "icon": "gempire:incubator_block",
+  "advancement": "gempire:incubation/obtain_incubator",
+  "category": "gempire:introduction",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "gempire:incubator_block",
+      "text": "So, you've gotten your hands on an incubator machine. But how do you use it?"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "First, place down your Incubator where ever you would like it to sit at. Then you can open the Incubator GUI by right-clicking the block.$(br2)In order to create gems you need gem essence, Chroma, an inactive gem base of your choosing, plus the cruxes required to grow that gem."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Each gem has a section in this GEM Incubation Guide that describes what its requirements are, including favored blocks and gem essence colors.$(br2)You may view these pages as you unlock them by picking up inactive gem bases."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "You may also supplement the Incubator with additional items to aid in incubation, such as a prime booster or a speed booster. Please view the following pages to find the example image of how the incubator should be used."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Incubator Usage",
+      "images": [
+        "gempire:textures/gui/patchouli/entries/incubator_recipe.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "When the Incubator is in use, please remember to fill ALL crux slots with material. It can be a mixture of a gem's preferred cruxes or just one type only, but ALL slots must be filled."
+    }
+  ]
+}

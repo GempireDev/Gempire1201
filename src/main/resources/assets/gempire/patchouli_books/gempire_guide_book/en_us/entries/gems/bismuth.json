@@ -18,19 +18,6 @@
     {
       "type": "patchouli:text",
       "text": "$(l)Possible Abilities$() $(br)$(li)Tank$(li)Beefcake$(li)Powerhouse$(li)Unhinged$(br2) $(l)Definite Abilities$()$(li)Refinery$(li)Tinkerer"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Essence Requirements$() $(br)$(li)Pink$(li)Blue"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)Block of Prismatic Metal"
-    },
-    {
-      "type": "patchouli:text",
-      "advancement": "gempire:incubation/create_bismuth",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Magma Block$(li)Iron Block$(li)Tungsten Block$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

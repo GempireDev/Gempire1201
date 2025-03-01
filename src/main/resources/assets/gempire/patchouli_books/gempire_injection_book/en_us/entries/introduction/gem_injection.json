@@ -1,0 +1,24 @@
+{
+  "name": "Gem Injection Information",
+  "icon": "minecraft:writable_book",
+  "advancement": "gempire:root",
+  "category": "gempire:introduction",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "You may notice that there's something new influencing injection rates. A particular string of numbers mentioned by various sources that is very confusing, bewildering even.$(br2)As the author of this journal, it's my job to help you out."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Each number in a gem's listed array corresponds to a specific type of value. Reading the numbers from left to right, the values are as follows:$(br)$(li)Organic$(li)Mystical$(li)Crystalline$(li)Metallic$(li)Igneous$(li)Moisture"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Every block has its own value that contributes to a gem's potential emergence.$(br2)Some blocks are very crystalline or mystical in nature, while others may be soggy wet or organic like moss.$(br2)Your injection site plays a huge part in what your gem results will be."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Something else you may be asking yourself is, 'what the hell is an injection trigger item?'$(br2)It's an item you can put into an injector to influence a gem's emergence even further. For example, a magma block for Ruby.$(br2)This will never guarantee a gem to pop out from the ground, however."
+    }
+  ]
+}

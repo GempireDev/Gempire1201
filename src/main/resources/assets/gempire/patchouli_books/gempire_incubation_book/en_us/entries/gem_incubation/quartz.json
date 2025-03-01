@@ -1,0 +1,21 @@
+{
+  "name": "Quartz",
+  "advancement": "gempire:incubation/create_quartz",
+  "icon": "gempire:quartz_gem_10",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Quartz Gem",
+      "item": "gempire:quartz_gem_10"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Pink$(li)White"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Raw Iron$(li)Quartz Block$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

@@ -15,19 +15,6 @@
     {
       "type": "patchouli:text",
       "text": "$(l)Possible Abilities$() $(br)$(li)Tank$(li)Beefcake$(li)Powerhouse$(li)Unhinged$(br2) $(l)Definite Abilities$()$(br)$(li)Cryokinesis$(li)Carving"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Essence Requirements$() $(br)$(li)Blue"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)Blue Ice"
-    },
-    {
-      "type": "patchouli:text",
-      "advancement": "gempire:incubation/create_larimar",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Snow Block$(li)Ice Block$(li)Packed Ice Block$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

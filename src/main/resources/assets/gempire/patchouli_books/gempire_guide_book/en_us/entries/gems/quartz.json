@@ -19,19 +19,6 @@
     {
       "type": "patchouli:text",
       "text": "$(l)Possible Abilities Continued$() $(br)$(li)Archer$(li)Pyrokinesis$(li)Cryokinesis$(li)Healer$(li)First-Aid$(li)Berserker$(li)Beastmaster$(li)Electrokinesis"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Essence Requirements$() $(br)$(li)Pink$(li)White"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)Amethyst Block"
-    },
-    {
-      "type": "patchouli:text",
-      "advancement": "gempire:incubation/create_quartz",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Raw Iron$(li)Quartz Block$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

@@ -1,0 +1,32 @@
+{
+  "name": "Sapphire",
+  "advancement": "gempire:injection/sapphire",
+  "icon": "gempire:sapphire_gem_11",
+  "category": "gempire:gem_injection",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Blue$(li)White"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Preferred Biome Temperature$() $(br)$(li)0.35F"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Injection Trigger Item$() $(br)$(li)Ender Eye"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Influential Blocks$() $(br)$(li)Raw Iron Block$(li)Ice Block$(li)Packed Ice$(li)Snow$(li)Blue Ice$(li)Gravel$(li)Packed Mud"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The following array of numbers lists the amount of potential block values required for this gem to emerge. Please note that this is a rough estimate and your results will vary.$(br)[255, 50, 95, 25, 0, 90]"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "This gem can be injected with a tier 2 injector setup."
+    }
+  ]
+}

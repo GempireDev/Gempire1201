@@ -1,0 +1,21 @@
+{
+  "name": "Ruby",
+  "advancement": "gempire:incubation/create_ruby",
+  "icon": "gempire:ruby_gem",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Ruby Gem",
+      "item": "gempire:ruby_gem"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Pink"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Netherrack$(li)Raw Iron$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

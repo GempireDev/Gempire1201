@@ -10,9 +10,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class InjectionRegistry {
-
-    //TODO: ADJUST INJECTION VALUES
-
     public static ArrayList<GemInfo> listBasic = new ArrayList<>();
 
     public static ArrayList<GemInfo> list = new ArrayList<>();

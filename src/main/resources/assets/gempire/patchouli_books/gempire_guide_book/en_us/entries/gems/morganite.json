@@ -39,19 +39,6 @@
       "type": "patchouli:spotlight",
       "item": "gempire:pink_phosphorus_lamp",
       "text": "To make colored phosphorus lamps, put an uncolored phosphorus lamp into her hand and a Chroma color of your choosing in her inventory."
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Essence Requirements$() $(br)$(li)Pink"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)Phantom Membrane"
-    },
-    {
-      "type": "patchouli:text",
-      "advancement": "gempire:incubation/create_morganite",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Soul Sand$(li)End Stone$(li)Phantom Membrane$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "name": "Jasper",
+  "advancement": "gempire:incubation/create_jasper",
+  "icon": "gempire:jasper_gem_1",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Jasper Gem",
+      "item": "gempire:jasper_gem_1"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Yellow$(li)White"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Raw Iron$(li)Quartz Block$(li)Gilded Blackstone$(li)Blaze Rod$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

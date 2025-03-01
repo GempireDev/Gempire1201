@@ -1,0 +1,21 @@
+{
+  "name": "Morganite",
+  "advancement": "gempire:injection/morganite",
+  "icon": "gempire:morganite_gem",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Morganite Gem",
+      "item": "gempire:morganite_gem"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Pink"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Soul Sand$(li)End Stone$(li)Phantom Membrane$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

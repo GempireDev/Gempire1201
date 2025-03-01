@@ -1,0 +1,32 @@
+{
+  "name": "Zircon",
+  "advancement": "gempire:injection/zircon",
+  "icon": "gempire:zircon_gem_11",
+  "category": "gempire:gem_injection",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Blue$(li)White"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Preferred Biome Temperature$() $(br)$(li)0.75F"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Injection Trigger Item$() $(br)$(li)Totem of Undying"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Influential Blocks$() $(br)$(li)Diamond Ore$(li)Glowstone$(li)Sculk Block$(li)Enchanting Table$(li)End Stone$(li)Bookshelf$(li)Diamond Block"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The following array of numbers lists the amount of potential block values required for this gem to emerge. Please note that this is a rough estimate and your results will vary.$(br)[215, 85, 115, 0, 0, 5]"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "This gem can be injected with a tier 2 injector setup."
+    }
+  ]
+}

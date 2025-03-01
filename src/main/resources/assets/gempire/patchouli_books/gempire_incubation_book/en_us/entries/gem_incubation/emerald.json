@@ -1,0 +1,21 @@
+{
+  "name": "Emerald",
+  "advancement": "gempire:incubation/create_emerald",
+  "icon": "gempire:emerald_gem",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Emerald Gem",
+      "item": "gempire:emerald_gem"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Blue$(li)Yellow"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)End Stone$(li)Emerald Block$(li)Ancient Debris$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

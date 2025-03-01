@@ -18,19 +18,6 @@
     {
       "type": "patchouli:text",
       "text": "$(l)Possible Abilities$() $(br)$(li)Stern$(br2) $(l)Definite Abilities$()$(li)Enchanter"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Essence Requirements$() $(br)$(li)Blue$(li)White"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)Totem of Undying"
-    },
-    {
-      "type": "patchouli:text",
-      "advancement": "gempire:incubation/create_zircon",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Deepslate Block(li)Ancient Debris Block$(li)Diamond Block$(li)Sculk Block$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

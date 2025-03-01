@@ -17,19 +17,6 @@
     {
       "type": "patchouli:text",
       "text": "$(l)Possible Abilities$() $(br)$(li)Tank$(li)Beefcake$(li)Powerhouse$(li)Unhinged$(li)Knockback$(li)Berserker$(br2) $(l)Definite Abilities$()$(br)$(li)Scout$(li)Acid Spit"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Essence Requirements$() $(br)$(li)Blue$(li)Yellow"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(l)Injection Trigger Item$() $(br)$(li)Wither Rose"
-    },
-    {
-      "type": "patchouli:text",
-      "advancement": "gempire:incubation/create_nephrite",
-      "text": "$(l)Incubation Cruxes$() $(br)$(li)Honey Block$(li)Slime Block$(li)Wither Rose$(br2)This list is ordered from least to most favorable."
     }
   ]
 }

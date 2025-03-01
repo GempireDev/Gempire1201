@@ -1,0 +1,21 @@
+{
+  "name": "Peridot",
+  "advancement": "gempire:incubation/create_peridot",
+  "icon": "gempire:peridot_gem",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Peridot Gem",
+      "item": "gempire:peridot_gem"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Blue$(li)Yellow"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Clay$(li)Smooth Basalt Block$(li)Raw Iron Block$(li)Experience Bottle$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

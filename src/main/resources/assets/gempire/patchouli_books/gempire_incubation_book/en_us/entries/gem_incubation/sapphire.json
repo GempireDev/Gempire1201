@@ -1,0 +1,21 @@
+{
+  "name": "Sapphire",
+  "advancement": "gempire:incubation/create_sapphire",
+  "icon": "gempire:sapphire_gem_11",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Sapphire Gem",
+      "item": "gempire:sapphire_gem_11"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Blue$(li)White"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Blue Ice Block$(li)Eye of Ender$(li)Diamond Block$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

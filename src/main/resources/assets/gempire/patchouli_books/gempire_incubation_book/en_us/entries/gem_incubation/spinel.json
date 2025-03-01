@@ -1,0 +1,21 @@
+{
+  "name": "Spinel",
+  "advancement": "gempire:incubation/create_spinel",
+  "icon": "gempire:spinel_gem_6",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Spinel Gem",
+      "item": "gempire:spinel_gem_6"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Pink"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Slime Block$(li)Nether Wart$(li)Chorus Flower Block$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}

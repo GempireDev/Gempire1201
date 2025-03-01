@@ -1,0 +1,21 @@
+{
+  "name": "Lapis Lazuli",
+  "advancement": "gempire:incubation/create_lapis",
+  "icon": "gempire:lapis_gem",
+  "category": "gempire:gem_incubation",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Lapis Gem",
+      "item": "gempire:lapis_gem"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Essence Requirements$() $(br)$(li)Blue"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Incubation Cruxes$() $(br)$(li)Calcite$(li)Dark Prismarine$(li)Lapis Block$(br2)This list is ordered from least to most favorable."
+    }
+  ]
+}
