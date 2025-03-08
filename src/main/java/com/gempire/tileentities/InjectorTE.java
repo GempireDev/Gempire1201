@@ -228,7 +228,7 @@ public class InjectorTE extends RandomizableContainerBlockEntity implements IFlu
         while (true) {
             Block seed = level.getBlockState(seedPos).getBlock();
             if (seed == ModBlocks.GEM_SEED_BLOCK.get() || seed == Blocks.AIR || seed == Blocks.WATER) {
-                seedPos = seedPos.offset(0, -10, 0);
+                seedPos = seedPos.offset(0, -11, 0);
             }
             else if (seed == Blocks.BEDROCK) return;
             else break;

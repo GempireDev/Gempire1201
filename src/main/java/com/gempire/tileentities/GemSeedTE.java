@@ -66,7 +66,6 @@ public class GemSeedTE extends BlockEntity {
     public int chromaColour;
     public float weight;
     public boolean clod = false;
-    public int clodNO;
     public GemInfo toForm;
     public boolean speedBoosted, primeBoosted = false;
 
@@ -245,7 +244,7 @@ public class GemSeedTE extends BlockEntity {
                 float distancef = distance;
                 if (primer == gemInfo.getPrimer()) distancef = distancef/3;
                 System.out.println("seed resources "+Arrays.toString(info.resources));
-                System.out.println(gemInfo.getName() + " " + Arrays.toString(res)+" " + distancef+ " quality "+subtracted);
+                System.out.println(gemInfo.getName() + " " + Arrays.toString(res)+" " + distancef+ " quality "+(1 -subtracted));
                 for (int b = 0; b < threshhold - distancef; b++) {
                     possibleResults.add(gemInfo);
                     possibleQualities.add((float) 1 - subtracted);
@@ -260,29 +259,17 @@ public class GemSeedTE extends BlockEntity {
             toForm = possibleResults.get(random);
             float qualityFloat = possibleQualities.get(random);
             if (!primeBoosted) {
-                if (qualityFloat <= 0.09) {
-                    quality = 4;
-                    clod = true;
-                } else if (qualityFloat <= 0.175) {
-                    quality = 3;
-                    clod = true;
-                }else if (qualityFloat >= 0.95) {
+                if (qualityFloat >= 0.9) {
                     quality = 0;
-                } else if (qualityFloat <= 0.25) {
+                } else if (qualityFloat <= 0.2) {
                     quality = 2;
                 } else {
                     quality = 1;
                 }
             } else {
-                if (qualityFloat <= 0.03) {
-                    quality = 5;
-                    clod = true;
-                } else if (qualityFloat <= 0.09) {
-                    quality = 4;
-                    clod = true;
-                } else if (qualityFloat >= 0.85) {
+                if (qualityFloat >= 0.8) {
                     quality = 0;
-                } else if (qualityFloat <= 0.2) {
+                } else if (qualityFloat <= 0.1) {
                     quality = 2;
                 } else {
                     quality = 1;
@@ -291,7 +278,7 @@ public class GemSeedTE extends BlockEntity {
             formGem();
         } else {
             clod = true;
-            quality = 5;
+            quality = level.getRandom().nextInt(2) + 3;
             formGem();
         }
     }
