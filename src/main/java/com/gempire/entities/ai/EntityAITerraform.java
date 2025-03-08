@@ -85,7 +85,7 @@ public class EntityAITerraform extends Goal {
         int yTop = (int) follower.getY()-1;
         Level level = follower.level();
         for (int x = 0; x < 48; x++) {
-            for (int y = 0; y < 39; y++) {
+            for (int y = 0; y < 43; y++) {
                 for (int z = 0; z < 16; z++) {
                     if (x < 16) {
                         list.add(chunk.getBlockAt(x, (int) follower.getY() -y + 3, z));
@@ -150,7 +150,7 @@ public class EntityAITerraform extends Goal {
                 posInChunk = pos.offset(-chunk.getWorldPosition().getX(), 0, -chunk.getWorldPosition().getZ());
             }
             if (posInChunk.getZ() < 12 && posInChunk.getZ() > 3) {
-                if (pos.getY() > yTop-16) {
+                if (pos.getY() > yTop-17) {
                     list2.add(pos);
                     if (isMineable(pos, tier)) {
                         level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
@@ -178,7 +178,7 @@ public class EntityAITerraform extends Goal {
                 posInChunk = pos.offset(-chunk.getWorldPosition().getX(), 0, -chunk.getWorldPosition().getZ());
             }
             if (posInChunk.getZ() < 11 && posInChunk.getZ() > 4) {
-                if (pos.getY() > yTop-26) {
+                if (pos.getY() > yTop-28) {
                     list2.add(pos);
                     if (isMineable(pos, tier)) {
                         level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
@@ -204,7 +204,7 @@ public class EntityAITerraform extends Goal {
                 posInChunk = pos.offset(-chunk.getWorldPosition().getX(), 0, -chunk.getWorldPosition().getZ());
             }
             if (posInChunk.getZ() < 10 && posInChunk.getZ() > 5) {
-                if (pos.getY() > yTop-36) {
+                if (pos.getY() > yTop-39) {
                     list2.add(pos);
                     if (isMineable(pos, tier)) {
                         level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
