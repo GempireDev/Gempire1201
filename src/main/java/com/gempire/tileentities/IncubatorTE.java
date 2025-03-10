@@ -217,6 +217,9 @@ public class IncubatorTE extends BaseContainerBlockEntity implements MenuProvide
         else if (gemBase.equals("inactive_spodumene_base") && (chroma.color != 1 && chroma.color != 4 && chroma.color != 11 && chroma.color != 10 && chroma.color != 13)) {
             return false;
         }
+        else if (gemBase.equals("inactive_sapphire_base") && (chroma.color == 14)) {
+            return false;
+        }
         return true;
     }
 
@@ -490,6 +493,7 @@ public class IncubatorTE extends BaseContainerBlockEntity implements MenuProvide
         larimar.put(Items.SNOW_BLOCK, 1);
         larimar.put(Items.ICE, 2);
         larimar.put(Items.PACKED_ICE, 3);
+        larimar.put(Items.BLUE_ICE, 4);
 
         morganite.put(Items.SOUL_SAND, 2);
         morganite.put(Items.END_STONE, 3);
@@ -535,7 +539,7 @@ public class IncubatorTE extends BaseContainerBlockEntity implements MenuProvide
 
         tourmaline.put(Items.MOSS_BLOCK, 1);
         tourmaline.put(Items.HONEYCOMB, 2);
-        tourmaline.put(Items.MYCELIUM, 3);
+        tourmaline.put(Items.MYCELIUM, 4);
 
         zircon.put(Items.DEEPSLATE, 1);
         zircon.put(Items.ANCIENT_DEBRIS, 2);

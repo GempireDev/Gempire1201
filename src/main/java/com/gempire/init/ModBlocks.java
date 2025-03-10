@@ -1482,6 +1482,9 @@ public class ModBlocks {
                     .of()
                     .strength(3.0f, 6.0f)
                     .sound(SoundType.AMETHYST)
+                    .lightLevel((state) -> {
+                        return 10;
+                    })
                     .noOcclusion()
             )
     );
