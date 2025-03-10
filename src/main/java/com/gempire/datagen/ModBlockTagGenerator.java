@@ -378,6 +378,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.PINK_SAND.get()
                 );
 
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.STRAWBERRY_BLOCK.get(),
+                        ModBlocks.STRAWBERRY_STEM.get()
+                );
+
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.TUNGSTEN_BLOCK.get(),
                         ModBlocks.TUNGSTEN_ORE.get(),
