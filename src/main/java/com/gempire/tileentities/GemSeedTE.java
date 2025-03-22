@@ -179,6 +179,7 @@ public class GemSeedTE extends BlockEntity {
                 !(block instanceof StairBlock) &&
                 !(block instanceof LadderBlock) &&
                 !(block instanceof ChainBlock) &&
+                !(block instanceof BubbleColumnBlock) &&
                 !(block == ModBlocks.DRILL_BLOCK.get()) &&
                 !(block == ModBlocks.DRAINED_ICE.get()) &&
                 !(block == ModBlocks.DRAINED_LOG_CRACKED.get()) &&

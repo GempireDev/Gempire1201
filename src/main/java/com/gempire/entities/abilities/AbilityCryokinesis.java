@@ -52,7 +52,8 @@ public class AbilityCryokinesis extends Ability implements IRangedAbility, IViol
         if(this.holder.getRandom().nextInt(5) == 0) {
             if(!(target.level().getBlockState(target.blockPosition().below()).getBlock() instanceof AirBlock) &&
                     !(target.level().getBlockState(target.blockPosition().below()).getBlock() instanceof BushBlock)&&
-                    (target.level().getBlockState(target.blockPosition().above()).getBlock() instanceof AirBlock)) {
+                    (target.level().getBlockState(target.blockPosition().above()).getBlock() instanceof AirBlock) &&
+                    ((target.level().getBlockState(target.blockPosition()).getBlock() instanceof AirBlock)||(target.level().getBlockState(target.blockPosition()).getBlock() instanceof BushBlock))) {
                 float f5 = (target.level().random.nextFloat() - 0.5F) * 8.0F;
                 float f1 = (target.level().random.nextFloat() - 0.5F) * 4.0F;
                 float f2 = (target.level().random.nextFloat() - 0.5F) * 8.0F;

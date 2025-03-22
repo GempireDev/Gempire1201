@@ -287,6 +287,9 @@ public class ModCreativeModeTabs {
                 populator.accept(ModItems.PRISMATIC_INGOT.get());
                 populator.accept(ModItems.PRISMATIC_UPGRADE_SMITHING_TEMPLATE.get());
 
+                populator.accept(ModItems.RAW_PYRITE.get());
+                populator.accept(ModItems.PYRITE_INGOT.get());
+
                 populator.accept(ModItems.RAW_THULITE.get());
                 populator.accept(ModItems.THULITE_INGOT.get());
                 populator.accept(ModItems.THULITE_NUGGET.get());

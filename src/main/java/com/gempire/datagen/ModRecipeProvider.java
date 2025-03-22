@@ -27,21 +27,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
-        /*ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TUNGSTEN_BLOCK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.DRAINED_BLUE_STONE_STAIRS.get())
+                .pattern("A  ")
+                .pattern("AA ")
                 .pattern("AAA")
+                .define('A', ModItems.DRAINED_BLUE_STONE.get())
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.DRAINED_BLUE_STONE_SLAB.get())
                 .pattern("AAA")
-                .pattern("AAA")
-                .define('A', ModItems.TUNGSTEN_INGOT.get())
-                .unlockedBy("has_tungsten", inventoryTrigger(ItemPredicate.Builder.item().
-                        of(ModItems.TUNGSTEN_INGOT.get()).build()))
+                .define('A', ModItems.DRAINED_BLUE_STONE.get())
                 .save(pWriter);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT.get(), 9)
-                .requires(ModBlocks.TUNGSTEN_BLOCK.get())
-                .unlockedBy("has_tungsten_block", inventoryTrigger(ItemPredicate.Builder.item().
-                        of(ModBlocks.TUNGSTEN_BLOCK.get()).build()))
-                .save(pWriter);
-*/
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT.get(), RecipeCategory.MISC, ModBlocks.TUNGSTEN_BLOCK.get(),
                 "gempire:tungsten_ingot", "tungsten","gempire:tungsten_block", "tungsten");
 

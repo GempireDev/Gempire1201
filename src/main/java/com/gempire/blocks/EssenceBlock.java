@@ -62,7 +62,7 @@ public class EssenceBlock extends LiquidBlock {
                         }
                     }
                 }
-            } else if ((((ItemEntity) entity).getItem()).getItem() == Items.STONE_BUTTON) {
+            } else if ((((ItemEntity) entity).getItem()).getItem() == Items.STONE_BUTTON&& state.getBlock() != ModBlocks.WHITE_ESSENCE_BLOCK.get()) {
                 if (!level.isClientSide) {
                     if (timer == 60) {
                         EntityGem gem = ModEntities.PEBBLE.get().create(level);
@@ -91,7 +91,7 @@ public class EssenceBlock extends LiquidBlock {
                         timer++;
                     }
                 }
-            } else if ((((ItemEntity) entity).getItem()).getItem() == Items.NAUTILUS_SHELL) {
+            } else if ((((ItemEntity) entity).getItem()).getItem() == Items.NAUTILUS_SHELL && state.getBlock() == ModBlocks.WHITE_ESSENCE_BLOCK.get()) {
                 if (!level.isClientSide) {
                     if (timer == 60) {
                         EntityGem gem = ModEntities.NACRE.get().create(level);
