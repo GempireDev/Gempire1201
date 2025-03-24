@@ -126,9 +126,9 @@ public class InjectionRegistry {
         blockList.put(Blocks.SNOW_BLOCK, new CruxInfo(new int[]{0, 0, 2, 0, 0, 2}, Blocks.SNOW_BLOCK, "snow_block"));
         blockList.put(Blocks.POWDER_SNOW, new CruxInfo(new int[]{0, 0, 2, 0, 0, 2}, Blocks.POWDER_SNOW, "powder_snow"));
 
-        blockList.put(Blocks.ICE, new CruxInfo(new int[]{0, 0, 2, 0, 0, 2}, Blocks.ICE, "powder_snow"));
-        blockList.put(Blocks.PACKED_ICE, new CruxInfo(new int[]{0, 0, 2, 0, 0, 5}, Blocks.PACKED_ICE, "powder_snow"));
-        blockList.put(Blocks.BLUE_ICE, new CruxInfo(new int[]{0, 0, 5, 0, 0, 5}, Blocks.BLUE_ICE, "powder_snow"));
+        blockList.put(Blocks.ICE, new CruxInfo(new int[]{0, 0, 2, 0, 0, 2}, Blocks.ICE, "ice"));
+        blockList.put(Blocks.PACKED_ICE, new CruxInfo(new int[]{0, 0, 2, 0, 0, 5}, Blocks.PACKED_ICE, "packed_ice"));
+        blockList.put(Blocks.BLUE_ICE, new CruxInfo(new int[]{0, 0, 5, 0, 0, 5}, Blocks.BLUE_ICE, "blue_ice"));
 
         blockList.put(Blocks.CLAY, new CruxInfo(new int[]{2, 0, 0, 0, 0, 2}, Blocks.CLAY, "clay"));
         blockList.put(Blocks.MOSS_BLOCK, new CruxInfo(new int[]{2, 0, 0, 0, 0, 2}, Blocks.MOSS_BLOCK, "moss_block"));
