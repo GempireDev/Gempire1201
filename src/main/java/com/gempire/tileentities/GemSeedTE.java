@@ -255,7 +255,7 @@ public class GemSeedTE extends BlockEntity {
         if (!possibleResults.isEmpty()) {
             RandomSource r = level.getRandom();
             System.out.println("size "+possibleResults.size());
-            System.out.println(possibleResults);
+            //System.out.println(possibleResults);
             int random = r.nextInt(possibleResults.size());
             toForm = possibleResults.get(random);
             float qualityFloat = possibleQualities.get(random);
