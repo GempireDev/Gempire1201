@@ -238,7 +238,7 @@ public class GemSeedTE extends BlockEntity {
             int[] res = gemInfo.getResources();
             for (int a = 0; a < res.length; a++) {
                 if (res[a] > info.resources[a]) distance += (res[a] - info.resources[a]);
-                else distance += (info.resources[a] - res[a]);
+                else distance += (info.resources[a] - res[a])/2;
             }
             float subtracted = ((float)distance)/threshhold;
             if (distance < threshhold) {
