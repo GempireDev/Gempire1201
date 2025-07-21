@@ -46,6 +46,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -71,6 +72,8 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 
 import javax.annotation.Nullable;
 import javax.imageio.ImageIO;
@@ -78,7 +81,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.*;
 
-public abstract class EntityGem extends PathfinderMob implements RangedAttackMob, Container, MenuProvider, ContainerListener {
+public abstract class EntityGem extends Monster implements RangedAttackMob, Container, MenuProvider, ContainerListener {
     public static final EntityDataAccessor<Boolean> HAS_CUSTOM_NAME = SynchedEntityData.<Boolean>defineId(EntityGem.class, EntityDataSerializers.BOOLEAN);
     public static final EntityDataAccessor<Boolean> EMOTIONAL = SynchedEntityData.<Boolean>defineId(EntityGem.class, EntityDataSerializers.BOOLEAN);
     public static final EntityDataAccessor<Integer> SKIN_COLOR = SynchedEntityData.<Integer>defineId(EntityGem.class, EntityDataSerializers.INT);
@@ -206,7 +209,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
 
     public static final SimpleCommandExceptionType FAILED_EXCEPTION = new SimpleCommandExceptionType(Component.translatable("commands.gempire.nounderstand"));
 
-    public EntityGem(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public EntityGem(EntityType<? extends Monster> type, Level worldIn) {
         super(type, worldIn);
         //this.dataManager.register(EntityGem.OWNER_ID, Optional.ofNullable(UUID.randomUUID()));
         this.entityData.define(EntityGem.HAS_CUSTOM_NAME, false);
@@ -461,6 +464,8 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
     @Override
     public void addAdditionalSaveData(CompoundTag compound) {
         super.addAdditionalSaveData(compound);
+
+        // Your existing save code...
         compound.putString("abilities", this.getAbilities());
         compound.putString("name", this.getName().getString());
         compound.putBoolean("display", getDisplay());
@@ -486,6 +491,9 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
         if (this.canLocateStructures()) compound.putInt("structureTime", this.structureTime);
         if (this.canLocateStructures()) this.writeStructures(compound);
         ContainerHelper.saveAllItems(compound, this.items);
+
+        // **Add this line to save current health**
+        compound.putFloat("Health", this.getHealth());
     }
 
     public void writeOwners(CompoundTag compound) {
@@ -701,26 +709,29 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
 
     @Override
     public void load(CompoundTag compound) {
-        super.load(compound);
+        super.load(compound);  // call super once at start
+
         setDisplay(compound.getBoolean("display"));
         if (!getDisplay()) {
             this.setCustomName(Component.translatable(compound.getString("name")));
             this.setAbilityPowers(this.findAbilities(compound.getString("abilities")));
             this.setAbilities(compound.getString("abilities"));
             if (this.canLocateStructures()) this.structureTime = compound.getInt("structureTime");
+
             AttributeModifier PRIME = new AttributeModifier(UUID.randomUUID(), "gempirePrimaryModifier", 5D, AttributeModifier.Operation.ADDITION);
             AttributeModifier PRIME_SPEED = new AttributeModifier(UUID.randomUUID(), "gempirePrimarySpeedModifier", .2D, AttributeModifier.Operation.ADDITION);
             AttributeModifier DEFECTIVE = new AttributeModifier(UUID.randomUUID(), "gempireDefectiveModifier", -5D, AttributeModifier.Operation.ADDITION);
             AttributeModifier DEFECTIVE_SPEED = new AttributeModifier(UUID.randomUUID(), "gempireDefectiveSpeedModifier", -.1D, AttributeModifier.Operation.ADDITION);
+
             if (!(this instanceof EntityStarterGem)) {
-                if (this.isPrimary() && !(this.getAttribute(Attributes.MOVEMENT_SPEED).hasModifier(PRIME_SPEED)) && !(this.getAttribute(Attributes.MAX_HEALTH).hasModifier(PRIME))) {
+                if (this.isPrimary() && !this.getAttribute(Attributes.MOVEMENT_SPEED).hasModifier(PRIME_SPEED) && !this.getAttribute(Attributes.MAX_HEALTH).hasModifier(PRIME)) {
                     System.out.println("prime modifiers");
                     this.getAttribute(Attributes.MAX_HEALTH).addPermanentModifier(PRIME);
                     this.getAttribute(Attributes.MOVEMENT_SPEED).addPermanentModifier(PRIME_SPEED);
                     this.getAttribute(Attributes.ATTACK_DAMAGE).addPermanentModifier(PRIME);
                     this.getAttribute(Attributes.ATTACK_SPEED).addPermanentModifier(PRIME);
                     this.getAttribute(Attributes.KNOCKBACK_RESISTANCE).addPermanentModifier(PRIME);
-                } else if (this.isDefective() && !(this.getAttribute(Attributes.MOVEMENT_SPEED).hasModifier(DEFECTIVE_SPEED)) && !(this.getAttribute(Attributes.MAX_HEALTH).hasModifier(DEFECTIVE))) {
+                } else if (this.isDefective() && !this.getAttribute(Attributes.MOVEMENT_SPEED).hasModifier(DEFECTIVE_SPEED) && !this.getAttribute(Attributes.MAX_HEALTH).hasModifier(DEFECTIVE)) {
                     System.out.println("off colour modifiers");
                     this.getAttribute(Attributes.MAX_HEALTH).addPermanentModifier(DEFECTIVE);
                     this.getAttribute(Attributes.MOVEMENT_SPEED).addPermanentModifier(DEFECTIVE_SPEED);
@@ -729,6 +740,7 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
                     this.getAttribute(Attributes.KNOCKBACK_RESISTANCE).addPermanentModifier(DEFECTIVE);
                 }
             }
+
             this.readAbilityUtil(compound);
             this.readScale(compound);
             this.readOwners(compound);
@@ -741,9 +753,11 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
             this.readFacetCut(compound);
             this.readCrackShatter(compound);
             this.readUtil(compound);
+
             if (getAssigned()) {
                 this.readAssignedUtil(compound);
             }
+
             this.setMasterName(compound.getString("masterName"));
             if (this.canLocateStructures()) this.readStructures(compound);
             ContainerHelper.loadAllItems(compound, this.items);
@@ -752,13 +766,17 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
             }
             setGemID(compound.getInt("gemID"));
 
+            // *** Load health here ***
+            if (compound.contains("Health", 99)) {  // 99 = float tag type
+                this.setHealth(compound.getFloat("Health"));
+            }
+
         } else {
             this.readVariant(compound);
             this.readColour(compound);
             this.readScale(compound);
             this.readUtil(compound);
         }
-        super.load(compound);
     }
 
     public void readOwners(CompoundTag compound) {
@@ -1490,19 +1508,31 @@ public abstract class EntityGem extends PathfinderMob implements RangedAttackMob
 
     @Override
     public boolean doHurtTarget(Entity entityIn) {
-        if(!entityIn.level().isClientSide){
-            if (entityIn instanceof LivingEntity) {
-                if (!enemyDying) {
-                    enemyDying = true;
-                    enemy = (LivingEntity) entityIn;
-                }
-                if(this.focusCheck()) for(Ability power : this.getAbilityPowers()){
-                    if(power instanceof IMeleeAbility) {
-                        ((IMeleeAbility)power).fight((LivingEntity) entityIn, this.getAttributeValue(Attributes.ATTACK_DAMAGE));
+        if (!entityIn.level().isClientSide && entityIn instanceof LivingEntity target) {
+            boolean usedAbility = false;
+
+            // Track target if needed
+            if (!enemyDying) {
+                enemyDying = true;
+                enemy = target;
+            }
+
+            // Use abilities that apply melee damage
+            if (this.focusCheck()) {
+                for (Ability power : this.getAbilityPowers()) {
+                    if (power instanceof IMeleeAbility meleeAbility) {
+                        meleeAbility.fight(target, this.getAttributeValue(Attributes.ATTACK_DAMAGE));
+                        usedAbility = true;
                     }
                 }
             }
+
+            // Fallback: apply basic attack damage if no ability did it
+            if (!usedAbility) {
+                target.hurt(this.damageSources().mobAttack(this), (float) this.getAttributeValue(Attributes.ATTACK_DAMAGE));
+            }
         }
+
         return super.doHurtTarget(entityIn);
     }
 

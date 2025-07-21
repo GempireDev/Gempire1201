@@ -23,6 +23,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -41,14 +42,14 @@ public class EntityTourmaline extends EntityVaryingGem {
     HashMap<String, Item> cropMap = new HashMap<>();
     HashMap<Item, String> stringMap = new HashMap<>();
 
-    public EntityTourmaline(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public EntityTourmaline(EntityType<? extends Monster> type, Level worldIn) {
         super(type, worldIn);
         this.entityData.define(EntityTourmaline.CROPS, "");
         this.entityData.define(EntityTourmaline.BUILDING, false);
     }
 
     public static AttributeSupplier.Builder registerAttributes() {
-        return Mob.createMobAttributes()
+        return Monster.createMonsterAttributes()
                 .add(Attributes.MAX_HEALTH, 30.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.4D)
                 .add(Attributes.ATTACK_DAMAGE, 3.0D)

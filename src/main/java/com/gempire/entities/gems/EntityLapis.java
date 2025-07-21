@@ -22,6 +22,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.animal.FlyingAnimal;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
@@ -34,13 +35,13 @@ public class EntityLapis extends EntityFlyingVehicleGem implements FlyingAnimal 
 
     public static EntityDataAccessor<Boolean> TERRAFORMING = SynchedEntityData.<Boolean>defineId(EntityGem.class, EntityDataSerializers.BOOLEAN);
 
-    public EntityLapis(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public EntityLapis(EntityType<? extends Monster> type, Level worldIn) {
         super(type, worldIn);
         this.entityData.define(EntityLapis.TERRAFORMING, false);
     }
 
     public static AttributeSupplier.Builder registerAttributes() {
-        return Mob.createMobAttributes()
+        return Monster.createMonsterAttributes()
                 .add(Attributes.MAX_HEALTH, 35.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.3D)
                 .add(Attributes.ATTACK_DAMAGE, 2.0D)

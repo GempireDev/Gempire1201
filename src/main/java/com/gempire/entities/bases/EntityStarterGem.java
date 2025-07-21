@@ -7,13 +7,14 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.Level;
 
 import java.util.ArrayList;
 
 public abstract class EntityStarterGem extends EntityGem {
 
-    public EntityStarterGem(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public EntityStarterGem(EntityType<? extends Monster> type, Level worldIn) {
         super(type, worldIn);
     }
 

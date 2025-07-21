@@ -25,6 +25,7 @@ import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.navigation.GroundPathNavigation;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.animal.FlyingAnimal;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
@@ -33,13 +34,13 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import java.util.ArrayList;
 
 public class EntityAquamarine extends EntityGem implements FlyingAnimal {
-    public EntityAquamarine(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public EntityAquamarine(EntityType<? extends Monster> type, Level worldIn) {
         super(type, worldIn);
         if (worldIn.dimension() != Level.NETHER) this.moveControl = new FlyingMoveControl(this, 20, true);
     }
 
     public static AttributeSupplier.Builder registerAttributes() {
-            return Mob.createMobAttributes()
+            return Monster.createMonsterAttributes()
                     .add(Attributes.MAX_HEALTH, 25.0D)
                     .add(Attributes.MOVEMENT_SPEED, 1D)
                     .add(Attributes.FLYING_SPEED, 6.0D)

@@ -1,32 +1,21 @@
 package com.gempire.container;
 
-import com.gempire.entities.bases.EntityGem;
 import com.gempire.entities.gems.EntityPearl;
 import com.gempire.init.ModContainers;
-import com.gempire.init.ModItems;
 import com.gempire.items.ItemGem;
-import com.mojang.datafixers.util.Pair;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.InventoryMenu;
+import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.world.inventory.ContainerLevelAccess;
-import net.minecraft.world.inventory.DataSlot;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 
 import java.util.Objects;
 
 public class PearlUIContainer extends AbstractContainerMenu {
     public final ContainerLevelAccess canInteract;
-
     public final EntityPearl gem;
 
     public PearlUIContainer(int windowID, Inventory playerInventory, EntityPearl gem) {
@@ -34,43 +23,45 @@ public class PearlUIContainer extends AbstractContainerMenu {
         this.gem = gem;
         this.canInteract = ContainerLevelAccess.create(this.gem.level(), this.gem.blockPosition());
 
-        //INITIALIZE GEM INVENTORY HERE
-        for(int row = 0; row < 6; row++){
-            for(int col = 0; col < 9; col++){
-                this.addSlot(new Slot(gem, col + row * 9, 182 + col * 18, 135 - (6 - row) * 18){
+        // GEM INVENTORY
+        for (int row = 0; row < 6; row++) {
+            for (int col = 0; col < 9; col++) {
+                this.addSlot(new Slot(gem, col + row * 9, 182 + col * 18, 135 - (6 - row) * 18) {
+                    @Override
                     public boolean mayPlace(ItemStack stack) {
-                        return !(stack.getItem() instanceof ItemGem || !(stack.getItem().canFitInsideContainerItems()));
+                        return !(stack.getItem() instanceof ItemGem || !stack.getItem().canFitInsideContainerItems());
                     }
                 });
             }
         }
 
-        //PLAYER INVENTORY
-        for(int row = 0; row < 3; row++){
-            for(int col = 0; col < 9; col++){
+        // PLAYER INVENTORY
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 9; col++) {
                 this.addSlot(new Slot(playerInventory, col + row * 9 + 9, 95 + col * 18, 240 - (4 - row) * 18 - 10));
             }
         }
 
-        //PLAYER HOTBAR
-        for(int col = 0; col < 9; col++){
+        // PLAYER HOTBAR
+        for (int col = 0; col < 9; col++) {
             this.addSlot(new Slot(playerInventory, col, 95 + col * 18, 216));
         }
     }
 
-    public PearlUIContainer(int windowID, Inventory playerInventory, FriendlyByteBuf extraData){
-        this(windowID, playerInventory, PearlUIContainer.getGem(playerInventory, extraData));
+    public PearlUIContainer(int windowID, Inventory playerInventory, FriendlyByteBuf extraData) {
+        this(windowID, playerInventory, getGem(playerInventory, extraData));
     }
 
-    public static EntityPearl getGem(Inventory playerInventory, FriendlyByteBuf extraData){
-        Objects.requireNonNull(playerInventory, "Player Inventory can not be null");
-        Objects.requireNonNull(extraData, "Data Packet can not be null");
+    public static EntityPearl getGem(Inventory playerInventory, FriendlyByteBuf extraData) {
+        Objects.requireNonNull(playerInventory, "Player Inventory cannot be null");
+        Objects.requireNonNull(extraData, "Data Packet cannot be null");
+
         int ID = extraData.readInt();
         Entity entity = playerInventory.player.level().getEntity(ID);
-        if(entity instanceof EntityPearl){
+        if (entity instanceof EntityPearl) {
             return (EntityPearl) entity;
         }
-        throw new IllegalStateException("Entity is not correct");
+        throw new IllegalStateException("Entity is not a Pearl");
     }
 
     @Override
@@ -82,22 +73,33 @@ public class PearlUIContainer extends AbstractContainerMenu {
     public ItemStack quickMoveStack(Player playerIn, int index) {
         ItemStack stack = ItemStack.EMPTY;
         Slot slot = this.slots.get(index);
-        if(slot.hasItem()){
+
+        if (slot != null && slot.hasItem()) {
             ItemStack slotStack = slot.getItem();
             stack = slotStack.copy();
-            if(index < EntityPearl.NUMBER_OF_SLOTS_PEARL && !this.moveItemStackTo(slotStack, EntityPearl.NUMBER_OF_SLOTS_PEARL - 1, this.slots.size(), true)){
-                return ItemStack.EMPTY;
+
+            int gemSlots = EntityPearl.NUMBER_OF_SLOTS_PEARL;
+            int totalSlots = this.slots.size();
+
+            // From Pearl inventory to player
+            if (index < gemSlots) {
+                if (!this.moveItemStackTo(slotStack, gemSlots, totalSlots, true)) {
+                    return ItemStack.EMPTY;
+                }
+            } else {
+                // From player to Pearl inventory
+                if (!this.moveItemStackTo(slotStack, 0, gemSlots, false)) {
+                    return ItemStack.EMPTY;
+                }
             }
-            if(!this.moveItemStackTo(slotStack, 0, EntityPearl.NUMBER_OF_SLOTS_PEARL - 1, false)){
-                return ItemStack.EMPTY;
-            }
-            if(slotStack.isEmpty()){
+
+            if (slotStack.isEmpty()) {
                 slot.set(ItemStack.EMPTY);
-            }
-            else{
+            } else {
                 slot.setChanged();
             }
         }
+
         return stack;
     }
 }

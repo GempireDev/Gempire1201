@@ -2,11 +2,12 @@ package com.gempire.entities.bases;
 
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.Level;
 
 public abstract class EntityVaryingGem extends EntityGem {
 
-    public EntityVaryingGem(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public EntityVaryingGem(EntityType<? extends Monster> type, Level worldIn) {
         super(type, worldIn);
     }
 

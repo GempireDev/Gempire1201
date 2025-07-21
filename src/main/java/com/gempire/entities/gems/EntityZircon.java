@@ -20,6 +20,7 @@ import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.ContainerHelper;
@@ -55,7 +56,7 @@ public class EntityZircon extends EntityVaryingGem {
 
     public int ENCHANTMENT_PAGES = 0;
 
-    public EntityZircon(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public EntityZircon(EntityType<? extends Monster> type, Level worldIn) {
         super(type, worldIn);
         this.entityData.define(EntityZircon.ENCHANT_PAGE, 0);
         this.entityData.define(EntityZircon.ENCHANT_MIN, 0);
@@ -64,7 +65,7 @@ public class EntityZircon extends EntityVaryingGem {
     }
 
     public static AttributeSupplier.Builder registerAttributes() {
-        return Mob.createMobAttributes()
+        return Monster.createMonsterAttributes()
                 .add(Attributes.MAX_HEALTH, 30.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.4D)
                 .add(Attributes.ATTACK_DAMAGE, 1.0D)

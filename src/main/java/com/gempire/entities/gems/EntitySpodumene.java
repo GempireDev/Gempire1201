@@ -25,6 +25,7 @@ import net.minecraft.world.entity.ai.navigation.AmphibiousPathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.navigation.GroundPathNavigation;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
@@ -34,7 +35,7 @@ import java.util.ArrayList;
 
 public class EntitySpodumene extends EntityVaryingGem {
 
-    public EntitySpodumene(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public EntitySpodumene(EntityType<? extends Monster> type, Level worldIn) {
         super(type, worldIn);
         if (this.isInWater()) this.moveControl = new SmoothSwimmingMoveControl(this, 85, 10, 0.02F, 0.5F, false);
     }
@@ -60,7 +61,7 @@ public class EntitySpodumene extends EntityVaryingGem {
     }
 
     public static AttributeSupplier.Builder registerAttributes() {
-        return Mob.createMobAttributes()
+        return Monster.createMonsterAttributes()
                 .add(Attributes.MAX_HEALTH, 30.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.35D)
                 .add(Attributes.ATTACK_DAMAGE, 2.0D)

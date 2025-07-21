@@ -11,6 +11,7 @@ import com.gempire.entities.other.EntityShambler;
 import com.gempire.util.GemPlacements;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.goal.*;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
@@ -20,7 +21,7 @@ import java.util.ArrayList;
 
 public class EntityQuartz extends AbstractQuartz {
 
-    public EntityQuartz(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public EntityQuartz(EntityType<? extends Monster> type, Level worldIn) {
         super(type, worldIn);
     }
     protected void registerGoals() {

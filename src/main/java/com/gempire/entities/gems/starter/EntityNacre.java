@@ -13,6 +13,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.animal.Cat;
 import net.minecraft.world.entity.animal.Ocelot;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.nbt.CompoundTag;
@@ -34,7 +35,7 @@ public class EntityNacre extends EntityStarterGem {
     public int ticksDoingHopperGoal = 0;
     public int maxTicksDoingHopperGoal = 200;
 
-    public EntityNacre(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public EntityNacre(EntityType<? extends Monster> type, Level worldIn) {
         super(type, worldIn);
     }
 
@@ -54,7 +55,7 @@ public class EntityNacre extends EntityStarterGem {
     }
 
     public static AttributeSupplier.Builder registerAttributes() {
-        return Mob.createMobAttributes()
+        return Monster.createMonsterAttributes()
                 .add(Attributes.MAX_HEALTH, 10.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.3D)
                 .add(Attributes.ATTACK_DAMAGE, 0);

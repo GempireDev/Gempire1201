@@ -1,19 +1,10 @@
 package com.gempire.networking;
 
 import com.gempire.entities.bases.EntityGem;
-import com.gempire.init.ModBlocks;
-import com.gempire.systems.warping.WarpPadData;
-import com.gempire.systems.warping.WarpPadInfo;
-import com.gempire.systems.warping.WarpPadInfoHolder;
-import com.gempire.systems.warping.WarpSelectionMenu;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.world.MenuProvider;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.network.NetworkHooks;
 
-import java.util.List;
 import java.util.function.Supplier;
 
 public class RequestPoof {

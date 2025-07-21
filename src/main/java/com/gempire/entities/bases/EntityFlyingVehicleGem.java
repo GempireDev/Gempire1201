@@ -7,6 +7,7 @@ import com.gempire.util.ElytraCalculation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec2;
@@ -18,7 +19,7 @@ public abstract class EntityFlyingVehicleGem extends EntityGem implements Player
 
     public boolean flying = false, jumping = false, descend = false, elytra = false, moving = false, hasMoved = false;
 
-    public EntityFlyingVehicleGem(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public EntityFlyingVehicleGem(EntityType<? extends Monster> type, Level worldIn) {
         super(type, worldIn);
     }
 

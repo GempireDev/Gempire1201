@@ -19,6 +19,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
@@ -27,12 +28,12 @@ import java.util.ArrayList;
 public class EntitySpinel extends EntityVaryingGem {
     //TODO: IMPLEMENT SPINEL. Will give gifts to gems on the brink of rebellion or a mental meltdown.
     // Gifts will range from items in her inventory, to stealing things out of nearby chests. bad spinel no crystal chest
-    public EntitySpinel(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public EntitySpinel(EntityType<? extends Monster> type, Level worldIn) {
         super(type, worldIn);
     }
 
     public static AttributeSupplier.Builder registerAttributes() {
-        return Mob.createMobAttributes()
+        return Monster.createMonsterAttributes()
                 .add(Attributes.MAX_HEALTH, 20.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.4D)
                 .add(Attributes.ATTACK_DAMAGE, 1.0D)

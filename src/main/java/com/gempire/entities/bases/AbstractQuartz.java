@@ -5,11 +5,10 @@ import com.gempire.entities.abilities.*;
 import com.gempire.entities.abilities.base.Ability;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.level.Level;
 
@@ -17,17 +16,18 @@ import java.util.ArrayList;
 
 public abstract class AbstractQuartz extends EntityVaryingGem implements RangedAttackMob {
 
-    public AbstractQuartz(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public AbstractQuartz(EntityType<? extends Monster> type, Level worldIn) {
         super(type, worldIn);
     }
 
     public static AttributeSupplier.Builder registerAttributes() {
-        return Mob.createMobAttributes()
+        return Monster.createMonsterAttributes()
                 .add(Attributes.MAX_HEALTH, 50.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.35D)
                 .add(Attributes.ATTACK_DAMAGE, 5.0D)
                 .add(Attributes.ATTACK_SPEED, 1.0D);
     }
+
     @Override
     public ArrayList<Ability> possibleAbilities() {
         ArrayList<Ability> arrayList = new ArrayList<>();
@@ -56,6 +56,7 @@ public abstract class AbstractQuartz extends EntityVaryingGem implements RangedA
     {
         return SoundEvents.NOTE_BLOCK_BASS.get();
     }
+
     @Override
     public boolean UsesUniqueNames() {
         return true;

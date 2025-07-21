@@ -18,6 +18,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
@@ -28,13 +29,13 @@ import java.util.ArrayList;
 
 public class EntityEmerald extends EntityGem implements RangedAttackMob {
     //TODO: IMPLEMENT EMERALD. Barters with Villagers and other trader type NPCs.
-    public EntityEmerald(EntityType<? extends PathfinderMob> type, Level worldIn) {
+    public EntityEmerald(EntityType<? extends Monster> type, Level worldIn) {
         super(type, worldIn);
     }
 
 
     public static AttributeSupplier.Builder registerAttributes() {
-        return Mob.createMobAttributes()
+        return Monster.createMonsterAttributes()
                 .add(Attributes.MAX_HEALTH, 75.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.4D)
                 .add(Attributes.ATTACK_DAMAGE, 4.0D)
